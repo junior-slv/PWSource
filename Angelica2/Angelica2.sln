@@ -1,26 +1,17 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 9.00
-# Visual Studio 2005
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Angelica3D", "Angelica3D\Angelica3D.vcproj", "{3D530187-65F1-4CD9-A515-F85EDC382CBD}"
-	ProjectSection(ProjectDependencies) = postProject
-		{F8B63341-82D6-4843-A5DF-26A31C6C30BD} = {F8B63341-82D6-4843-A5DF-26A31C6C30BD}
-		{B9C0364F-E91F-4194-BAEB-B4F4DFFB3346} = {B9C0364F-E91F-4194-BAEB-B4F4DFFB3346}
-		{757BB985-CBDE-40F6-B900-6396FD6CAE73} = {757BB985-CBDE-40F6-B900-6396FD6CAE73}
-	EndProjectSection
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34728.123
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Angelica3D", "Angelica3D\Angelica3D.vcxproj", "{3D530187-65F1-4CD9-A515-F85EDC382CBD}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AngelicaCommon", "AngelicaCommon\AngelicaCommon.vcproj", "{B9C0364F-E91F-4194-BAEB-B4F4DFFB3346}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AngelicaCommon", "AngelicaCommon\AngelicaCommon.vcxproj", "{B9C0364F-E91F-4194-BAEB-B4F4DFFB3346}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AngelicaFile", "AngelicaFile\AngelicaFile.vcproj", "{F8B63341-82D6-4843-A5DF-26A31C6C30BD}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AngelicaFile", "AngelicaFile\AngelicaFile.vcxproj", "{F8B63341-82D6-4843-A5DF-26A31C6C30BD}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AngelicaMedia", "AngelicaMedia\AngelicaMedia.vcproj", "{757BB985-CBDE-40F6-B900-6396FD6CAE73}"
-	ProjectSection(ProjectDependencies) = postProject
-		{418FDE5B-CD6E-40F8-9356-9021E8A1235C} = {418FDE5B-CD6E-40F8-9356-9021E8A1235C}
-	EndProjectSection
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AngelicaMedia", "AngelicaMedia\AngelicaMedia.vcxproj", "{757BB985-CBDE-40F6-B900-6396FD6CAE73}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ImmWrapper", "ImmWrapper\ImmWrapper.vcproj", "{418FDE5B-CD6E-40F8-9356-9021E8A1235C}"
-	ProjectSection(ProjectDependencies) = postProject
-		{B9C0364F-E91F-4194-BAEB-B4F4DFFB3346} = {B9C0364F-E91F-4194-BAEB-B4F4DFFB3346}
-	EndProjectSection
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ImmWrapper", "ImmWrapper\ImmWrapper.vcxproj", "{418FDE5B-CD6E-40F8-9356-9021E8A1235C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -139,5 +130,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {423D4BB8-A53F-4C37-8E31-88F725A10984}
 	EndGlobalSection
 EndGlobal

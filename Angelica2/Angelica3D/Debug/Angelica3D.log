@@ -1,0 +1,544 @@
+﻿cl : command line  warning D9035: option 'Gm' has been deprecated and will be removed in a future release
+cl : command line  warning D9035: option 'Zc:forScope-' has been deprecated and will be removed in a future release
+  A3DWorldCDS.cpp
+C:\Users\Junior\Documents\Projetos\PWSource\Angelica2\Angelica3D\header\A3DPlatform.h(18,10): error C1083: Cannot open include file: 'd3d8.h': No such file or directory
+  (compiling source file 'Source/A3DWorldCDS.cpp')
+  
+  A3DWorld.cpp
+C:\Users\Junior\Documents\Projetos\PWSource\Angelica2\Angelica3D\header\A3DPlatform.h(18,10): error C1083: Cannot open include file: 'd3d8.h': No such file or directory
+  (compiling source file 'Source/A3DWorld.cpp')
+  
+  A3DWireCollector.cpp
+C:\Users\Junior\Documents\Projetos\PWSource\Angelica2\Angelica3D\header\A3DPlatform.h(18,10): error C1083: Cannot open include file: 'd3d8.h': No such file or directory
+  (compiling source file 'Source/A3DWireCollector.cpp')
+  
+  A3DWaterWave.cpp
+C:\Users\Junior\Documents\Projetos\PWSource\Angelica2\Angelica3D\header\A3DPlatform.h(18,10): error C1083: Cannot open include file: 'd3d8.h': No such file or directory
+  (compiling source file 'Source/A3DWaterWave.cpp')
+  
+  A3DWaterArea.cpp
+C:\Users\Junior\Documents\Projetos\PWSource\Angelica2\Angelica3D\header\A3DPlatform.h(18,10): error C1083: Cannot open include file: 'd3d8.h': No such file or directory
+  (compiling source file 'Source/A3DWaterArea.cpp')
+  
+  A3DVSSRouteLoader.cpp
+  A3DViewport.cpp
+C:\Users\Junior\Documents\Projetos\PWSource\Angelica2\Angelica3D\header\A3DPlatform.h(18,10): error C1083: Cannot open include file: 'd3d8.h': No such file or directory
+  (compiling source file 'Source/A3DViewport.cpp')
+  
+  A3DVertexShader.cpp
+C:\Users\Junior\Documents\Projetos\PWSource\Angelica2\Angelica3D\header\A3DPlatform.h(18,10): error C1083: Cannot open include file: 'd3d8.h': No such file or directory
+  (compiling source file 'Source/A3DVertexShader.cpp')
+  
+  A3DVertexCollector.cpp
+C:\Users\Junior\Documents\Projetos\PWSource\Angelica2\Angelica3D\header\A3DPlatform.h(18,10): error C1083: Cannot open include file: 'd3d8.h': No such file or directory
+  (compiling source file 'Source/A3DVertexCollector.cpp')
+  
+  A3DVectorComp.cpp
+  A3DTrackMan.cpp
+  A3DTrace.cpp
+C:\Users\Junior\Documents\Projetos\PWSource\Angelica2\Angelica3D\header\A3DPlatform.h(18,10): error C1083: Cannot open include file: 'd3d8.h': No such file or directory
+  (compiling source file 'Source/A3DTrace.cpp')
+  
+  A3DTextureMan.cpp
+C:\Users\Junior\Documents\Projetos\PWSource\Angelica2\Angelica3D\header\A3DPlatform.h(18,10): error C1083: Cannot open include file: 'd3d8.h': No such file or directory
+  (compiling source file 'Source/A3DTextureMan.cpp')
+  
+  A3DTexture.cpp
+C:\Users\Junior\Documents\Projetos\PWSource\Angelica2\Angelica3D\header\A3DPlatform.h(18,10): error C1083: Cannot open include file: 'd3d8.h': No such file or directory
+  (compiling source file 'Source/A3DTexture.cpp')
+  
+  A3DTerrainWaterSimpleAlphaRender.cpp
+C:\Users\Junior\Documents\Projetos\PWSource\Angelica2\Angelica3D\header\A3DPlatform.h(18,10): error C1083: Cannot open include file: 'd3d8.h': No such file or directory
+  (compiling source file 'Source/A3DTerrainWaterSimpleAlphaRender.cpp')
+  
+  A3DTerrainWaterRender.cpp
+C:\Users\Junior\Documents\Projetos\PWSource\Angelica2\Angelica3D\header\A3DPlatform.h(18,10): error C1083: Cannot open include file: 'd3d8.h': No such file or directory
+  (compiling source file 'Source/A3DTerrainWaterRender.cpp')
+  
+  A3DTerrainWater.cpp
+C:\Users\Junior\Documents\Projetos\PWSource\Angelica2\Angelica3D\header\A3DPlatform.h(18,10): error C1083: Cannot open include file: 'd3d8.h': No such file or directory
+  (compiling source file 'Source/A3DTerrainWater.cpp')
+  
+  A3DTerrainOutline.cpp
+C:\Users\Junior\Documents\Projetos\PWSource\Angelica2\Angelica3D\header\A3DPlatform.h(18,10): error C1083: Cannot open include file: 'd3d8.h': No such file or directory
+  (compiling source file 'Source/A3DTerrainOutline.cpp')
+  
+  A3DTerrainMark.cpp
+C:\Users\Junior\Documents\Projetos\PWSource\Angelica2\Angelica3D\header\A3DPlatform.h(18,10): error C1083: Cannot open include file: 'd3d8.h': No such file or directory
+  (compiling source file 'Source/A3DTerrainMark.cpp')
+  
+  A3DTerrain2Trace.cpp
+  Generating Code...
+  Compiling...
+  A3DTerrain2RenderAux.cpp
+C:\Users\Junior\Documents\Projetos\PWSource\Angelica2\Angelica3D\header\A3DPlatform.h(18,10): error C1083: Cannot open include file: 'd3d8.h': No such file or directory
+  (compiling source file 'Source/A3DTerrain2RenderAux.cpp')
+  
+  A3DTerrain2Render.cpp
+C:\Users\Junior\Documents\Projetos\PWSource\Angelica2\Angelica3D\header\A3DPlatform.h(18,10): error C1083: Cannot open include file: 'd3d8.h': No such file or directory
+  (compiling source file 'Source/A3DTerrain2Render.cpp')
+  
+  A3DTerrain2LOD.cpp
+  A3DTerrain2LoaderB.cpp
+C:\Users\Junior\Documents\Projetos\PWSource\Angelica2\Angelica3D\header\A3DPlatform.h(18,10): error C1083: Cannot open include file: 'd3d8.h': No such file or directory
+  (compiling source file 'Source/A3DTerrain2LoaderB.cpp')
+  
+  A3DTerrain2LoaderA.cpp
+C:\Users\Junior\Documents\Projetos\PWSource\Angelica2\Angelica3D\header\A3DPlatform.h(18,10): error C1083: Cannot open include file: 'd3d8.h': No such file or directory
+  (compiling source file 'Source/A3DTerrain2LoaderA.cpp')
+  
+  A3DTerrain2Loader.cpp
+C:\Users\Junior\Documents\Projetos\PWSource\Angelica2\Angelica3D\header\A3DPlatform.h(18,10): error C1083: Cannot open include file: 'd3d8.h': No such file or directory
+  (compiling source file 'Source/A3DTerrain2Loader.cpp')
+  
+  A3DTerrain2Env.cpp
+C:\Users\Junior\Documents\Projetos\PWSource\Angelica2\Angelica3D\header\A3DPixelShader.h(19,10): error C1083: Cannot open include file: 'D3dx8core.h': No such file or directory
+  (compiling source file 'Source/A3DTerrain2Env.cpp')
+  
+  A3DTerrain2CullHC.cpp
+  A3DTerrain2Blk.cpp
+C:\Users\Junior\Documents\Projetos\PWSource\Angelica2\Angelica3D\header\A3DPlatform.h(18,10): error C1083: Cannot open include file: 'd3d8.h': No such file or directory
+  (compiling source file 'Source/A3DTerrain2Blk.cpp')
+  
+  A3DTerrain2.cpp
+C:\Users\Junior\Documents\Projetos\PWSource\Angelica2\Angelica3D\header\A3DPlatform.h(18,10): error C1083: Cannot open include file: 'd3d8.h': No such file or directory
+  (compiling source file 'Source/A3DTerrain2.cpp')
+  
+  A3DTerrain.cpp
+C:\Users\Junior\Documents\Projetos\PWSource\Angelica2\Angelica3D\header\A3DPlatform.h(18,10): error C1083: Cannot open include file: 'd3d8.h': No such file or directory
+  (compiling source file 'Source/A3DTerrain.cpp')
+  
+  A3DSurfaceMan.cpp
+C:\Users\Junior\Documents\Projetos\PWSource\Angelica2\Angelica3D\header\A3DPlatform.h(18,10): error C1083: Cannot open include file: 'd3d8.h': No such file or directory
+  (compiling source file 'Source/A3DSurfaceMan.cpp')
+  
+  A3DSurface.cpp
+C:\Users\Junior\Documents\Projetos\PWSource\Angelica2\Angelica3D\header\A3DPlatform.h(18,10): error C1083: Cannot open include file: 'd3d8.h': No such file or directory
+  (compiling source file 'Source/A3DSurface.cpp')
+  
+  A3DSuppleMesh.cpp
+C:\Users\Junior\Documents\Projetos\PWSource\Angelica2\Angelica3D\header\A3DPlatform.h(18,10): error C1083: Cannot open include file: 'd3d8.h': No such file or directory
+  (compiling source file 'Source/A3DSuppleMesh.cpp')
+  
+  A3DSuperSpray.cpp
+C:\Users\Junior\Documents\Projetos\PWSource\Angelica2\Angelica3D\header\A3DPlatform.h(18,10): error C1083: Cannot open include file: 'd3d8.h': No such file or directory
+  (compiling source file 'Source/A3DSuperSpray.cpp')
+  
+  A3DSuperDecal.cpp
+C:\Users\Junior\Documents\Projetos\PWSource\Angelica2\Angelica3D\header\A3DPlatform.h(18,10): error C1083: Cannot open include file: 'd3d8.h': No such file or directory
+  (compiling source file 'Source/A3DSuperDecal.cpp')
+  
+  A3DStringSet.cpp
+C:\Users\Junior\Documents\Projetos\PWSource\Angelica2\Angelica3D\header\A3DPlatform.h(18,10): error C1083: Cannot open include file: 'd3d8.h': No such file or directory
+  (compiling source file 'Source/A3DStringSet.cpp')
+  
+  A3DString.cpp
+C:\Users\Junior\Documents\Projetos\PWSource\Angelica2\Angelica3D\header\A3DPlatform.h(18,10): error C1083: Cannot open include file: 'd3d8.h': No such file or directory
+  (compiling source file 'Source/A3DString.cpp')
+  
+  A3DStream.cpp
+C:\Users\Junior\Documents\Projetos\PWSource\Angelica2\Angelica3D\header\A3DPlatform.h(18,10): error C1083: Cannot open include file: 'd3d8.h': No such file or directory
+  (compiling source file 'Source/A3DStream.cpp')
+  
+  A3DStars.cpp
+C:\Users\Junior\Documents\Projetos\PWSource\Angelica2\Angelica3D\header\A3DPlatform.h(18,10): error C1083: Cannot open include file: 'd3d8.h': No such file or directory
+  (compiling source file 'Source/A3DStars.cpp')
+  
+  Generating Code...
+  Compiling...
+  A3DSnow.cpp
+C:\Users\Junior\Documents\Projetos\PWSource\Angelica2\Angelica3D\header\A3DPlatform.h(18,10): error C1083: Cannot open include file: 'd3d8.h': No such file or directory
+  (compiling source file 'Source/A3DSnow.cpp')
+  
+  A3DSkySphere.cpp
+C:\Users\Junior\Documents\Projetos\PWSource\Angelica2\Angelica3D\header\A3DPlatform.h(18,10): error C1083: Cannot open include file: 'd3d8.h': No such file or directory
+  (compiling source file 'Source/A3DSkySphere.cpp')
+  
+  A3DSkyGradient.cpp
+C:\Users\Junior\Documents\Projetos\PWSource\Angelica2\Angelica3D\header\A3DPlatform.h(18,10): error C1083: Cannot open include file: 'd3d8.h': No such file or directory
+  (compiling source file 'Source/A3DSkyGradient.cpp')
+  
+  A3DSkyBox.cpp
+C:\Users\Junior\Documents\Projetos\PWSource\Angelica2\Angelica3D\header\A3DPlatform.h(18,10): error C1083: Cannot open include file: 'd3d8.h': No such file or directory
+  (compiling source file 'Source/A3DSkyBox.cpp')
+  
+  A3DSky.cpp
+C:\Users\Junior\Documents\Projetos\PWSource\Angelica2\Angelica3D\header\A3DPlatform.h(18,10): error C1083: Cannot open include file: 'd3d8.h': No such file or directory
+  (compiling source file 'Source/A3DSky.cpp')
+  
+  A3DSkinRender.cpp
+C:\Users\Junior\Documents\Projetos\PWSource\Angelica2\Angelica3D\header\A3DPlatform.h(18,10): error C1083: Cannot open include file: 'd3d8.h': No such file or directory
+  (compiling source file 'Source/A3DSkinRender.cpp')
+  
+  A3DSkinModelMan.cpp
+C:\Users\Junior\Documents\Projetos\PWSource\Angelica2\Angelica3D\header\A3DPlatform.h(18,10): error C1083: Cannot open include file: 'd3d8.h': No such file or directory
+  (compiling source file 'Source/A3DSkinModelMan.cpp')
+  
+  A3DSkinModelAux.cpp
+C:\Users\Junior\Documents\Projetos\PWSource\Angelica2\Angelica3D\header\A3DPlatform.h(18,10): error C1083: Cannot open include file: 'd3d8.h': No such file or directory
+  (compiling source file 'Source/A3DSkinModelAux.cpp')
+  
+  A3DSkinModelAct.cpp
+C:\Users\Junior\Documents\Projetos\PWSource\Angelica2\Angelica3D\header\A3DPlatform.h(18,10): error C1083: Cannot open include file: 'd3d8.h': No such file or directory
+  (compiling source file 'Source/A3DSkinModelAct.cpp')
+  
+  A3DSkinModel.cpp
+C:\Users\Junior\Documents\Projetos\PWSource\Angelica2\Angelica3D\header\A3DPlatform.h(18,10): error C1083: Cannot open include file: 'd3d8.h': No such file or directory
+  (compiling source file 'Source/A3DSkinModel.cpp')
+  
+  A3DSkinMeshMan.cpp
+C:\Users\Junior\Documents\Projetos\PWSource\Angelica2\Angelica3D\header\A3DPlatform.h(18,10): error C1083: Cannot open include file: 'd3d8.h': No such file or directory
+  (compiling source file 'Source/A3DSkinMeshMan.cpp')
+  
+  A3DSkinMesh.cpp
+C:\Users\Junior\Documents\Projetos\PWSource\Angelica2\Angelica3D\header\A3DPlatform.h(18,10): error C1083: Cannot open include file: 'd3d8.h': No such file or directory
+  (compiling source file 'Source/A3DSkinMesh.cpp')
+  
+  A3DSkinMan.cpp
+C:\Users\Junior\Documents\Projetos\PWSource\Angelica2\Angelica3D\header\A3DPlatform.h(18,10): error C1083: Cannot open include file: 'd3d8.h': No such file or directory
+  (compiling source file 'Source/A3DSkinMan.cpp')
+  
+  A3DSkin.cpp
+C:\Users\Junior\Documents\Projetos\PWSource\Angelica2\Angelica3D\header\A3DPlatform.h(18,10): error C1083: Cannot open include file: 'd3d8.h': No such file or directory
+  (compiling source file 'Source/A3DSkin.cpp')
+  
+  A3DSkeleton.cpp
+C:\Users\Junior\Documents\Projetos\PWSource\Angelica2\Angelica3D\header\A3DPlatform.h(18,10): error C1083: Cannot open include file: 'd3d8.h': No such file or directory
+  (compiling source file 'Source/A3DSkeleton.cpp')
+  
+  A3DShadowMap.cpp
+C:\Users\Junior\Documents\Projetos\PWSource\Angelica2\Angelica3D\header\A3DPlatform.h(18,10): error C1083: Cannot open include file: 'd3d8.h': No such file or directory
+  (compiling source file 'Source/A3DShadowMap.cpp')
+  
+  A3DShaderMan.cpp
+C:\Users\Junior\Documents\Projetos\PWSource\Angelica2\Angelica3D\header\A3DPlatform.h(18,10): error C1083: Cannot open include file: 'd3d8.h': No such file or directory
+  (compiling source file 'Source/A3DShaderMan.cpp')
+  
+  A3DShader.cpp
+C:\Users\Junior\Documents\Projetos\PWSource\Angelica2\Angelica3D\header\A3DPlatform.h(18,10): error C1083: Cannot open include file: 'd3d8.h': No such file or directory
+  (compiling source file 'Source/A3DShader.cpp')
+  
+  A3DSceneHull.cpp
+C:\Users\Junior\Documents\Projetos\PWSource\Angelica2\Angelica3D\header\A3DPlatform.h(18,10): error C1083: Cannot open include file: 'd3d8.h': No such file or directory
+  (compiling source file 'Source/A3DSceneHull.cpp')
+  
+  A3DScene.cpp
+C:\Users\Junior\Documents\Projetos\PWSource\Angelica2\Angelica3D\header\A3DPlatform.h(18,10): error C1083: Cannot open include file: 'd3d8.h': No such file or directory
+  (compiling source file 'Source/A3DScene.cpp')
+  
+  Generating Code...
+  Compiling...
+  A3DRouteVSS.cpp
+  A3DRigidMesh.cpp
+C:\Users\Junior\Documents\Projetos\PWSource\Angelica2\Angelica3D\header\A3DPlatform.h(18,10): error C1083: Cannot open include file: 'd3d8.h': No such file or directory
+  (compiling source file 'Source/A3DRigidMesh.cpp')
+  
+  A3DRenderTarget.cpp
+C:\Users\Junior\Documents\Projetos\PWSource\Angelica2\Angelica3D\header\A3DPlatform.h(18,10): error C1083: Cannot open include file: 'd3d8.h': No such file or directory
+  (compiling source file 'Source/A3DRenderTarget.cpp')
+  
+  A3DRain.cpp
+C:\Users\Junior\Documents\Projetos\PWSource\Angelica2\Angelica3D\header\A3DPlatform.h(18,10): error C1083: Cannot open include file: 'd3d8.h': No such file or directory
+  (compiling source file 'Source/A3DRain.cpp')
+  
+  A3DQuaternion.cpp
+C:\Users\Junior\Documents\Projetos\PWSource\Angelica2\Angelica3D\Source\A3DQuaternion.cpp(18,10): error C1083: Cannot open include file: 'D3dx8math.h': No such file or directory
+  A3DPortal.cpp
+C:\Users\Junior\Documents\Projetos\PWSource\Angelica2\Angelica3D\header\A3DPlatform.h(18,10): error C1083: Cannot open include file: 'd3d8.h': No such file or directory
+  (compiling source file 'Source/A3DPortal.cpp')
+  
+  A3DPlants.cpp
+C:\Users\Junior\Documents\Projetos\PWSource\Angelica2\Angelica3D\header\A3DPlatform.h(18,10): error C1083: Cannot open include file: 'd3d8.h': No such file or directory
+  (compiling source file 'Source/A3DPlants.cpp')
+  
+  A3DPixelShader.cpp
+C:\Users\Junior\Documents\Projetos\PWSource\Angelica2\Angelica3D\header\A3DPixelShader.h(19,10): error C1083: Cannot open include file: 'D3dx8core.h': No such file or directory
+  (compiling source file 'Source/A3DPixelShader.cpp')
+  
+  A3DPI.cpp
+C:\Users\Junior\Documents\Projetos\PWSource\Angelica2\Angelica3D\header\A3DPlatform.h(18,10): error C1083: Cannot open include file: 'd3d8.h': No such file or directory
+  (compiling source file 'Source/A3DPI.cpp')
+  
+  A3DPerlinNormalMap.cpp
+C:\Users\Junior\Documents\Projetos\PWSource\Angelica2\Angelica3D\header\A3DPlatform.h(18,10): error C1083: Cannot open include file: 'd3d8.h': No such file or directory
+  (compiling source file 'Source/A3DPerlinNormalMap.cpp')
+  
+  A3DParticleSystem.cpp
+C:\Users\Junior\Documents\Projetos\PWSource\Angelica2\Angelica3D\header\A3DPlatform.h(18,10): error C1083: Cannot open include file: 'd3d8.h': No such file or directory
+  (compiling source file 'Source/A3DParticleSystem.cpp')
+  
+  A3DPArray.cpp
+C:\Users\Junior\Documents\Projetos\PWSource\Angelica2\Angelica3D\header\A3DPlatform.h(18,10): error C1083: Cannot open include file: 'd3d8.h': No such file or directory
+  (compiling source file 'Source/A3DPArray.cpp')
+  
+  A3DOrthoCamera.cpp
+C:\Users\Junior\Documents\Projetos\PWSource\Angelica2\Angelica3D\header\A3DPlatform.h(18,10): error C1083: Cannot open include file: 'd3d8.h': No such file or directory
+  (compiling source file 'Source/A3DOrthoCamera.cpp')
+  
+  A3DMuscleOrgan.cpp
+C:\Users\Junior\Documents\Projetos\PWSource\Angelica2\Angelica3D\header\A3DPlatform.h(18,10): error C1083: Cannot open include file: 'd3d8.h': No such file or directory
+  (compiling source file 'Source/A3DMuscleOrgan.cpp')
+  
+  A3DMuscleMesh.cpp
+C:\Users\Junior\Documents\Projetos\PWSource\Angelica2\Angelica3D\header\A3DPlatform.h(18,10): error C1083: Cannot open include file: 'd3d8.h': No such file or directory
+  (compiling source file 'Source/A3DMuscleMesh.cpp')
+  
+  A3DMoxMan.cpp
+C:\Users\Junior\Documents\Projetos\PWSource\Angelica2\Angelica3D\header\A3DPlatform.h(18,10): error C1083: Cannot open include file: 'd3d8.h': No such file or directory
+  (compiling source file 'Source/A3DMoxMan.cpp')
+  
+  A3DMorphSkinMesh.cpp
+C:\Users\Junior\Documents\Projetos\PWSource\Angelica2\Angelica3D\header\A3DPlatform.h(18,10): error C1083: Cannot open include file: 'd3d8.h': No such file or directory
+  (compiling source file 'Source/A3DMorphSkinMesh.cpp')
+  
+  A3DMorphRigidMesh.cpp
+C:\Users\Junior\Documents\Projetos\PWSource\Angelica2\Angelica3D\header\A3DPlatform.h(18,10): error C1083: Cannot open include file: 'd3d8.h': No such file or directory
+  (compiling source file 'Source/A3DMorphRigidMesh.cpp')
+  
+  A3DMorphMesh.cpp
+C:\Users\Junior\Documents\Projetos\PWSource\Angelica2\Angelica3D\header\A3DPlatform.h(18,10): error C1083: Cannot open include file: 'd3d8.h': No such file or directory
+  (compiling source file 'Source/A3DMorphMesh.cpp')
+  
+  A3DModelMan.cpp
+C:\Users\Junior\Documents\Projetos\PWSource\Angelica2\Angelica3D\header\A3DPlatform.h(18,10): error C1083: Cannot open include file: 'd3d8.h': No such file or directory
+  (compiling source file 'Source/A3DModelMan.cpp')
+  
+  Generating Code...
+  Compiling...
+  A3DModelCollector.cpp
+  A3DModel.cpp
+C:\Users\Junior\Documents\Projetos\PWSource\Angelica2\Angelica3D\header\A3DPlatform.h(18,10): error C1083: Cannot open include file: 'd3d8.h': No such file or directory
+  (compiling source file 'Source/A3DModel.cpp')
+  
+  A3DMeshSorter.cpp
+C:\Users\Junior\Documents\Projetos\PWSource\Angelica2\Angelica3D\header\A3DPlatform.h(18,10): error C1083: Cannot open include file: 'd3d8.h': No such file or directory
+  (compiling source file 'Source/A3DMeshSorter.cpp')
+  
+  A3DMeshMan.cpp
+  A3DMeshCollector.cpp
+C:\Users\Junior\Documents\Projetos\PWSource\Angelica2\Angelica3D\header\A3DPlatform.h(18,10): error C1083: Cannot open include file: 'd3d8.h': No such file or directory
+  (compiling source file 'Source/A3DMeshCollector.cpp')
+  
+  A3DMeshBase.cpp
+C:\Users\Junior\Documents\Projetos\PWSource\Angelica2\Angelica3D\header\A3DPlatform.h(18,10): error C1083: Cannot open include file: 'd3d8.h': No such file or directory
+  (compiling source file 'Source/A3DMeshBase.cpp')
+  
+  A3DMesh.cpp
+C:\Users\Junior\Documents\Projetos\PWSource\Angelica2\Angelica3D\header\A3DPlatform.h(18,10): error C1083: Cannot open include file: 'd3d8.h': No such file or directory
+  (compiling source file 'Source/A3DMesh.cpp')
+  
+  A3DMatrix.cpp
+C:\Users\Junior\Documents\Projetos\PWSource\Angelica2\Angelica3D\header\A3DPlatform.h(18,10): error C1083: Cannot open include file: 'd3d8.h': No such file or directory
+  (compiling source file 'Source/A3DMatrix.cpp')
+  
+  A3DMathUtility.cpp
+  A3DMaterial.cpp
+C:\Users\Junior\Documents\Projetos\PWSource\Angelica2\Angelica3D\header\A3DPlatform.h(18,10): error C1083: Cannot open include file: 'd3d8.h': No such file or directory
+  (compiling source file 'Source/A3DMaterial.cpp')
+  
+  A3DLitModelRender.cpp
+C:\Users\Junior\Documents\Projetos\PWSource\Angelica2\Angelica3D\header\A3DPlatform.h(18,10): error C1083: Cannot open include file: 'd3d8.h': No such file or directory
+  (compiling source file 'Source/A3DLitModelRender.cpp')
+  
+  A3DLitModel.cpp
+C:\Users\Junior\Documents\Projetos\PWSource\Angelica2\Angelica3D\header\A3DPlatform.h(18,10): error C1083: Cannot open include file: 'd3d8.h': No such file or directory
+  (compiling source file 'Source/A3DLitModel.cpp')
+  
+  A3DLightning.cpp
+C:\Users\Junior\Documents\Projetos\PWSource\Angelica2\Angelica3D\header\A3DPlatform.h(18,10): error C1083: Cannot open include file: 'd3d8.h': No such file or directory
+  (compiling source file 'Source/A3DLightning.cpp')
+  
+  A3DLightMan.cpp
+C:\Users\Junior\Documents\Projetos\PWSource\Angelica2\Angelica3D\header\A3DPlatform.h(18,10): error C1083: Cannot open include file: 'd3d8.h': No such file or directory
+  (compiling source file 'Source/A3DLightMan.cpp')
+  
+  A3DLightingEngine.cpp
+C:\Users\Junior\Documents\Projetos\PWSource\Angelica2\Angelica3D\header\A3DPlatform.h(18,10): error C1083: Cannot open include file: 'd3d8.h': No such file or directory
+  (compiling source file 'Source/A3DLightingEngine.cpp')
+  
+  A3DLight.cpp
+C:\Users\Junior\Documents\Projetos\PWSource\Angelica2\Angelica3D\header\A3DPlatform.h(18,10): error C1083: Cannot open include file: 'd3d8.h': No such file or directory
+  (compiling source file 'Source/A3DLight.cpp')
+  
+  A3DLensFlare.cpp
+C:\Users\Junior\Documents\Projetos\PWSource\Angelica2\Angelica3D\header\A3DPlatform.h(18,10): error C1083: Cannot open include file: 'd3d8.h': No such file or directory
+  (compiling source file 'Source/A3DLensFlare.cpp')
+  
+  A3DLamp.cpp
+C:\Users\Junior\Documents\Projetos\PWSource\Angelica2\Angelica3D\header\A3DPlatform.h(18,10): error C1083: Cannot open include file: 'd3d8.h': No such file or directory
+  (compiling source file 'Source/A3DLamp.cpp')
+  
+  A3DKDTree.cpp
+C:\Users\Junior\Documents\Projetos\PWSource\Angelica2\Angelica3D\header\A3DPlatform.h(18,10): error C1083: Cannot open include file: 'd3d8.h': No such file or directory
+  (compiling source file 'Source/A3DKDTree.cpp')
+  
+  A3DJoint.cpp
+C:\Users\Junior\Documents\Projetos\PWSource\Angelica2\Angelica3D\header\A3DPlatform.h(18,10): error C1083: Cannot open include file: 'd3d8.h': No such file or directory
+  (compiling source file 'Source/A3DJoint.cpp')
+  
+  Generating Code...
+  Compiling...
+  A3DImgModelMan.cpp
+C:\Users\Junior\Documents\Projetos\PWSource\Angelica2\Angelica3D\header\A3DPlatform.h(18,10): error C1083: Cannot open include file: 'd3d8.h': No such file or directory
+  (compiling source file 'Source/A3DImgModelMan.cpp')
+  
+  A3DImgModel.cpp
+C:\Users\Junior\Documents\Projetos\PWSource\Angelica2\Angelica3D\header\A3DPlatform.h(18,10): error C1083: Cannot open include file: 'd3d8.h': No such file or directory
+  (compiling source file 'Source/A3DImgModel.cpp')
+  
+  A3DIKSolver.cpp
+  A3DIKData.cpp
+  A3DIBLScene.cpp
+C:\Users\Junior\Documents\Projetos\PWSource\Angelica2\Angelica3D\header\A3DPlatform.h(18,10): error C1083: Cannot open include file: 'd3d8.h': No such file or directory
+  (compiling source file 'Source/A3DIBLScene.cpp')
+  
+  A3DIBLMesh.cpp
+C:\Users\Junior\Documents\Projetos\PWSource\Angelica2\Angelica3D\header\A3DPlatform.h(18,10): error C1083: Cannot open include file: 'd3d8.h': No such file or directory
+  (compiling source file 'Source/A3DIBLMesh.cpp')
+  
+  A3DHorizonCull.cpp
+  A3DHermiteSpline.cpp
+  A3DGraphicsFX.cpp
+C:\Users\Junior\Documents\Projetos\PWSource\Angelica2\Angelica3D\header\A3DPlatform.h(18,10): error C1083: Cannot open include file: 'd3d8.h': No such file or directory
+  (compiling source file 'Source/A3DGraphicsFX.cpp')
+  
+  A3DGFXMan.cpp
+C:\Users\Junior\Documents\Projetos\PWSource\Angelica2\Angelica3D\header\A3DPlatform.h(18,10): error C1083: Cannot open include file: 'd3d8.h': No such file or directory
+  (compiling source file 'Source/A3DGFXMan.cpp')
+  
+  A3DGFXCollector.cpp
+  A3DGeometry.cpp
+C:\Users\Junior\Documents\Projetos\PWSource\Angelica2\Angelica3D\header\A3DPlatform.h(18,10): error C1083: Cannot open include file: 'd3d8.h': No such file or directory
+  (compiling source file 'Source/A3DGeometry.cpp')
+  
+  A3DGDI.cpp
+C:\Users\Junior\Documents\Projetos\PWSource\Angelica2\Angelica3D\header\A3DPlatform.h(18,10): error C1083: Cannot open include file: 'd3d8.h': No such file or directory
+  (compiling source file 'Source/A3DGDI.cpp')
+  
+  A3DFuncs.cpp
+C:\Users\Junior\Documents\Projetos\PWSource\Angelica2\Angelica3D\header\A3DPlatform.h(18,10): error C1083: Cannot open include file: 'd3d8.h': No such file or directory
+  (compiling source file 'Source/A3DFuncs.cpp')
+  
+  A3DFrustum.cpp
+  A3DFrame.cpp
+C:\Users\Junior\Documents\Projetos\PWSource\Angelica2\Angelica3D\header\A3DPlatform.h(18,10): error C1083: Cannot open include file: 'd3d8.h': No such file or directory
+  (compiling source file 'Source/A3DFrame.cpp')
+  
+  A3DFontMan.cpp
+C:\Users\Junior\Documents\Projetos\PWSource\Angelica2\Angelica3D\header\A3DPlatform.h(18,10): error C1083: Cannot open include file: 'd3d8.h': No such file or directory
+  (compiling source file 'Source/A3DFontMan.cpp')
+  
+  A3DFont.cpp
+C:\Users\Junior\Documents\Projetos\PWSource\Angelica2\Angelica3D\header\A3DPlatform.h(18,10): error C1083: Cannot open include file: 'd3d8.h': No such file or directory
+  (compiling source file 'Source/A3DFont.cpp')
+  
+  A3DFlatCollector.cpp
+C:\Users\Junior\Documents\Projetos\PWSource\Angelica2\Angelica3D\header\A3DPlatform.h(18,10): error C1083: Cannot open include file: 'd3d8.h': No such file or directory
+  (compiling source file 'Source/A3DFlatCollector.cpp')
+  
+  A3DFlash.cpp
+C:\Users\Junior\Documents\Projetos\PWSource\Angelica2\Angelica3D\header\A3DPlatform.h(18,10): error C1083: Cannot open include file: 'd3d8.h': No such file or directory
+  (compiling source file 'Source/A3DFlash.cpp')
+  
+  Generating Code...
+  Compiling...
+  A3DESPMove.cpp
+C:\Users\Junior\Documents\Projetos\PWSource\Angelica2\Angelica3D\header\A3DPlatform.h(18,10): error C1083: Cannot open include file: 'd3d8.h': No such file or directory
+  (compiling source file 'Source/A3DESPMove.cpp')
+  
+  A3DESP.cpp
+C:\Users\Junior\Documents\Projetos\PWSource\Angelica2\Angelica3D\header\A3DPlatform.h(18,10): error C1083: Cannot open include file: 'd3d8.h': No such file or directory
+  (compiling source file 'Source/A3DESP.cpp')
+  
+  A3DEngine.cpp
+C:\Users\Junior\Documents\Projetos\PWSource\Angelica2\Angelica3D\header\A3DPlatform.h(18,10): error C1083: Cannot open include file: 'd3d8.h': No such file or directory
+  (compiling source file 'Source/A3DEngine.cpp')
+  
+  A3DDevice.cpp
+C:\Users\Junior\Documents\Projetos\PWSource\Angelica2\Angelica3D\header\A3DPlatform.h(18,10): error C1083: Cannot open include file: 'd3d8.h': No such file or directory
+  (compiling source file 'Source/A3DDevice.cpp')
+  
+  A3DDecal.cpp
+C:\Users\Junior\Documents\Projetos\PWSource\Angelica2\Angelica3D\header\A3DPlatform.h(18,10): error C1083: Cannot open include file: 'd3d8.h': No such file or directory
+  (compiling source file 'Source/A3DDecal.cpp')
+  
+  A3DCursor.cpp
+C:\Users\Junior\Documents\Projetos\PWSource\Angelica2\Angelica3D\header\A3DPlatform.h(18,10): error C1083: Cannot open include file: 'd3d8.h': No such file or directory
+  (compiling source file 'Source/A3DCursor.cpp')
+  
+  A3DCubeTexture.cpp
+C:\Users\Junior\Documents\Projetos\PWSource\Angelica2\Angelica3D\header\A3DPlatform.h(18,10): error C1083: Cannot open include file: 'd3d8.h': No such file or directory
+  (compiling source file 'Source/A3DCubeTexture.cpp')
+  
+  A3DCoordinate.cpp
+C:\Users\Junior\Documents\Projetos\PWSource\Angelica2\Angelica3D\header\A3DPlatform.h(18,10): error C1083: Cannot open include file: 'd3d8.h': No such file or directory
+  (compiling source file 'Source/A3DCoordinate.cpp')
+  
+  A3DController.cpp
+  A3DControl.cpp
+  A3DConfig.cpp
+  A3DCollision.cpp
+  A3DClothMesh.cpp
+C:\Users\Junior\Documents\Projetos\PWSource\Angelica2\Angelica3D\header\A3DPlatform.h(18,10): error C1083: Cannot open include file: 'd3d8.h': No such file or directory
+  (compiling source file 'Source/A3DClothMesh.cpp')
+  
+  A3DCameraBase.cpp
+C:\Users\Junior\Documents\Projetos\PWSource\Angelica2\Angelica3D\header\A3DPlatform.h(18,10): error C1083: Cannot open include file: 'd3d8.h': No such file or directory
+  (compiling source file 'Source/A3DCameraBase.cpp')
+  
+  A3DCamera.cpp
+C:\Users\Junior\Documents\Projetos\PWSource\Angelica2\Angelica3D\header\A3DPlatform.h(18,10): error C1083: Cannot open include file: 'd3d8.h': No such file or directory
+  (compiling source file 'Source/A3DCamera.cpp')
+  
+  A3DBSP.cpp
+C:\Users\Junior\Documents\Projetos\PWSource\Angelica2\Angelica3D\header\A3DPlatform.h(18,10): error C1083: Cannot open include file: 'd3d8.h': No such file or directory
+  (compiling source file 'Source/A3DBSP.cpp')
+  
+  A3DBoneController.cpp
+C:\Users\Junior\Documents\Projetos\PWSource\Angelica2\Angelica3D\header\A3DPlatform.h(18,10): error C1083: Cannot open include file: 'd3d8.h': No such file or directory
+  (compiling source file 'Source/A3DBoneController.cpp')
+  
+  A3DBone.cpp
+C:\Users\Junior\Documents\Projetos\PWSource\Angelica2\Angelica3D\header\A3DPlatform.h(18,10): error C1083: Cannot open include file: 'd3d8.h': No such file or directory
+  (compiling source file 'Source/A3DBone.cpp')
+  
+  A3DBillBoard.cpp
+C:\Users\Junior\Documents\Projetos\PWSource\Angelica2\Angelica3D\header\A3DPlatform.h(18,10): error C1083: Cannot open include file: 'd3d8.h': No such file or directory
+  (compiling source file 'Source/A3DBillBoard.cpp')
+  
+  A3DBezierSegment.cpp
+C:\Users\Junior\Documents\Projetos\PWSource\Angelica2\Angelica3D\header\A3DPlatform.h(18,10): error C1083: Cannot open include file: 'd3d8.h': No such file or directory
+  (compiling source file 'Source/A3DBezierSegment.cpp')
+  
+  Generating Code...
+  Compiling...
+  A3DBezierPoint.cpp
+C:\Users\Junior\Documents\Projetos\PWSource\Angelica2\Angelica3D\header\A3DPlatform.h(18,10): error C1083: Cannot open include file: 'd3d8.h': No such file or directory
+  (compiling source file 'Source/A3DBezierPoint.cpp')
+  
+  A3DAdditionalView.cpp
+C:\Users\Junior\Documents\Projetos\PWSource\Angelica2\Angelica3D\header\A3DPlatform.h(18,10): error C1083: Cannot open include file: 'd3d8.h': No such file or directory
+  (compiling source file 'Source/A3DAdditionalView.cpp')
+  
+  A3DAbsTrackMaker.cpp
+  A2DSpriteTextures.cpp
+C:\Users\Junior\Documents\Projetos\PWSource\Angelica2\Angelica3D\header\A3DPlatform.h(18,10): error C1083: Cannot open include file: 'd3d8.h': No such file or directory
+  (compiling source file 'Source/A2DSpriteTextures.cpp')
+  
+  A2DSpriteTexMan.cpp
+C:\Users\Junior\Documents\Projetos\PWSource\Angelica2\Angelica3D\header\A3DPlatform.h(18,10): error C1083: Cannot open include file: 'd3d8.h': No such file or directory
+  (compiling source file 'Source/A2DSpriteTexMan.cpp')
+  
+  A2DSpriteItem.cpp
+C:\Users\Junior\Documents\Projetos\PWSource\Angelica2\Angelica3D\header\A3DPlatform.h(18,10): error C1083: Cannot open include file: 'd3d8.h': No such file or directory
+  (compiling source file 'Source/A2DSpriteItem.cpp')
+  
+  A2DSpriteBuffer.cpp
+C:\Users\Junior\Documents\Projetos\PWSource\Angelica2\Angelica3D\header\A3DPlatform.h(18,10): error C1083: Cannot open include file: 'd3d8.h': No such file or directory
+  (compiling source file 'Source/A2DSpriteBuffer.cpp')
+  
+  A2DSprite.cpp
+C:\Users\Junior\Documents\Projetos\PWSource\Angelica2\Angelica3D\header\A3DPlatform.h(18,10): error C1083: Cannot open include file: 'd3d8.h': No such file or directory
+  (compiling source file 'Source/A2DSprite.cpp')
+  
+  Generating Code...

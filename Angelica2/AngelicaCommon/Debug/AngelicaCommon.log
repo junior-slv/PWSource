@@ -1,0 +1,73 @@
+﻿cl : command line  warning D9035: option 'Gm' has been deprecated and will be removed in a future release
+cl : command line  warning D9035: option 'Zc:forScope-' has been deprecated and will be removed in a future release
+  jexception.cpp
+C:\Users\Junior\Documents\Projetos\PWSource\Angelica2\AngelicaCommon\Source\jexception.cpp(60,38): warning C4535: calling _set_se_translator() requires /EHa
+C:\Users\Junior\Documents\Projetos\PWSource\Angelica2\AngelicaCommon\Source\jexception.cpp(177,17): warning C4477: 'fprintf' : format string '%08X' requires an argument of type 'unsigned int', but variadic argument 1 has type 'PVOID'
+C:\Users\Junior\Documents\Projetos\PWSource\Angelica2\AngelicaCommon\Source\jexception.cpp(212,17): warning C4477: 'fprintf' : format string '%08X' requires an argument of type 'unsigned int', but variadic argument 1 has type 'unsigned char *'
+C:\Users\Junior\Documents\Projetos\PWSource\Angelica2\AngelicaCommon\Source\jexception.cpp(235,17): warning C4477: 'fprintf' : format string '%08X' requires an argument of type 'unsigned int', but variadic argument 1 has type 'unsigned char *'
+  AWString.cpp
+  ATime.cpp
+  ATempMemMan.cpp
+  AString.cpp
+  ARandomGen.cpp
+  APerlinNoiseBase.cpp
+  APerlinNoise3D.cpp
+  APerlinNoise2D.cpp
+  APerlinNoise1D.cpp
+  AMiniDump.cpp
+  AMemoryDbg.cpp
+  AMemory.cpp
+C:\Users\Junior\Documents\Projetos\PWSource\Angelica2\AngelicaCommon\Source\AMemory.cpp(1015,25): warning C4477: 'fprintf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'const DWORD'
+C:\Users\Junior\Documents\Projetos\PWSource\Angelica2\AngelicaCommon\Source\AMemory.cpp(1216,19): warning C4477: 'fprintf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'DWORD'
+C:\Users\Junior\Documents\Projetos\PWSource\Angelica2\AngelicaCommon\Source\AMemory.cpp(1696,20): warning C4477: 'sprintf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'const DWORD'
+C:\Users\Junior\Documents\Projetos\PWSource\Angelica2\AngelicaCommon\Source\AMemory.cpp(1702,20): warning C4477: 'sprintf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'const DWORD'
+C:\Users\Junior\Documents\Projetos\PWSource\Angelica2\AngelicaCommon\Source\AMemory.cpp(1728,20): warning C4477: 'sprintf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'const DWORD'
+C:\Users\Junior\Documents\Projetos\PWSource\Angelica2\AngelicaCommon\Source\AMemory.cpp(1734,20): warning C4477: 'sprintf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'const DWORD'
+C:\Users\Junior\Documents\Projetos\PWSource\Angelica2\AngelicaCommon\Source\AMemory.cpp(1776,19): warning C4477: 'sprintf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'const DWORD'
+C:\Users\Junior\Documents\Projetos\PWSource\Angelica2\AngelicaCommon\Source\AMemory.cpp(1795,19): warning C4477: 'sprintf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'const DWORD'
+C:\Users\Junior\Documents\Projetos\PWSource\Angelica2\AngelicaCommon\Source\AMemory.cpp(1814,19): warning C4477: 'sprintf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'const DWORD'
+  ALog.cpp
+  AList.cpp
+  ACounter.cpp
+  AAssist.cpp
+  Generating Code...
+C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(1554,5): warning MSB8012: TargetPath(C:\Users\Junior\Documents\Projetos\PWSource\Angelica2\AngelicaCommon\Debug\AngelicaCommon.lib) does not match the Library's OutputFile property value (C:\Users\Junior\Documents\Projetos\PWSource\Angelica2\AngelicaCommon\Debug\AngelicaCommon_d.lib). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Lib.OutputFile).
+C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(1556,5): warning MSB8012: TargetName(AngelicaCommon) does not match the Library's OutputFile property value (AngelicaCommon_d). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Lib.OutputFile).
+  AngelicaCommon.vcxproj -> C:\Users\Junior\Documents\Projetos\PWSource\Angelica2\AngelicaCommon\Debug\AngelicaCommon.lib
+  Performing Custom Build Step
+  copy library into acsdk folder
+  O sistema n?o pode encontrar o arquivo especificado.
+  Erro ao copiar library para acsdk.
+  copy headers into acsdk folder
+  .\header\AArray.h
+  .\header\AAssist.h
+  .\header\ABaseDef.h
+  .\header\AC.h
+  .\header\AChar.h
+  .\header\ACounter.h
+  .\header\ACPlatform.h
+  .\header\ACSWrapper.h
+  .\header\AList.h
+  .\header\AList2.h
+  .\header\ALog.h
+  .\header\AMemory.h
+  .\header\AMiniDump.h
+  .\header\AObjectPool.h
+  .\header\APerlinNoise1D.h
+  .\header\APerlinNoise2D.h
+  .\header\APerlinNoise3D.h
+  .\header\APerlinNoiseBase.h
+  .\header\APoint.h
+  .\header\ARandomGen.h
+  .\header\ARect.h
+  .\header\AStack.h
+  .\header\AString.h
+  .\header\ATempMemMan.h
+  .\header\ATime.h
+  .\header\AWString.h
+  .\header\deque.h
+  .\header\hashmap.h
+  .\header\hashtab.h
+  .\header\jexception.h
+  .\header\vector.h
+         31 arquivo(s) copiado(s).

@@ -1,0 +1,68 @@
+﻿cl : command line  warning D9035: option 'Gm' has been deprecated and will be removed in a future release
+  AWScriptFile.cpp
+  AWIniFile.cpp
+  ATextTabFile.cpp
+C:\Users\Junior\Documents\Projetos\PWSource\Angelica2\AngelicaFile\Source\AWIniFile.cpp(691,17): warning C4477: 'fwprintf' : format string '%s' requires an argument of type 'wchar_t *', but variadic argument 1 has type 'AWString'
+C:\Users\Junior\Documents\Projetos\PWSource\Angelica2\AngelicaFile\Source\AWIniFile.cpp(697,16): warning C4477: 'fwprintf' : format string '%s' requires an argument of type 'wchar_t *', but variadic argument 1 has type 'AWString'
+C:\Users\Junior\Documents\Projetos\PWSource\Angelica2\AngelicaFile\Source\AWIniFile.cpp(705,17): warning C4477: 'fwprintf' : format string '%s' requires an argument of type 'wchar_t *', but variadic argument 1 has type 'AWString'
+  AScriptFile.cpp
+  AMemFile.cpp
+  AIniFile.cpp
+C:\Users\Junior\Documents\Projetos\PWSource\Angelica2\AngelicaFile\Source\AIniFile.cpp(677,16): warning C4477: 'fprintf' : format string '%s' requires an argument of type 'char *', but variadic argument 1 has type 'AString'
+C:\Users\Junior\Documents\Projetos\PWSource\Angelica2\AngelicaFile\Source\AIniFile.cpp(683,15): warning C4477: 'fprintf' : format string '%s' requires an argument of type 'char *', but variadic argument 1 has type 'AString'
+C:\Users\Junior\Documents\Projetos\PWSource\Angelica2\AngelicaFile\Source\AIniFile.cpp(691,16): warning C4477: 'fprintf' : format string '%s' requires an argument of type 'char *', but variadic argument 1 has type 'AString'
+  AFileUnicode.cpp
+  AFilePackMan.cpp
+  AFilePackGame.cpp
+C:\Users\Junior\Documents\Projetos\PWSource\Angelica2\AngelicaFile\Source\AFilePackGame.cpp(512,16): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Junior\Documents\Projetos\PWSource\Angelica2\AngelicaFile\Source\AFilePackGame.cpp(514,13): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Junior\Documents\Projetos\PWSource\Angelica2\AngelicaFile\Source\AFilePackGame.cpp(534,16): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Junior\Documents\Projetos\PWSource\Angelica2\AngelicaFile\Source\AFilePackGame.cpp(536,13): warning C4018: '<': signed/unsigned mismatch
+  AFilePackBase.cpp
+C:\Users\Junior\Documents\Projetos\PWSource\Angelica2\AngelicaFile\Source\AFilePackBase.cpp(331,25): warning C4244: 'initializing': conversion from '__int64' to 'size_t', possible loss of data
+C:\Users\Junior\Documents\Projetos\PWSource\Angelica2\AngelicaFile\Source\AFilePackBase.cpp(345,20): warning C4244: 'argument': conversion from '__int64' to 'long', possible loss of data
+C:\Users\Junior\Documents\Projetos\PWSource\Angelica2\AngelicaFile\Source\AFilePackBase.cpp(413,20): warning C4244: 'argument': conversion from '__int64' to 'long', possible loss of data
+C:\Users\Junior\Documents\Projetos\PWSource\Angelica2\AngelicaFile\Source\AFilePackBase.cpp(415,27): warning C4244: 'argument': conversion from '__int64' to 'long', possible loss of data
+C:\Users\Junior\Documents\Projetos\PWSource\Angelica2\AngelicaFile\Source\AFilePackBase.cpp(421,19): warning C4244: 'argument': conversion from '__int64' to 'long', possible loss of data
+C:\Users\Junior\Documents\Projetos\PWSource\Angelica2\AngelicaFile\Source\AFilePackBase.cpp(461,24): warning C4244: 'argument': conversion from '__int64' to 'long', possible loss of data
+  AFilePackage.cpp
+C:\Users\Junior\Documents\Projetos\PWSource\Angelica2\AngelicaFile\Source\AFilePackage.cpp(859,16): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Junior\Documents\Projetos\PWSource\Angelica2\AngelicaFile\Source\AFilePackage.cpp(861,13): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Junior\Documents\Projetos\PWSource\Angelica2\AngelicaFile\Source\AFilePackage.cpp(881,16): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Junior\Documents\Projetos\PWSource\Angelica2\AngelicaFile\Source\AFilePackage.cpp(883,13): warning C4018: '<': signed/unsigned mismatch
+  AFileImage.cpp
+C:\Users\Junior\Documents\Projetos\PWSource\Angelica2\AngelicaFile\Source\AFileImage.cpp(179,26): warning C4244: '=': conversion from '__time64_t' to 'DWORD', possible loss of data
+  AFile.cpp
+C:\Users\Junior\Documents\Projetos\PWSource\Angelica2\AngelicaFile\Source\AFile.cpp(105,26): warning C4244: '=': conversion from '__time64_t' to 'DWORD', possible loss of data
+  AFI.cpp
+  ADirImage.cpp
+  ADir.cpp
+  Generating Code...
+C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(1554,5): warning MSB8012: TargetPath(C:\Users\Junior\Documents\Projetos\PWSource\Angelica2\AngelicaFile\Debug\AngelicaFile.lib) does not match the Library's OutputFile property value (C:\Users\Junior\Documents\Projetos\PWSource\Angelica2\AngelicaFile\Debug\AngelicaFile_d.lib). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Lib.OutputFile).
+C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(1556,5): warning MSB8012: TargetName(AngelicaFile) does not match the Library's OutputFile property value (AngelicaFile_d). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Lib.OutputFile).
+  AngelicaFile.vcxproj -> C:\Users\Junior\Documents\Projetos\PWSource\Angelica2\AngelicaFile\Debug\AngelicaFile.lib
+  Performing Custom Build Step
+  copy library into afsdk folder
+  O sistema n?o pode encontrar o arquivo especificado.
+  Erro ao copiar library para afsdk.
+  copy headers into afsdk folder
+  .\header\ADir.h
+  .\header\ADirImage.h
+  .\header\AF.h
+  .\header\AFI.h
+  .\header\AFile.h
+  .\header\AFileImage.h
+  .\header\AFilePackage.h
+  .\header\AFilePackBase.h
+  .\header\AFilePackGame.h
+  .\header\AFilePackMan.h
+  .\header\AFileUnicode.h
+  .\header\AFPI.h
+  .\header\AFPlatform.h
+  .\header\AIniFile.h
+  .\header\AMemFile.h
+  .\header\AScriptFile.h
+  .\header\ATextTabFile.h
+  .\header\AWIniFile.h
+  .\header\AWScriptFile.h
+         19 arquivo(s) copiado(s).
