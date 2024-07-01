@@ -1,11 +1,11 @@
 ﻿cl : command line  warning D9035: option 'Gm' has been deprecated and will be removed in a future release
 cl : command line  warning D9035: option 'Zc:forScope-' has been deprecated and will be removed in a future release
   jexception.cpp
-  AWString.cpp
 C:\Users\Junior\Documents\Projetos\PWSource\Angelica2\AngelicaCommon\Source\jexception.cpp(60,38): warning C4535: calling _set_se_translator() requires /EHa
 C:\Users\Junior\Documents\Projetos\PWSource\Angelica2\AngelicaCommon\Source\jexception.cpp(177,17): warning C4477: 'fprintf' : format string '%08X' requires an argument of type 'unsigned int', but variadic argument 1 has type 'PVOID'
 C:\Users\Junior\Documents\Projetos\PWSource\Angelica2\AngelicaCommon\Source\jexception.cpp(212,17): warning C4477: 'fprintf' : format string '%08X' requires an argument of type 'unsigned int', but variadic argument 1 has type 'unsigned char *'
 C:\Users\Junior\Documents\Projetos\PWSource\Angelica2\AngelicaCommon\Source\jexception.cpp(235,17): warning C4477: 'fprintf' : format string '%08X' requires an argument of type 'unsigned int', but variadic argument 1 has type 'unsigned char *'
+  AWString.cpp
   ATime.cpp
   ATempMemMan.cpp
   AString.cpp
@@ -48,8 +48,7 @@ C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v17
   AngelicaCommon.vcxproj -> C:\Users\Junior\Documents\Projetos\PWSource\Angelica2\AngelicaCommon\Debug\AngelicaCommon.lib
   Performing Custom Build Step
   copy library into acsdk folder
-  O sistema n?o pode encontrar o arquivo especificado.
-  Erro ao copiar library para acsdk.
+          1 arquivo(s) copiado(s).
   copy headers into acsdk folder
   .\header\AArray.h
   .\header\AAssist.h

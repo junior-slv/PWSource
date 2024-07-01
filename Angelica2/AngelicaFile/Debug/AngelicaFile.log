@@ -43,8 +43,7 @@ C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v17
   AngelicaFile.vcxproj -> C:\Users\Junior\Documents\Projetos\PWSource\Angelica2\AngelicaFile\Debug\AngelicaFile.lib
   Performing Custom Build Step
   copy library into afsdk folder
-  O sistema n?o pode encontrar o arquivo especificado.
-  Erro ao copiar library para afsdk.
+          1 arquivo(s) copiado(s).
   copy headers into afsdk folder
   .\header\ADir.h
   .\header\ADirImage.h

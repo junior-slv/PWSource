@@ -148,6 +148,8 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Unicode Release|Win32'">
     <OutDir>.\Unicode_Release\</OutDir>
     <IntDir>.\Unicode_Release\</IntDir>
+    <IncludePath>..\..\Core\Microsoft SDKs\Windows\v6.0A\Include;..\..\Core\Microsoft DirectX 9.0 SDK (Summer 2004)\Include;..\..\Core\IFC\include;$(IncludePath)</IncludePath>
+    <LibraryPath>..\..\Core\IFC\lib;..\..\Core\Microsoft DirectX 9.0 SDK (Summer 2004)\Lib;..\..\Core\Microsoft SDKs\Windows\v6.0A\Lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='StdNew Debug|Win32'">
     <OutDir>.\StdNew_Debug\</OutDir>
@@ -160,6 +162,9 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <OutDir>.\Release\</OutDir>
     <IntDir>.\Release\</IntDir>
+    <IncludePath>..\..\Core\Microsoft SDKs\Windows\v6.0A\Include;..\..\Core\Microsoft DirectX 9.0 SDK (Summer 2004)\Include;..\..\Core\IFC\include;$(IncludePath)</IncludePath>
+    <ExternalIncludePath>..\..\Core\IFC\lib;..\..\Core\Microsoft DirectX 9.0 SDK (Summer 2004)\Lib;..\..\Core\Microsoft SDKs\Windows\v6.0A\Lib;$(LibraryPath)</ExternalIncludePath>
+    <LibraryPath>..\..\Core\IFC\lib;..\..\Core\Microsoft DirectX 9.0 SDK (Summer 2004)\Lib;..\..\Core\Microsoft SDKs\Windows\v6.0A\Lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='StdNew Release|Win32'">
     <OutDir>.\StdNew_Release\</OutDir>
@@ -168,6 +173,8 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Unicode Debug|Win32'">
     <OutDir>.\Unicode_Debug\</OutDir>
     <IntDir>.\Unicode_Debug\</IntDir>
+    <IncludePath>..\..\Core\Microsoft SDKs\Windows\v6.0A\Include;..\..\Core\Microsoft DirectX 9.0 SDK (Summer 2004)\Include;..\..\Core\IFC\include;$(IncludePath)</IncludePath>
+    <LibraryPath>..\..\Core\IFC\lib;..\..\Core\Microsoft DirectX 9.0 SDK (Summer 2004)\Lib;..\..\Core\Microsoft SDKs\Windows\v6.0A\Lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='StdNew Unicode Debug|Win32'">
     <OutDir>.\StdNew_Unicode_Debug\</OutDir>
@@ -213,7 +220,7 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Unicode Release|Win32'">
     <CustomBuildStep>
       <Command>echo copy library into acsdk folder
-copy "$(TargetPath)" "..\Output\acsdk\lib\$(TargetName).lib"
+copy "$(TargetDir)$(TargetName)_u.lib" "..\Output\acsdk\lib\$(TargetName)_u.lib"
 if errorlevel 1 echo Erro ao copiar library para acsdk.
 
 echo copy headers into acsdk folder
@@ -386,7 +393,7 @@ if errorlevel 1 echo Erro ao copiar headers para acsdk.
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Unicode Debug|Win32'">
     <CustomBuildStep>
       <Command>echo copy library into acsdk folder
-copy "$(TargetPath)" "..\Output\acsdk\lib\$(TargetName).lib"
+copy "$(TargetDir)$(TargetName)_ud.lib" "..\Output\acsdk\lib\$(TargetName)_ud.lib"
 if errorlevel 1 echo Erro ao copiar library para acsdk.
 
 echo copy headers into acsdk folder
@@ -459,7 +466,7 @@ if errorlevel 1 echo Erro ao copiar headers para acsdk.
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <CustomBuildStep>
       <Command>echo copy library into acsdk folder
-copy "$(TargetPath)" "..\Output\acsdk\lib\$(TargetName).lib"
+copy "$(TargetDir)$(TargetName)_d.lib" "..\Output\acsdk\lib\$(TargetName)_d.lib"
 if errorlevel 1 echo Erro ao copiar library para acsdk.
 
 echo copy headers into acsdk folder

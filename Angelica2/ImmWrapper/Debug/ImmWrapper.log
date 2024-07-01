@@ -23,8 +23,7 @@ AMImmEffect.obj : warning LNK4075: ignoring '/EDITANDCONTINUE' due to '/SAFESEH'
   Performing Custom Build Step
   copy library into 3rdsdk folder
           1 arquivo(s) copiado(s).
-  O sistema n?o pode encontrar o arquivo especificado.
-  Erro ao copiar .dll para 3rdsdk.
+          1 arquivo(s) copiado(s).
   copy headers into 3rdsdk folder
   .\header\AMImmEffect.h
   .\header\AMImmPI.h

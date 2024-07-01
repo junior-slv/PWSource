@@ -54,14 +54,17 @@
     <OutDir>.\Release\</OutDir>
     <IntDir>.\Release\</IntDir>
     <LinkIncremental>false</LinkIncremental>
+    <IncludePath>..\..\Core\Microsoft SDKs\Windows\v6.0A\Include;..\..\Core\Microsoft DirectX 9.0 SDK (Summer 2004)\Include;..\..\Core\IFC\include;$(IncludePath)</IncludePath>
+    <ExternalIncludePath>C:\Users\Junior\Documents\Projetos\PWSource\Core\IFC\lib;..\..\Core\Microsoft DirectX 9.0 SDK (Summer 2004)\Lib;..\..\Core\Microsoft SDKs\Windows\v6.0A\Lib;$(LibraryPath)</ExternalIncludePath>
+    <LibraryPath>..\..\Core\IFC\lib;..\..\Core\Microsoft DirectX 9.0 SDK (Summer 2004)\Lib;..\..\Core\Microsoft SDKs\Windows\v6.0A\Lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <CustomBuildStep>
       <Command>echo copy library into 3rdsdk folder
-copy "$(OutDir)$(TargetName).lib" "..\Output\3rdsdk\lib\$(TargetName).lib"
+copy "$(TargetDir)$(TargetName)_d.lib" "..\Output\3rdsdk\lib\$(TargetName)_d.lib"
 if errorlevel 1 echo Erro ao copiar .lib para 3rdsdk.
 
-copy "$(OutDir)$(TargetName).dll" "..\Output\3rdsdk\bin\$(TargetName).dll"
+copy "$(TargetDir)$(TargetName)_d.dll" "..\Output\3rdsdk\bin\$(TargetName)_d.dll"
 if errorlevel 1 echo Erro ao copiar .dll para 3rdsdk.
 
 echo copy headers into 3rdsdk folder

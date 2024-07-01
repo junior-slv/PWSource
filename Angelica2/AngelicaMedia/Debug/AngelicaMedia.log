@@ -28,8 +28,7 @@ C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v17
   AngelicaMedia.vcxproj -> C:\Users\Junior\Documents\Projetos\PWSource\Angelica2\AngelicaMedia\Debug\AngelicaMedia.lib
   Performing Custom Build Step
   copy library into amsdk folder
-  O sistema n?o pode encontrar o arquivo especificado.
-  Erro ao copiar library para amsdk.
+          1 arquivo(s) copiado(s).
   copy headers into amsdk folder
   C:\Users\Junior\Documents\Projetos\PWSource\Angelica2\AngelicaMedia\\header\AM.h
   C:\Users\Junior\Documents\Projetos\PWSource\Angelica2\AngelicaMedia\\header\AM3DSoundBuffer.h
