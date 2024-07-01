@@ -1,0 +1,5 @@
+# Ignorar pastas Debug, Unicode_Release, Unicode_Debug e Release em qualquer subdiretório dentro de Angelica2
+Angelica2/**/Debug/
+Angelica2/**/Unicode_Release/
+Angelica2/**/Unicode_Debug/
+Angelica2/**/Release/

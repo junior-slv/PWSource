@@ -3,10 +3,8 @@
   AMWaveFile.cpp
   AMVideoEngine.cpp
   AMVideoClip.cpp
+  STREAMS.H included TWICE
   AMSurfaceRenderer.cpp
-C:\Users\Junior\Documents\Projetos\PWSource\Angelica2\angelica3d\header\A3DPlatform.h(18,10): error C1083: Cannot open include file: 'd3d8.h': No such file or directory
-  (compiling source file 'Source/AMVideoClip.cpp')
-  
   AMSoundStream.cpp
   AMSoundEngine.cpp
   AMSoundDevice.cpp
@@ -24,7 +22,33 @@ C:\Users\Junior\Documents\Projetos\PWSource\Angelica2\AngelicaMedia\Source\AMOgg
   AMConfig.cpp
   AM3DSoundDevice.cpp
   AM3DSoundBuffer.cpp
-C:\Users\Junior\Documents\Projetos\PWSource\Angelica2\angelica3d\header\A3DPlatform.h(18,10): error C1083: Cannot open include file: 'd3d8.h': No such file or directory
-  (compiling source file 'Source/AM3DSoundBuffer.cpp')
-  
   Generating Code...
+C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(1554,5): warning MSB8012: TargetPath(C:\Users\Junior\Documents\Projetos\PWSource\Angelica2\AngelicaMedia\Debug\AngelicaMedia.lib) does not match the Library's OutputFile property value (C:\Users\Junior\Documents\Projetos\PWSource\Angelica2\AngelicaMedia\Debug\AngelicaMedia_d.lib). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Lib.OutputFile).
+C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(1556,5): warning MSB8012: TargetName(AngelicaMedia) does not match the Library's OutputFile property value (AngelicaMedia_d). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Lib.OutputFile).
+  AngelicaMedia.vcxproj -> C:\Users\Junior\Documents\Projetos\PWSource\Angelica2\AngelicaMedia\Debug\AngelicaMedia.lib
+  Performing Custom Build Step
+  copy library into amsdk folder
+  O sistema n?o pode encontrar o arquivo especificado.
+  Erro ao copiar library para amsdk.
+  copy headers into amsdk folder
+  C:\Users\Junior\Documents\Projetos\PWSource\Angelica2\AngelicaMedia\\header\AM.h
+  C:\Users\Junior\Documents\Projetos\PWSource\Angelica2\AngelicaMedia\\header\AM3DSoundBuffer.h
+  C:\Users\Junior\Documents\Projetos\PWSource\Angelica2\AngelicaMedia\\header\AM3DSoundDevice.h
+  C:\Users\Junior\Documents\Projetos\PWSource\Angelica2\AngelicaMedia\\header\AMConfig.h
+  C:\Users\Junior\Documents\Projetos\PWSource\Angelica2\AngelicaMedia\\header\AMEngine.h
+  C:\Users\Junior\Documents\Projetos\PWSource\Angelica2\AngelicaMedia\\header\AMMp3File.h
+  C:\Users\Junior\Documents\Projetos\PWSource\Angelica2\AngelicaMedia\\header\AMOggFile.h
+  C:\Users\Junior\Documents\Projetos\PWSource\Angelica2\AngelicaMedia\\header\AMPI.h
+  C:\Users\Junior\Documents\Projetos\PWSource\Angelica2\AngelicaMedia\\header\AMPlatform.h
+  C:\Users\Junior\Documents\Projetos\PWSource\Angelica2\AngelicaMedia\\header\AMSoundBuffer.h
+  C:\Users\Junior\Documents\Projetos\PWSource\Angelica2\AngelicaMedia\\header\AMSoundBufferMan.h
+  C:\Users\Junior\Documents\Projetos\PWSource\Angelica2\AngelicaMedia\\header\AMSoundDevice.h
+  C:\Users\Junior\Documents\Projetos\PWSource\Angelica2\AngelicaMedia\\header\AMSoundEngine.h
+  C:\Users\Junior\Documents\Projetos\PWSource\Angelica2\AngelicaMedia\\header\AMSoundStream.h
+  C:\Users\Junior\Documents\Projetos\PWSource\Angelica2\AngelicaMedia\\header\AMSurfaceRenderer.h
+  C:\Users\Junior\Documents\Projetos\PWSource\Angelica2\AngelicaMedia\\header\AMTypes.h
+  C:\Users\Junior\Documents\Projetos\PWSource\Angelica2\AngelicaMedia\\header\AMVideoClip.h
+  C:\Users\Junior\Documents\Projetos\PWSource\Angelica2\AngelicaMedia\\header\AMVideoEngine.h
+  C:\Users\Junior\Documents\Projetos\PWSource\Angelica2\AngelicaMedia\\header\AMWaveFile.h
+  C:\Users\Junior\Documents\Projetos\PWSource\Angelica2\AngelicaMedia\\header\FFT.h
+         20 arquivo(s) copiado(s).

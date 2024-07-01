@@ -1,7 +1,32 @@
 ﻿cl : command line  warning D9035: option 'Gm' has been deprecated and will be removed in a future release
 cl : command line  warning D9035: option 'Zc:forScope-' has been deprecated and will be removed in a future release
   AMImmWrapper.cpp
+C:\Users\Junior\Documents\Projetos\PWSource\Core\IFC\include\ImmEffect.h(62,46): warning C4838: conversion from 'unsigned int' to 'LONG' requires a narrowing conversion
+  (compiling source file 'Source/AMImmWrapper.cpp')
+  
+C:\Users\Junior\Documents\Projetos\PWSource\Core\IFC\include\ImmEffect.h(62,58): warning C4838: conversion from 'unsigned int' to 'LONG' requires a narrowing conversion
+  (compiling source file 'Source/AMImmWrapper.cpp')
+  
   AMImmEffect.cpp
-C:\Users\Junior\Documents\Projetos\PWSource\Angelica2\ImmWrapper\Source\AMImmWrapper.cpp(20,10): error C1083: Cannot open include file: 'ifc.h': No such file or directory
-C:\Users\Junior\Documents\Projetos\PWSource\Angelica2\ImmWrapper\Source\AMImmEffect.cpp(18,10): error C1083: Cannot open include file: 'ifc.h': No such file or directory
+C:\Users\Junior\Documents\Projetos\PWSource\Core\IFC\include\ImmEffect.h(62,46): warning C4838: conversion from 'unsigned int' to 'LONG' requires a narrowing conversion
+  (compiling source file 'Source/AMImmEffect.cpp')
+  
+C:\Users\Junior\Documents\Projetos\PWSource\Core\IFC\include\ImmEffect.h(62,58): warning C4838: conversion from 'unsigned int' to 'LONG' requires a narrowing conversion
+  (compiling source file 'Source/AMImmEffect.cpp')
+  
   Generating Code...
+C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(1392,5): warning MSB8012: TargetPath(C:\Users\Junior\Documents\Projetos\PWSource\Angelica2\ImmWrapper\Debug\ImmWrapper.dll) does not match the Linker's OutputFile property value (C:\Users\Junior\Documents\Projetos\PWSource\Angelica2\ImmWrapper\Debug\ImmWrapper_d.dll). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Link.OutputFile).
+C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(1394,5): warning MSB8012: TargetName(ImmWrapper) does not match the Linker's OutputFile property value (ImmWrapper_d). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Link.OutputFile).
+AMImmEffect.obj : warning LNK4075: ignoring '/EDITANDCONTINUE' due to '/SAFESEH' specification
+     Creating library .\Debug/ImmWrapper_d.lib and object .\Debug/ImmWrapper_d.exp
+  ImmWrapper.vcxproj -> C:\Users\Junior\Documents\Projetos\PWSource\Angelica2\ImmWrapper\Debug\ImmWrapper.dll
+  Performing Custom Build Step
+  copy library into 3rdsdk folder
+          1 arquivo(s) copiado(s).
+  O sistema n?o pode encontrar o arquivo especificado.
+  Erro ao copiar .dll para 3rdsdk.
+  copy headers into 3rdsdk folder
+  .\header\AMImmEffect.h
+  .\header\AMImmPI.h
+  .\header\AMImmWrapper.h
+          3 arquivo(s) copiado(s).

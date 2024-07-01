@@ -1,10 +1,10 @@
 ﻿cl : command line  warning D9035: option 'Gm' has been deprecated and will be removed in a future release
   AWScriptFile.cpp
   AWIniFile.cpp
-  ATextTabFile.cpp
 C:\Users\Junior\Documents\Projetos\PWSource\Angelica2\AngelicaFile\Source\AWIniFile.cpp(691,17): warning C4477: 'fwprintf' : format string '%s' requires an argument of type 'wchar_t *', but variadic argument 1 has type 'AWString'
 C:\Users\Junior\Documents\Projetos\PWSource\Angelica2\AngelicaFile\Source\AWIniFile.cpp(697,16): warning C4477: 'fwprintf' : format string '%s' requires an argument of type 'wchar_t *', but variadic argument 1 has type 'AWString'
 C:\Users\Junior\Documents\Projetos\PWSource\Angelica2\AngelicaFile\Source\AWIniFile.cpp(705,17): warning C4477: 'fwprintf' : format string '%s' requires an argument of type 'wchar_t *', but variadic argument 1 has type 'AWString'
+  ATextTabFile.cpp
   AScriptFile.cpp
   AMemFile.cpp
   AIniFile.cpp

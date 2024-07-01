@@ -170,6 +170,8 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <OutDir>.\Debug\</OutDir>
     <IntDir>.\Debug\</IntDir>
+    <IncludePath>..\..\Core\Microsoft SDKs\Windows\v6.0A\Include;..\..\Core\Microsoft DirectX 9.0 SDK (Summer 2004)\Include;..\..\Core\IFC\include;$(IncludePath)</IncludePath>
+    <LibraryPath>..\..\Core\IFC\lib;..\..\Core\Microsoft DirectX 9.0 SDK (Summer 2004)\Lib;..\..\Core\Microsoft SDKs\Windows\v6.0A\Lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DBG Release SBCS|Win32'">
     <OutDir>.\AngelicaFile___Win32_DBG_Release_SBCS\</OutDir>
