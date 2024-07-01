@@ -1,0 +1,1193 @@
+﻿<?xml version="1.0"?>
+<Assembly>
+  <Namespace Name="System">
+    <Namespace Name="Security">
+      <Namespace Name="Cryptography">
+        <Type Name="CryptographicAttributeObject">
+          <Method Sig="instance void .ctor(class Oid )" />
+          <Method Sig="instance void .ctor(class Oid , class AsnEncodedDataCollection )" />
+          <Method Sig="instance class Oid get_Oid()" />
+          <Method Sig="instance class AsnEncodedDataCollection get_Values()" />
+        </Type>
+        <Type Name="CryptographicAttributeObjectCollection">
+          <Method Sig="instance void .ctor()" />
+          <Method Sig="instance void .ctor(class CryptographicAttributeObject )" />
+          <Method Sig="instance int Add(class AsnEncodedData )" />
+          <Method Sig="instance int Add(class CryptographicAttributeObject )" />
+          <Method Sig="instance void Remove(class CryptographicAttributeObject )" />
+          <Method Sig="instance class CryptographicAttributeObject get_Item(int )" />
+          <Method Sig="instance int get_Count()" />
+          <Method Sig="instance class CryptographicAttributeObjectEnumerator GetEnumerator()" />
+          <Method Sig="instance void CopyTo([] class CryptographicAttributeObject , int )" />
+          <Method Sig="instance bool get_IsSynchronized()" />
+          <Method Sig="instance object get_SyncRoot()" />
+        </Type>
+        <Type Name="CryptographicAttributeObjectEnumerator">
+          <Method Sig="instance class CryptographicAttributeObject get_Current()" />
+          <Method Sig="instance bool MoveNext()" />
+          <Method Sig="instance void Reset()" />
+        </Type>
+        <Type Name="ProtectedData">
+          <Method Sig="[] byte Protect([] byte , [] byte , struct DataProtectionScope )">
+            <Demand>
+              <PermissionSet version="1" class="System.Security.PermissionSet">
+                <IPermission version="1" class="System.Security.Permissions.DataProtectionPermission, System.Security, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" Flags="ProtectData" />
+              </PermissionSet>
+            </Demand>
+          </Method>
+          <Method Sig="[] byte Unprotect([] byte , [] byte , struct DataProtectionScope )">
+            <Demand>
+              <PermissionSet version="1" class="System.Security.PermissionSet">
+                <IPermission version="1" class="System.Security.Permissions.DataProtectionPermission, System.Security, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" Flags="UnprotectData" />
+              </PermissionSet>
+            </Demand>
+          </Method>
+        </Type>
+        <Type Name="ProtectedMemory">
+          <Method Sig="void Protect([] byte , struct MemoryProtectionScope )">
+            <Demand>
+              <PermissionSet version="1" class="System.Security.PermissionSet">
+                <IPermission version="1" class="System.Security.Permissions.DataProtectionPermission, System.Security, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" Flags="ProtectMemory" />
+              </PermissionSet>
+            </Demand>
+          </Method>
+          <Method Sig="void Unprotect([] byte , struct MemoryProtectionScope )">
+            <Demand>
+              <PermissionSet version="1" class="System.Security.PermissionSet">
+                <IPermission version="1" class="System.Security.Permissions.DataProtectionPermission, System.Security, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" Flags="UnprotectMemory" />
+              </PermissionSet>
+            </Demand>
+          </Method>
+        </Type>
+        <Namespace Name="Pkcs">
+          <Type Name="EnvelopedCms">
+            <Method Sig="instance void .ctor()" />
+            <Method Sig="instance void .ctor(class ContentInfo )" />
+            <Method Sig="instance void .ctor(struct SubjectIdentifierType , class ContentInfo )" />
+            <Method Sig="instance void .ctor(class ContentInfo , class AlgorithmIdentifier )" />
+            <Method Sig="instance void .ctor(struct SubjectIdentifierType , class ContentInfo , class AlgorithmIdentifier )" />
+            <Method Sig="instance int get_Version()" />
+            <Method Sig="instance class ContentInfo get_ContentInfo()" />
+            <Method Sig="instance class AlgorithmIdentifier get_ContentEncryptionAlgorithm()" />
+            <Method Sig="instance class X509Certificate2Collection get_Certificates()" />
+            <Method Sig="instance class CryptographicAttributeObjectCollection get_UnprotectedAttributes()" />
+            <Method Sig="instance class RecipientInfoCollection get_RecipientInfos()" />
+            <Method Sig="instance [] byte Encode()" />
+            <Method Sig="instance void Decode([] byte )" />
+            <Method Sig="instance void Encrypt()">
+              <Demand>
+                <PermissionSet version="1" class="System.Security.PermissionSet" Unrestricted="true" />
+              </Demand>
+            </Method>
+            <Method Sig="instance void Encrypt(class CmsRecipient )">
+              <Demand>
+                <PermissionSet version="1" class="System.Security.PermissionSet" Unrestricted="true" />
+              </Demand>
+            </Method>
+            <Method Sig="instance void Encrypt(class CmsRecipientCollection )">
+              <Demand>
+                <PermissionSet version="1" class="System.Security.PermissionSet" Unrestricted="true" />
+              </Demand>
+            </Method>
+            <Method Sig="instance void Decrypt()">
+              <Demand>
+                <PermissionSet version="1" class="System.Security.PermissionSet" Unrestricted="true" />
+              </Demand>
+            </Method>
+            <Method Sig="instance void Decrypt(class RecipientInfo )">
+              <Demand>
+                <PermissionSet version="1" class="System.Security.PermissionSet" Unrestricted="true" />
+              </Demand>
+            </Method>
+            <Method Sig="instance void Decrypt(class X509Certificate2Collection )">
+              <Demand>
+                <PermissionSet version="1" class="System.Security.PermissionSet" Unrestricted="true" />
+              </Demand>
+            </Method>
+            <Method Sig="instance void Decrypt(class RecipientInfo , class X509Certificate2Collection )">
+              <Demand>
+                <PermissionSet version="1" class="System.Security.PermissionSet" Unrestricted="true" />
+              </Demand>
+            </Method>
+          </Type>
+          <Type Name="CmsRecipient">
+            <Method Sig="instance void .ctor(class X509Certificate2 )" />
+            <Method Sig="instance void .ctor(struct SubjectIdentifierType , class X509Certificate2 )" />
+            <Method Sig="instance struct SubjectIdentifierType get_RecipientIdentifierType()" />
+            <Method Sig="instance class X509Certificate2 get_Certificate()" />
+          </Type>
+          <Type Name="CmsRecipientCollection">
+            <Method Sig="instance void .ctor()" />
+            <Method Sig="instance void .ctor(class CmsRecipient )" />
+            <Method Sig="instance void .ctor(struct SubjectIdentifierType , class X509Certificate2Collection )" />
+            <Method Sig="instance class CmsRecipient get_Item(int )" />
+            <Method Sig="instance int get_Count()" />
+            <Method Sig="instance int Add(class CmsRecipient )" />
+            <Method Sig="instance void Remove(class CmsRecipient )" />
+            <Method Sig="instance class CmsRecipientEnumerator GetEnumerator()" />
+            <Method Sig="instance void CopyTo(class Array , int )" />
+            <Method Sig="instance void CopyTo([] class CmsRecipient , int )" />
+            <Method Sig="instance bool get_IsSynchronized()" />
+            <Method Sig="instance object get_SyncRoot()" />
+          </Type>
+          <Type Name="CmsRecipientEnumerator">
+            <Method Sig="instance class CmsRecipient get_Current()" />
+            <Method Sig="instance bool MoveNext()" />
+            <Method Sig="instance void Reset()" />
+          </Type>
+          <Type Name="CmsSigner">
+            <Method Sig="instance void .ctor()" />
+            <Method Sig="instance void .ctor(struct SubjectIdentifierType )" />
+            <Method Sig="instance void .ctor(class X509Certificate2 )" />
+            <Method Sig="instance void .ctor(class CspParameters )" />
+            <Method Sig="instance void .ctor(struct SubjectIdentifierType , class X509Certificate2 )" />
+            <Method Sig="instance struct SubjectIdentifierType get_SignerIdentifierType()" />
+            <Method Sig="instance void set_SignerIdentifierType(struct SubjectIdentifierType )" />
+            <Method Sig="instance class X509Certificate2 get_Certificate()" />
+            <Method Sig="instance void set_Certificate(class X509Certificate2 )" />
+            <Method Sig="instance class Oid get_DigestAlgorithm()" />
+            <Method Sig="instance void set_DigestAlgorithm(class Oid )" />
+            <Method Sig="instance class CryptographicAttributeObjectCollection get_SignedAttributes()" />
+            <Method Sig="instance class CryptographicAttributeObjectCollection get_UnsignedAttributes()" />
+            <Method Sig="instance class X509Certificate2Collection get_Certificates()" />
+            <Method Sig="instance struct X509IncludeOption get_IncludeOption()" />
+            <Method Sig="instance void set_IncludeOption(struct X509IncludeOption )" />
+          </Type>
+          <Type Name="Pkcs9AttributeObject">
+            <Method Sig="instance void .ctor()" />
+            <Method Sig="instance void .ctor(string , [] byte )" />
+            <Method Sig="instance void .ctor(class Oid , [] byte )" />
+            <Method Sig="instance void .ctor(class AsnEncodedData )" />
+            <Method Sig="instance class Oid get_Oid()" />
+            <Method Sig="instance void CopyFrom(class AsnEncodedData )" />
+          </Type>
+          <Type Name="Pkcs9SigningTime">
+            <Method Sig="instance void .ctor()" />
+            <Method Sig="instance void .ctor(struct DateTime )" />
+            <Method Sig="instance void .ctor([] byte )" />
+            <Method Sig="instance struct DateTime get_SigningTime()" />
+            <Method Sig="instance void CopyFrom(class AsnEncodedData )" />
+          </Type>
+          <Type Name="Pkcs9DocumentName">
+            <Method Sig="instance void .ctor()" />
+            <Method Sig="instance void .ctor(string )" />
+            <Method Sig="instance void .ctor([] byte )" />
+            <Method Sig="instance string get_DocumentName()" />
+            <Method Sig="instance void CopyFrom(class AsnEncodedData )" />
+          </Type>
+          <Type Name="Pkcs9DocumentDescription">
+            <Method Sig="instance void .ctor()" />
+            <Method Sig="instance void .ctor(string )" />
+            <Method Sig="instance void .ctor([] byte )" />
+            <Method Sig="instance string get_DocumentDescription()" />
+            <Method Sig="instance void CopyFrom(class AsnEncodedData )" />
+          </Type>
+          <Type Name="Pkcs9ContentType">
+            <Method Sig="instance void .ctor()" />
+            <Method Sig="instance class Oid get_ContentType()" />
+            <Method Sig="instance void CopyFrom(class AsnEncodedData )" />
+          </Type>
+          <Type Name="Pkcs9MessageDigest">
+            <Method Sig="instance void .ctor()" />
+            <Method Sig="instance [] byte get_MessageDigest()" />
+            <Method Sig="instance void CopyFrom(class AsnEncodedData )" />
+          </Type>
+          <Type Name="RecipientInfo">
+            <Method Sig="instance struct RecipientInfoType get_Type()" />
+            <Method Sig="instance int get_Version()" />
+            <Method Sig="instance class SubjectIdentifier get_RecipientIdentifier()" />
+            <Method Sig="instance class AlgorithmIdentifier get_KeyEncryptionAlgorithm()" />
+            <Method Sig="instance [] byte get_EncryptedKey()" />
+          </Type>
+          <Type Name="KeyTransRecipientInfo">
+            <Method Sig="instance int get_Version()" />
+            <Method Sig="instance class SubjectIdentifier get_RecipientIdentifier()" />
+            <Method Sig="instance class AlgorithmIdentifier get_KeyEncryptionAlgorithm()" />
+            <Method Sig="instance [] byte get_EncryptedKey()" />
+          </Type>
+          <Type Name="KeyAgreeRecipientInfo">
+            <Method Sig="instance int get_Version()" />
+            <Method Sig="instance class SubjectIdentifierOrKey get_OriginatorIdentifierOrKey()" />
+            <Method Sig="instance class SubjectIdentifier get_RecipientIdentifier()" />
+            <Method Sig="instance struct DateTime get_Date()" />
+            <Method Sig="instance class CryptographicAttributeObject get_OtherKeyAttribute()" />
+            <Method Sig="instance class AlgorithmIdentifier get_KeyEncryptionAlgorithm()" />
+            <Method Sig="instance [] byte get_EncryptedKey()" />
+          </Type>
+          <Type Name="RecipientInfoCollection">
+            <Method Sig="instance class RecipientInfo get_Item(int )" />
+            <Method Sig="instance int get_Count()" />
+            <Method Sig="instance class RecipientInfoEnumerator GetEnumerator()" />
+            <Method Sig="instance void CopyTo(class Array , int )" />
+            <Method Sig="instance void CopyTo([] class RecipientInfo , int )" />
+            <Method Sig="instance bool get_IsSynchronized()" />
+            <Method Sig="instance object get_SyncRoot()" />
+          </Type>
+          <Type Name="RecipientInfoEnumerator">
+            <Method Sig="instance class RecipientInfo get_Current()" />
+            <Method Sig="instance bool MoveNext()" />
+            <Method Sig="instance void Reset()" />
+          </Type>
+          <Type Name="SubjectIdentifier">
+            <Method Sig="instance struct SubjectIdentifierType get_Type()" />
+            <Method Sig="instance object get_Value()" />
+          </Type>
+          <Type Name="PublicKeyInfo">
+            <Method Sig="instance class AlgorithmIdentifier get_Algorithm()" />
+            <Method Sig="instance [] byte get_KeyValue()" />
+          </Type>
+          <Type Name="SubjectIdentifierOrKey">
+            <Method Sig="instance struct SubjectIdentifierOrKeyType get_Type()" />
+            <Method Sig="instance object get_Value()" />
+          </Type>
+          <Type Name="AlgorithmIdentifier">
+            <Method Sig="instance void .ctor()" />
+            <Method Sig="instance void .ctor(class Oid )" />
+            <Method Sig="instance void .ctor(class Oid , int )" />
+            <Method Sig="instance class Oid get_Oid()" />
+            <Method Sig="instance void set_Oid(class Oid )" />
+            <Method Sig="instance int get_KeyLength()" />
+            <Method Sig="instance void set_KeyLength(int )" />
+            <Method Sig="instance [] byte get_Parameters()" />
+            <Method Sig="instance void set_Parameters([] byte )" />
+          </Type>
+          <Type Name="ContentInfo">
+            <Method Sig="instance void .ctor([] byte )" />
+            <Method Sig="instance void .ctor(class Oid , [] byte )" />
+            <Method Sig="instance class Oid get_ContentType()" />
+            <Method Sig="instance [] byte get_Content()" />
+            <Method Sig="class Oid GetContentType([] byte )" />
+          </Type>
+          <Type Name="SignedCms">
+            <Method Sig="instance void .ctor()" />
+            <Method Sig="instance void .ctor(struct SubjectIdentifierType )" />
+            <Method Sig="instance void .ctor(class ContentInfo )" />
+            <Method Sig="instance void .ctor(struct SubjectIdentifierType , class ContentInfo )" />
+            <Method Sig="instance void .ctor(class ContentInfo , bool )" />
+            <Method Sig="instance void .ctor(struct SubjectIdentifierType , class ContentInfo , bool )" />
+            <Method Sig="instance int get_Version()" />
+            <Method Sig="instance class ContentInfo get_ContentInfo()" />
+            <Method Sig="instance bool get_Detached()" />
+            <Method Sig="instance class X509Certificate2Collection get_Certificates()" />
+            <Method Sig="instance class SignerInfoCollection get_SignerInfos()" />
+            <Method Sig="instance [] byte Encode()" />
+            <Method Sig="instance void Decode([] byte )" />
+            <Method Sig="instance void ComputeSignature()">
+              <Demand>
+                <PermissionSet version="1" class="System.Security.PermissionSet" Unrestricted="true" />
+              </Demand>
+            </Method>
+            <Method Sig="instance void ComputeSignature(class CmsSigner )">
+              <Demand>
+                <PermissionSet version="1" class="System.Security.PermissionSet" Unrestricted="true" />
+              </Demand>
+            </Method>
+            <Method Sig="instance void ComputeSignature(class CmsSigner , bool )">
+              <Demand>
+                <PermissionSet version="1" class="System.Security.PermissionSet" Unrestricted="true" />
+              </Demand>
+            </Method>
+            <Method Sig="instance void RemoveSignature(int )" />
+            <Method Sig="instance void RemoveSignature(class SignerInfo )" />
+            <Method Sig="instance void CheckSignature(bool )">
+              <Demand>
+                <PermissionSet version="1" class="System.Security.PermissionSet" Unrestricted="true" />
+              </Demand>
+            </Method>
+            <Method Sig="instance void CheckSignature(class X509Certificate2Collection , bool )">
+              <Demand>
+                <PermissionSet version="1" class="System.Security.PermissionSet" Unrestricted="true" />
+              </Demand>
+            </Method>
+            <Method Sig="instance void CheckHash()" />
+          </Type>
+          <Type Name="SignerInfo">
+            <Method Sig="instance int get_Version()" />
+            <Method Sig="instance class X509Certificate2 get_Certificate()">
+              <Demand>
+                <PermissionSet version="1" class="System.Security.PermissionSet" Unrestricted="true" />
+              </Demand>
+            </Method>
+            <Method Sig="instance class SubjectIdentifier get_SignerIdentifier()" />
+            <Method Sig="instance class Oid get_DigestAlgorithm()" />
+            <Method Sig="instance class CryptographicAttributeObjectCollection get_SignedAttributes()" />
+            <Method Sig="instance class CryptographicAttributeObjectCollection get_UnsignedAttributes()" />
+            <Method Sig="instance class SignerInfoCollection get_CounterSignerInfos()" />
+            <Method Sig="instance void ComputeCounterSignature()">
+              <Demand>
+                <PermissionSet version="1" class="System.Security.PermissionSet" Unrestricted="true" />
+              </Demand>
+            </Method>
+            <Method Sig="instance void ComputeCounterSignature(class CmsSigner )">
+              <Demand>
+                <PermissionSet version="1" class="System.Security.PermissionSet" Unrestricted="true" />
+              </Demand>
+            </Method>
+            <Method Sig="instance void RemoveCounterSignature(int )" />
+            <Method Sig="instance void RemoveCounterSignature(class SignerInfo )" />
+            <Method Sig="instance void CheckSignature(bool )">
+              <Demand>
+                <PermissionSet version="1" class="System.Security.PermissionSet" Unrestricted="true" />
+              </Demand>
+            </Method>
+            <Method Sig="instance void CheckSignature(class X509Certificate2Collection , bool )">
+              <Demand>
+                <PermissionSet version="1" class="System.Security.PermissionSet" Unrestricted="true" />
+              </Demand>
+            </Method>
+            <Method Sig="instance void CheckHash()" />
+          </Type>
+          <Type Name="SignerInfoCollection">
+            <Method Sig="instance class SignerInfo get_Item(int )" />
+            <Method Sig="instance int get_Count()" />
+            <Method Sig="instance class SignerInfoEnumerator GetEnumerator()" />
+            <Method Sig="instance void CopyTo(class Array , int )" />
+            <Method Sig="instance void CopyTo([] class SignerInfo , int )" />
+            <Method Sig="instance bool get_IsSynchronized()" />
+            <Method Sig="instance object get_SyncRoot()" />
+          </Type>
+          <Type Name="SignerInfoEnumerator">
+            <Method Sig="instance class SignerInfo get_Current()" />
+            <Method Sig="instance bool MoveNext()" />
+            <Method Sig="instance void Reset()" />
+          </Type>
+        </Namespace>
+        <Namespace Name="X509Certificates">
+          <Type Name="X509Certificate2UI">
+            <Method Sig="void DisplayCertificate(class X509Certificate2 )">
+              <Demand>
+                <PermissionSet version="1" class="System.Security.PermissionSet">
+                  <IPermission Window="SafeTopLevelWindows" version="1" class="System.Security.Permissions.UIPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+                </PermissionSet>
+              </Demand>
+            </Method>
+            <Method Sig="void DisplayCertificate(class X509Certificate2 , intptr )">
+              <Demand>
+                <PermissionSet version="1" class="System.Security.PermissionSet">
+                  <IPermission Window="SafeTopLevelWindows" version="1" class="System.Security.Permissions.UIPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+                </PermissionSet>
+              </Demand>
+              <LinkDemand>
+                <PermissionSet version="1" class="System.Security.PermissionSet">
+                  <IPermission version="1" class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="UnmanagedCode" />
+                </PermissionSet>
+              </LinkDemand>
+            </Method>
+            <Method Sig="class X509Certificate2Collection SelectFromCollection(class X509Certificate2Collection , string , string , struct X509SelectionFlag )">
+              <Demand>
+                <PermissionSet version="1" class="System.Security.PermissionSet" Unrestricted="true" />
+              </Demand>
+            </Method>
+            <Method Sig="class X509Certificate2Collection SelectFromCollection(class X509Certificate2Collection , string , string , struct X509SelectionFlag , intptr )">
+              <Demand>
+                <PermissionSet version="1" class="System.Security.PermissionSet" Unrestricted="true" />
+              </Demand>
+              <LinkDemand>
+                <PermissionSet version="1" class="System.Security.PermissionSet">
+                  <IPermission version="1" class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="UnmanagedCode" />
+                </PermissionSet>
+              </LinkDemand>
+            </Method>
+          </Type>
+        </Namespace>
+        <Namespace Name="Xml">
+          <Type Name="DataObject">
+            <Method Sig="instance void .ctor()" />
+            <Method Sig="instance void .ctor(string , string , string , class XmlElement )" />
+            <Method Sig="instance string get_Id()" />
+            <Method Sig="instance void set_Id(string )" />
+            <Method Sig="instance string get_MimeType()" />
+            <Method Sig="instance void set_MimeType(string )" />
+            <Method Sig="instance string get_Encoding()" />
+            <Method Sig="instance void set_Encoding(string )" />
+            <Method Sig="instance class XmlNodeList get_Data()" />
+            <Method Sig="instance void set_Data(class XmlNodeList )" />
+            <Method Sig="instance class XmlElement GetXml()">
+              <Demand>
+                <PermissionSet version="1" class="System.Security.PermissionSet">
+                  <IPermission version="1" class="System.Security.Permissions.FileIOPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" PathDiscovery="*AllFiles*" />
+                </PermissionSet>
+              </Demand>
+            </Method>
+            <Method Sig="instance void LoadXml(class XmlElement )" />
+          </Type>
+          <Type Name="KeyInfo">
+            <Method Sig="instance void .ctor()" />
+            <Method Sig="instance string get_Id()" />
+            <Method Sig="instance void set_Id(string )" />
+            <Method Sig="instance class XmlElement GetXml()">
+              <Demand>
+                <PermissionSet version="1" class="System.Security.PermissionSet">
+                  <IPermission version="1" class="System.Security.Permissions.FileIOPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" PathDiscovery="*AllFiles*" />
+                </PermissionSet>
+              </Demand>
+            </Method>
+            <Method Sig="instance void LoadXml(class XmlElement )" />
+            <Method Sig="instance int get_Count()" />
+            <Method Sig="instance void AddClause(class KeyInfoClause )" />
+            <Method Sig="instance class IEnumerator GetEnumerator()" />
+            <Method Sig="instance class IEnumerator GetEnumerator(class Type )" />
+          </Type>
+          <Type Name="KeyInfoClause">
+            <Method Sig="instance class XmlElement GetXml()" />
+            <Method Sig="instance void LoadXml(class XmlElement )" />
+          </Type>
+          <Type Name="KeyInfoName">
+            <Method Sig="instance void .ctor()" />
+            <Method Sig="instance void .ctor(string )" />
+            <Method Sig="instance string get_Value()" />
+            <Method Sig="instance void set_Value(string )" />
+            <Method Sig="instance class XmlElement GetXml()">
+              <Demand>
+                <PermissionSet version="1" class="System.Security.PermissionSet">
+                  <IPermission version="1" class="System.Security.Permissions.FileIOPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" PathDiscovery="*AllFiles*" />
+                </PermissionSet>
+              </Demand>
+            </Method>
+            <Method Sig="instance void LoadXml(class XmlElement )" />
+          </Type>
+          <Type Name="DSAKeyValue">
+            <Method Sig="instance void .ctor()" />
+            <Method Sig="instance void .ctor(class DSA )" />
+            <Method Sig="instance class DSA get_Key()" />
+            <Method Sig="instance void set_Key(class DSA )" />
+            <Method Sig="instance class XmlElement GetXml()">
+              <Demand>
+                <PermissionSet version="1" class="System.Security.PermissionSet">
+                  <IPermission version="1" class="System.Security.Permissions.FileIOPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" PathDiscovery="*AllFiles*" />
+                </PermissionSet>
+              </Demand>
+            </Method>
+            <Method Sig="instance void LoadXml(class XmlElement )" />
+          </Type>
+          <Type Name="RSAKeyValue">
+            <Method Sig="instance void .ctor()" />
+            <Method Sig="instance void .ctor(class RSA )" />
+            <Method Sig="instance class RSA get_Key()" />
+            <Method Sig="instance void set_Key(class RSA )" />
+            <Method Sig="instance class XmlElement GetXml()">
+              <Demand>
+                <PermissionSet version="1" class="System.Security.PermissionSet">
+                  <IPermission version="1" class="System.Security.Permissions.FileIOPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" PathDiscovery="*AllFiles*" />
+                </PermissionSet>
+              </Demand>
+            </Method>
+            <Method Sig="instance void LoadXml(class XmlElement )" />
+          </Type>
+          <Type Name="KeyInfoRetrievalMethod">
+            <Method Sig="instance void .ctor()" />
+            <Method Sig="instance void .ctor(string )" />
+            <Method Sig="instance void .ctor(string , string )" />
+            <Method Sig="instance string get_Uri()" />
+            <Method Sig="instance void set_Uri(string )" />
+            <Method Sig="instance string get_Type()" />
+            <Method Sig="instance void set_Type(string )" />
+            <Method Sig="instance class XmlElement GetXml()">
+              <Demand>
+                <PermissionSet version="1" class="System.Security.PermissionSet">
+                  <IPermission version="1" class="System.Security.Permissions.FileIOPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" PathDiscovery="*AllFiles*" />
+                </PermissionSet>
+              </Demand>
+            </Method>
+            <Method Sig="instance void LoadXml(class XmlElement )" />
+          </Type>
+          <Type Name="KeyInfoEncryptedKey">
+            <Method Sig="instance void .ctor()" />
+            <Method Sig="instance void .ctor(class EncryptedKey )" />
+            <Method Sig="instance class EncryptedKey get_EncryptedKey()" />
+            <Method Sig="instance void set_EncryptedKey(class EncryptedKey )" />
+            <Method Sig="instance class XmlElement GetXml()" />
+            <Method Sig="instance void LoadXml(class XmlElement )" />
+          </Type>
+          <Type Name="X509IssuerSerial">
+            <Method Sig="instance string get_IssuerName()" />
+            <Method Sig="instance void set_IssuerName(string )" />
+            <Method Sig="instance string get_SerialNumber()" />
+            <Method Sig="instance void set_SerialNumber(string )" />
+          </Type>
+          <Type Name="KeyInfoX509Data">
+            <Method Sig="instance void .ctor()" />
+            <Method Sig="instance void .ctor([] byte )">
+              <Demand>
+                <PermissionSet version="1" class="System.Security.PermissionSet">
+                  <IPermission version="1" class="System.Security.Permissions.KeyContainerPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="Create" />
+                </PermissionSet>
+              </Demand>
+            </Method>
+            <Method Sig="instance void .ctor(class X509Certificate )" />
+            <Method Sig="instance void .ctor(class X509Certificate , struct X509IncludeOption )">
+              <Demand>
+                <PermissionSet version="1" class="System.Security.PermissionSet" Unrestricted="true" />
+              </Demand>
+            </Method>
+            <Method Sig="instance class ArrayList get_Certificates()" />
+            <Method Sig="instance void AddCertificate(class X509Certificate )" />
+            <Method Sig="instance class ArrayList get_SubjectKeyIds()" />
+            <Method Sig="instance void AddSubjectKeyId([] byte )" />
+            <Method Sig="instance void AddSubjectKeyId(string )" />
+            <Method Sig="instance class ArrayList get_SubjectNames()" />
+            <Method Sig="instance void AddSubjectName(string )" />
+            <Method Sig="instance class ArrayList get_IssuerSerials()" />
+            <Method Sig="instance void AddIssuerSerial(string , string )" />
+            <Method Sig="instance [] byte get_CRL()" />
+            <Method Sig="instance void set_CRL([] byte )" />
+            <Method Sig="instance class XmlElement GetXml()">
+              <Demand>
+                <PermissionSet version="1" class="System.Security.PermissionSet">
+                  <IPermission version="1" class="System.Security.Permissions.FileIOPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" PathDiscovery="*AllFiles*" />
+                </PermissionSet>
+              </Demand>
+            </Method>
+            <Method Sig="instance void LoadXml(class XmlElement )">
+              <Demand>
+                <PermissionSet version="1" class="System.Security.PermissionSet">
+                  <IPermission version="1" class="System.Security.Permissions.KeyContainerPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="Create" />
+                </PermissionSet>
+              </Demand>
+            </Method>
+          </Type>
+          <Type Name="KeyInfoNode">
+            <Method Sig="instance void .ctor()" />
+            <Method Sig="instance void .ctor(class XmlElement )" />
+            <Method Sig="instance class XmlElement get_Value()" />
+            <Method Sig="instance void set_Value(class XmlElement )" />
+            <Method Sig="instance class XmlElement GetXml()">
+              <Demand>
+                <PermissionSet version="1" class="System.Security.PermissionSet">
+                  <IPermission version="1" class="System.Security.Permissions.FileIOPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" PathDiscovery="*AllFiles*" />
+                </PermissionSet>
+              </Demand>
+            </Method>
+            <Method Sig="instance void LoadXml(class XmlElement )" />
+          </Type>
+          <Type Name="Reference">
+            <Method Sig="instance void .ctor()" />
+            <Method Sig="instance void .ctor(class Stream )" />
+            <Method Sig="instance void .ctor(string )" />
+            <Method Sig="instance string get_Id()" />
+            <Method Sig="instance void set_Id(string )" />
+            <Method Sig="instance string get_Uri()" />
+            <Method Sig="instance void set_Uri(string )" />
+            <Method Sig="instance string get_Type()" />
+            <Method Sig="instance void set_Type(string )" />
+            <Method Sig="instance string get_DigestMethod()" />
+            <Method Sig="instance void set_DigestMethod(string )" />
+            <Method Sig="instance [] byte get_DigestValue()" />
+            <Method Sig="instance void set_DigestValue([] byte )" />
+            <Method Sig="instance class TransformChain get_TransformChain()" />
+            <Method Sig="instance void set_TransformChain(class TransformChain )" />
+            <Method Sig="instance class XmlElement GetXml()">
+              <Demand>
+                <PermissionSet version="1" class="System.Security.PermissionSet">
+                  <IPermission version="1" class="System.Security.Permissions.FileIOPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" PathDiscovery="*AllFiles*" />
+                </PermissionSet>
+              </Demand>
+            </Method>
+            <Method Sig="instance void LoadXml(class XmlElement )" />
+            <Method Sig="instance void AddTransform(class Transform )" />
+          </Type>
+          <Type Name="Signature">
+            <Method Sig="instance void .ctor()" />
+            <Method Sig="instance string get_Id()" />
+            <Method Sig="instance void set_Id(string )" />
+            <Method Sig="instance class SignedInfo get_SignedInfo()" />
+            <Method Sig="instance void set_SignedInfo(class SignedInfo )" />
+            <Method Sig="instance [] byte get_SignatureValue()" />
+            <Method Sig="instance void set_SignatureValue([] byte )" />
+            <Method Sig="instance class KeyInfo get_KeyInfo()" />
+            <Method Sig="instance void set_KeyInfo(class KeyInfo )" />
+            <Method Sig="instance class IList get_ObjectList()" />
+            <Method Sig="instance void set_ObjectList(class IList )" />
+            <Method Sig="instance class XmlElement GetXml()">
+              <Demand>
+                <PermissionSet version="1" class="System.Security.PermissionSet">
+                  <IPermission version="1" class="System.Security.Permissions.FileIOPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" PathDiscovery="*AllFiles*" />
+                </PermissionSet>
+              </Demand>
+            </Method>
+            <Method Sig="instance void LoadXml(class XmlElement )" />
+            <Method Sig="instance void AddObject(class DataObject )" />
+          </Type>
+          <Type Name="SignedInfo">
+            <Method Sig="instance void .ctor()" />
+            <Method Sig="instance class IEnumerator GetEnumerator()" />
+            <Method Sig="instance void CopyTo(class Array , int )" />
+            <Method Sig="instance int get_Count()" />
+            <Method Sig="instance bool get_IsReadOnly()" />
+            <Method Sig="instance bool get_IsSynchronized()" />
+            <Method Sig="instance object get_SyncRoot()" />
+            <Method Sig="instance string get_Id()" />
+            <Method Sig="instance void set_Id(string )" />
+            <Method Sig="instance string get_CanonicalizationMethod()" />
+            <Method Sig="instance void set_CanonicalizationMethod(string )" />
+            <Method Sig="instance class Transform get_CanonicalizationMethodObject()" />
+            <Method Sig="instance string get_SignatureMethod()" />
+            <Method Sig="instance void set_SignatureMethod(string )" />
+            <Method Sig="instance string get_SignatureLength()" />
+            <Method Sig="instance void set_SignatureLength(string )" />
+            <Method Sig="instance class ArrayList get_References()" />
+            <Method Sig="instance class XmlElement GetXml()">
+              <Demand>
+                <PermissionSet version="1" class="System.Security.PermissionSet">
+                  <IPermission version="1" class="System.Security.Permissions.FileIOPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" PathDiscovery="*AllFiles*" />
+                </PermissionSet>
+              </Demand>
+            </Method>
+            <Method Sig="instance void LoadXml(class XmlElement )" />
+            <Method Sig="instance void AddReference(class Reference )" />
+          </Type>
+          <Type Name="SignedXml">
+            <Method Sig="instance void .ctor()" />
+            <Method Sig="instance void .ctor(class XmlDocument )" />
+            <Method Sig="instance void .ctor(class XmlElement )" />
+            <Method Sig="instance string get_SigningKeyName()" />
+            <Method Sig="instance void set_SigningKeyName(string )" />
+            <Method Sig="instance void set_Resolver(class XmlResolver )" />
+            <Method Sig="instance class AsymmetricAlgorithm get_SigningKey()" />
+            <Method Sig="instance void set_SigningKey(class AsymmetricAlgorithm )" />
+            <Method Sig="instance class EncryptedXml get_EncryptedXml()" />
+            <Method Sig="instance void set_EncryptedXml(class EncryptedXml )" />
+            <Method Sig="instance class Signature get_Signature()" />
+            <Method Sig="instance class SignedInfo get_SignedInfo()" />
+            <Method Sig="instance string get_SignatureMethod()" />
+            <Method Sig="instance string get_SignatureLength()" />
+            <Method Sig="instance [] byte get_SignatureValue()" />
+            <Method Sig="instance class KeyInfo get_KeyInfo()" />
+            <Method Sig="instance void set_KeyInfo(class KeyInfo )" />
+            <Method Sig="instance class XmlElement GetXml()">
+              <Demand>
+                <PermissionSet version="1" class="System.Security.PermissionSet">
+                  <IPermission version="1" class="System.Security.Permissions.FileIOPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" PathDiscovery="*AllFiles*" />
+                </PermissionSet>
+              </Demand>
+            </Method>
+            <Method Sig="instance void LoadXml(class XmlElement )" />
+            <Method Sig="instance void AddReference(class Reference )" />
+            <Method Sig="instance void AddObject(class DataObject )" />
+            <Method Sig="instance bool CheckSignature()">
+              <Demand>
+                <PermissionSet version="1" class="System.Security.PermissionSet" Unrestricted="true" />
+              </Demand>
+            </Method>
+            <Method Sig="instance bool CheckSignatureReturningKey(&amp; class AsymmetricAlgorithm )">
+              <Demand>
+                <PermissionSet version="1" class="System.Security.PermissionSet" Unrestricted="true" />
+              </Demand>
+            </Method>
+            <Method Sig="instance bool CheckSignature(class AsymmetricAlgorithm )">
+              <Demand>
+                <PermissionSet version="1" class="System.Security.PermissionSet" Unrestricted="true" />
+              </Demand>
+            </Method>
+            <Method Sig="instance bool CheckSignature(class KeyedHashAlgorithm )">
+              <Demand>
+                <PermissionSet version="1" class="System.Security.PermissionSet" Unrestricted="true" />
+              </Demand>
+            </Method>
+            <Method Sig="instance bool CheckSignature(class X509Certificate2 , bool )">
+              <Demand>
+                <PermissionSet version="1" class="System.Security.PermissionSet" Unrestricted="true" />
+              </Demand>
+            </Method>
+            <Method Sig="instance void ComputeSignature()">
+              <Demand>
+                <PermissionSet version="1" class="System.Security.PermissionSet" Unrestricted="true" />
+              </Demand>
+            </Method>
+            <Method Sig="instance void ComputeSignature(class KeyedHashAlgorithm )">
+              <Demand>
+                <PermissionSet version="1" class="System.Security.PermissionSet" Unrestricted="true" />
+              </Demand>
+            </Method>
+            <Method Sig="instance class XmlElement GetIdElement(class XmlDocument , string )" />
+          </Type>
+          <Type Name="TransformChain">
+            <Method Sig="instance void .ctor()" />
+            <Method Sig="instance void Add(class Transform )" />
+            <Method Sig="instance class IEnumerator GetEnumerator()" />
+            <Method Sig="instance int get_Count()" />
+            <Method Sig="instance class Transform get_Item(int )" />
+          </Type>
+          <Type Name="Transform">
+            <Method Sig="instance string get_Algorithm()" />
+            <Method Sig="instance void set_Algorithm(string )" />
+            <Method Sig="instance void set_Resolver(class XmlResolver )" />
+            <Method Sig="instance [] class Type get_InputTypes()" />
+            <Method Sig="instance [] class Type get_OutputTypes()" />
+            <Method Sig="instance class XmlElement GetXml()">
+              <Demand>
+                <PermissionSet version="1" class="System.Security.PermissionSet">
+                  <IPermission version="1" class="System.Security.Permissions.FileIOPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" PathDiscovery="*AllFiles*" />
+                </PermissionSet>
+              </Demand>
+            </Method>
+            <Method Sig="instance void LoadInnerXml(class XmlNodeList )" />
+            <Method Sig="instance void LoadInput(object )" />
+            <Method Sig="instance object GetOutput()" />
+            <Method Sig="instance object GetOutput(class Type )" />
+            <Method Sig="instance [] byte GetDigestedOutput(class HashAlgorithm )" />
+            <Method Sig="instance class XmlElement get_Context()" />
+            <Method Sig="instance void set_Context(class XmlElement )" />
+            <Method Sig="instance class Hashtable get_PropagatedNamespaces()" />
+          </Type>
+          <Type Name="XmlDsigC14NTransform">
+            <Method Sig="instance void .ctor()" />
+            <Method Sig="instance void .ctor(bool )" />
+            <Method Sig="instance [] class Type get_InputTypes()" />
+            <Method Sig="instance [] class Type get_OutputTypes()" />
+            <Method Sig="instance void LoadInnerXml(class XmlNodeList )" />
+            <Method Sig="instance void LoadInput(object )">
+              <Demand>
+                <PermissionSet version="1" class="System.Security.PermissionSet" Unrestricted="true" />
+              </Demand>
+            </Method>
+            <Method Sig="instance object GetOutput()" />
+            <Method Sig="instance object GetOutput(class Type )" />
+            <Method Sig="instance [] byte GetDigestedOutput(class HashAlgorithm )" />
+          </Type>
+          <Type Name="XmlDsigC14NWithCommentsTransform">
+            <Method Sig="instance void .ctor()" />
+          </Type>
+          <Type Name="XmlDsigExcC14NTransform">
+            <Method Sig="instance void .ctor()" />
+            <Method Sig="instance void .ctor(bool )" />
+            <Method Sig="instance void .ctor(string )" />
+            <Method Sig="instance void .ctor(bool , string )" />
+            <Method Sig="instance string get_InclusiveNamespacesPrefixList()" />
+            <Method Sig="instance void set_InclusiveNamespacesPrefixList(string )" />
+            <Method Sig="instance [] class Type get_InputTypes()" />
+            <Method Sig="instance [] class Type get_OutputTypes()" />
+            <Method Sig="instance void LoadInnerXml(class XmlNodeList )" />
+            <Method Sig="instance void LoadInput(object )">
+              <Demand>
+                <PermissionSet version="1" class="System.Security.PermissionSet" Unrestricted="true" />
+              </Demand>
+            </Method>
+            <Method Sig="instance object GetOutput()" />
+            <Method Sig="instance object GetOutput(class Type )" />
+            <Method Sig="instance [] byte GetDigestedOutput(class HashAlgorithm )" />
+          </Type>
+          <Type Name="XmlDsigExcC14NWithCommentsTransform">
+            <Method Sig="instance void .ctor()" />
+            <Method Sig="instance void .ctor(string )" />
+          </Type>
+          <Type Name="XmlDsigBase64Transform">
+            <Method Sig="instance void .ctor()" />
+            <Method Sig="instance [] class Type get_InputTypes()" />
+            <Method Sig="instance [] class Type get_OutputTypes()" />
+            <Method Sig="instance void LoadInnerXml(class XmlNodeList )" />
+            <Method Sig="instance void LoadInput(object )" />
+            <Method Sig="instance object GetOutput()" />
+            <Method Sig="instance object GetOutput(class Type )" />
+          </Type>
+          <Type Name="XmlDsigXPathTransform">
+            <Method Sig="instance void .ctor()" />
+            <Method Sig="instance [] class Type get_InputTypes()" />
+            <Method Sig="instance [] class Type get_OutputTypes()" />
+            <Method Sig="instance void LoadInnerXml(class XmlNodeList )" />
+            <Method Sig="instance void LoadInput(object )">
+              <Demand>
+                <PermissionSet version="1" class="System.Security.PermissionSet" Unrestricted="true" />
+              </Demand>
+            </Method>
+            <Method Sig="instance object GetOutput()" />
+            <Method Sig="instance object GetOutput(class Type )" />
+          </Type>
+          <Type Name="XmlDsigXsltTransform">
+            <Method Sig="instance void .ctor()" />
+            <Method Sig="instance void .ctor(bool )" />
+            <Method Sig="instance [] class Type get_InputTypes()" />
+            <Method Sig="instance [] class Type get_OutputTypes()" />
+            <Method Sig="instance void LoadInnerXml(class XmlNodeList )" />
+            <Method Sig="instance void LoadInput(object )">
+              <Demand>
+                <PermissionSet version="1" class="System.Security.PermissionSet" Unrestricted="true" />
+              </Demand>
+            </Method>
+            <Method Sig="instance object GetOutput()">
+              <Demand>
+                <PermissionSet version="1" class="System.Security.PermissionSet" Unrestricted="true" />
+              </Demand>
+            </Method>
+            <Method Sig="instance object GetOutput(class Type )">
+              <Demand>
+                <PermissionSet version="1" class="System.Security.PermissionSet" Unrestricted="true" />
+              </Demand>
+            </Method>
+          </Type>
+          <Type Name="XmlDsigEnvelopedSignatureTransform">
+            <Method Sig="instance void .ctor()" />
+            <Method Sig="instance void .ctor(bool )" />
+            <Method Sig="instance [] class Type get_InputTypes()" />
+            <Method Sig="instance [] class Type get_OutputTypes()" />
+            <Method Sig="instance void LoadInnerXml(class XmlNodeList )" />
+            <Method Sig="instance void LoadInput(object )">
+              <Demand>
+                <PermissionSet version="1" class="System.Security.PermissionSet">
+                  <IPermission version="1" class="System.Security.Permissions.FileIOPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" PathDiscovery="*AllFiles*" />
+                </PermissionSet>
+              </Demand>
+            </Method>
+            <Method Sig="instance object GetOutput()" />
+            <Method Sig="instance object GetOutput(class Type )" />
+          </Type>
+          <Type Name="XmlDecryptionTransform">
+            <Method Sig="instance void .ctor()" />
+            <Method Sig="instance class EncryptedXml get_EncryptedXml()" />
+            <Method Sig="instance void set_EncryptedXml(class EncryptedXml )" />
+            <Method Sig="instance [] class Type get_InputTypes()" />
+            <Method Sig="instance [] class Type get_OutputTypes()" />
+            <Method Sig="instance void AddExceptUri(string )" />
+            <Method Sig="instance void LoadInnerXml(class XmlNodeList )" />
+            <Method Sig="instance void LoadInput(object )">
+              <Demand>
+                <PermissionSet version="1" class="System.Security.PermissionSet">
+                  <IPermission version="1" class="System.Security.Permissions.FileIOPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" PathDiscovery="*AllFiles*" />
+                </PermissionSet>
+              </Demand>
+            </Method>
+            <Method Sig="instance object GetOutput()">
+              <Demand>
+                <PermissionSet version="1" class="System.Security.PermissionSet" Unrestricted="true" />
+              </Demand>
+            </Method>
+            <Method Sig="instance object GetOutput(class Type )">
+              <Demand>
+                <PermissionSet version="1" class="System.Security.PermissionSet" Unrestricted="true" />
+              </Demand>
+            </Method>
+          </Type>
+          <Type Name="XmlLicenseTransform">
+            <Method Sig="instance void .ctor()" />
+            <Method Sig="instance [] class Type get_InputTypes()" />
+            <Method Sig="instance [] class Type get_OutputTypes()" />
+            <Method Sig="instance class IRelDecryptor get_Decryptor()" />
+            <Method Sig="instance void set_Decryptor(class IRelDecryptor )" />
+            <Method Sig="instance object GetOutput()" />
+            <Method Sig="instance object GetOutput(class Type )" />
+            <Method Sig="instance void LoadInnerXml(class XmlNodeList )" />
+            <Method Sig="instance void LoadInput(object )">
+              <Demand>
+                <PermissionSet version="1" class="System.Security.PermissionSet">
+                  <IPermission version="1" class="System.Security.Permissions.FileIOPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" PathDiscovery="*AllFiles*" />
+                </PermissionSet>
+              </Demand>
+            </Method>
+          </Type>
+          <Type Name="EncryptedType">
+            <Method Sig="instance string get_Id()" />
+            <Method Sig="instance void set_Id(string )" />
+            <Method Sig="instance string get_Type()" />
+            <Method Sig="instance void set_Type(string )" />
+            <Method Sig="instance string get_MimeType()" />
+            <Method Sig="instance void set_MimeType(string )" />
+            <Method Sig="instance string get_Encoding()" />
+            <Method Sig="instance void set_Encoding(string )" />
+            <Method Sig="instance class KeyInfo get_KeyInfo()" />
+            <Method Sig="instance void set_KeyInfo(class KeyInfo )" />
+            <Method Sig="instance class EncryptionMethod get_EncryptionMethod()" />
+            <Method Sig="instance void set_EncryptionMethod(class EncryptionMethod )" />
+            <Method Sig="instance class EncryptionPropertyCollection get_EncryptionProperties()" />
+            <Method Sig="instance void AddProperty(class EncryptionProperty )" />
+            <Method Sig="instance class CipherData get_CipherData()" />
+            <Method Sig="instance void set_CipherData(class CipherData )" />
+            <Method Sig="instance void LoadXml(class XmlElement )" />
+            <Method Sig="instance class XmlElement GetXml()" />
+          </Type>
+          <Type Name="EncryptionMethod">
+            <Method Sig="instance void .ctor()" />
+            <Method Sig="instance void .ctor(string )" />
+            <Method Sig="instance int get_KeySize()" />
+            <Method Sig="instance void set_KeySize(int )" />
+            <Method Sig="instance string get_KeyAlgorithm()" />
+            <Method Sig="instance void set_KeyAlgorithm(string )" />
+            <Method Sig="instance class XmlElement GetXml()">
+              <Demand>
+                <PermissionSet version="1" class="System.Security.PermissionSet">
+                  <IPermission version="1" class="System.Security.Permissions.FileIOPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" PathDiscovery="*AllFiles*" />
+                </PermissionSet>
+              </Demand>
+            </Method>
+            <Method Sig="instance void LoadXml(class XmlElement )" />
+          </Type>
+          <Type Name="EncryptionProperty">
+            <Method Sig="instance void .ctor()" />
+            <Method Sig="instance void .ctor(class XmlElement )" />
+            <Method Sig="instance string get_Id()" />
+            <Method Sig="instance string get_Target()" />
+            <Method Sig="instance class XmlElement get_PropertyElement()" />
+            <Method Sig="instance void set_PropertyElement(class XmlElement )" />
+            <Method Sig="instance class XmlElement GetXml()">
+              <Demand>
+                <PermissionSet version="1" class="System.Security.PermissionSet">
+                  <IPermission version="1" class="System.Security.Permissions.FileIOPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" PathDiscovery="*AllFiles*" />
+                </PermissionSet>
+              </Demand>
+            </Method>
+            <Method Sig="instance void LoadXml(class XmlElement )" />
+          </Type>
+          <Type Name="EncryptionPropertyCollection">
+            <Method Sig="instance void .ctor()" />
+            <Method Sig="instance class IEnumerator GetEnumerator()" />
+            <Method Sig="instance int get_Count()" />
+            <Method Sig="instance int Add(class EncryptionProperty )" />
+            <Method Sig="instance void Clear()" />
+            <Method Sig="instance bool Contains(class EncryptionProperty )" />
+            <Method Sig="instance int IndexOf(class EncryptionProperty )" />
+            <Method Sig="instance void Insert(int , class EncryptionProperty )" />
+            <Method Sig="instance void Remove(class EncryptionProperty )" />
+            <Method Sig="instance void RemoveAt(int )" />
+            <Method Sig="instance bool get_IsFixedSize()" />
+            <Method Sig="instance bool get_IsReadOnly()" />
+            <Method Sig="instance class EncryptionProperty Item(int )" />
+            <Method Sig="instance class EncryptionProperty get_ItemOf(int )" />
+            <Method Sig="instance void set_ItemOf(int , class EncryptionProperty )" />
+            <Method Sig="instance void CopyTo(class Array , int )" />
+            <Method Sig="instance void CopyTo([] class EncryptionProperty , int )" />
+            <Method Sig="instance object get_SyncRoot()" />
+            <Method Sig="instance bool get_IsSynchronized()" />
+          </Type>
+          <Type Name="EncryptedReference">
+            <Method Sig="instance string get_Uri()" />
+            <Method Sig="instance void set_Uri(string )" />
+            <Method Sig="instance class TransformChain get_TransformChain()" />
+            <Method Sig="instance void set_TransformChain(class TransformChain )" />
+            <Method Sig="instance void AddTransform(class Transform )" />
+            <Method Sig="instance class XmlElement GetXml()">
+              <Demand>
+                <PermissionSet version="1" class="System.Security.PermissionSet">
+                  <IPermission version="1" class="System.Security.Permissions.FileIOPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" PathDiscovery="*AllFiles*" />
+                </PermissionSet>
+              </Demand>
+            </Method>
+            <Method Sig="instance void LoadXml(class XmlElement )" />
+          </Type>
+          <Type Name="CipherReference">
+            <Method Sig="instance void .ctor()" />
+            <Method Sig="instance void .ctor(string )" />
+            <Method Sig="instance void .ctor(string , class TransformChain )" />
+            <Method Sig="instance class XmlElement GetXml()">
+              <Demand>
+                <PermissionSet version="1" class="System.Security.PermissionSet">
+                  <IPermission version="1" class="System.Security.Permissions.FileIOPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" PathDiscovery="*AllFiles*" />
+                </PermissionSet>
+              </Demand>
+            </Method>
+            <Method Sig="instance void LoadXml(class XmlElement )" />
+          </Type>
+          <Type Name="DataReference">
+            <Method Sig="instance void .ctor()" />
+            <Method Sig="instance void .ctor(string )" />
+            <Method Sig="instance void .ctor(string , class TransformChain )" />
+          </Type>
+          <Type Name="KeyReference">
+            <Method Sig="instance void .ctor()" />
+            <Method Sig="instance void .ctor(string )" />
+            <Method Sig="instance void .ctor(string , class TransformChain )" />
+          </Type>
+          <Type Name="EncryptedData">
+            <Method Sig="instance void LoadXml(class XmlElement )" />
+            <Method Sig="instance class XmlElement GetXml()">
+              <Demand>
+                <PermissionSet version="1" class="System.Security.PermissionSet">
+                  <IPermission version="1" class="System.Security.Permissions.FileIOPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" PathDiscovery="*AllFiles*" />
+                </PermissionSet>
+              </Demand>
+            </Method>
+            <Method Sig="instance void .ctor()" />
+          </Type>
+          <Type Name="EncryptedKey">
+            <Method Sig="instance void .ctor()" />
+            <Method Sig="instance string get_Recipient()" />
+            <Method Sig="instance void set_Recipient(string )" />
+            <Method Sig="instance string get_CarriedKeyName()" />
+            <Method Sig="instance void set_CarriedKeyName(string )" />
+            <Method Sig="instance class ReferenceList get_ReferenceList()" />
+            <Method Sig="instance void AddReference(class DataReference )" />
+            <Method Sig="instance void AddReference(class KeyReference )" />
+            <Method Sig="instance void LoadXml(class XmlElement )" />
+            <Method Sig="instance class XmlElement GetXml()">
+              <Demand>
+                <PermissionSet version="1" class="System.Security.PermissionSet">
+                  <IPermission version="1" class="System.Security.Permissions.FileIOPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" PathDiscovery="*AllFiles*" />
+                </PermissionSet>
+              </Demand>
+            </Method>
+          </Type>
+          <Type Name="ReferenceList">
+            <Method Sig="instance void .ctor()" />
+            <Method Sig="instance class IEnumerator GetEnumerator()" />
+            <Method Sig="instance int get_Count()" />
+            <Method Sig="instance int Add(object )" />
+            <Method Sig="instance void Clear()" />
+            <Method Sig="instance bool Contains(object )" />
+            <Method Sig="instance int IndexOf(object )" />
+            <Method Sig="instance void Insert(int , object )" />
+            <Method Sig="instance void Remove(object )" />
+            <Method Sig="instance void RemoveAt(int )" />
+            <Method Sig="instance class EncryptedReference Item(int )" />
+            <Method Sig="instance class EncryptedReference get_ItemOf(int )" />
+            <Method Sig="instance void set_ItemOf(int , class EncryptedReference )" />
+            <Method Sig="instance void CopyTo(class Array , int )" />
+            <Method Sig="instance object get_SyncRoot()" />
+            <Method Sig="instance bool get_IsSynchronized()" />
+          </Type>
+          <Type Name="CipherData">
+            <Method Sig="instance void .ctor()" />
+            <Method Sig="instance void .ctor([] byte )" />
+            <Method Sig="instance void .ctor(class CipherReference )" />
+            <Method Sig="instance class CipherReference get_CipherReference()" />
+            <Method Sig="instance void set_CipherReference(class CipherReference )" />
+            <Method Sig="instance [] byte get_CipherValue()" />
+            <Method Sig="instance void set_CipherValue([] byte )" />
+            <Method Sig="instance class XmlElement GetXml()">
+              <Demand>
+                <PermissionSet version="1" class="System.Security.PermissionSet">
+                  <IPermission version="1" class="System.Security.Permissions.FileIOPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" PathDiscovery="*AllFiles*" />
+                </PermissionSet>
+              </Demand>
+            </Method>
+            <Method Sig="instance void LoadXml(class XmlElement )" />
+          </Type>
+          <Type Name="EncryptedXml">
+            <Method Sig="instance void .ctor()" />
+            <Method Sig="instance void .ctor(class XmlDocument )" />
+            <Method Sig="instance void .ctor(class XmlDocument , class Evidence )" />
+            <Method Sig="instance class Evidence get_DocumentEvidence()" />
+            <Method Sig="instance void set_DocumentEvidence(class Evidence )" />
+            <Method Sig="instance class XmlResolver get_Resolver()" />
+            <Method Sig="instance void set_Resolver(class XmlResolver )" />
+            <Method Sig="instance struct PaddingMode get_Padding()" />
+            <Method Sig="instance void set_Padding(struct PaddingMode )" />
+            <Method Sig="instance struct CipherMode get_Mode()" />
+            <Method Sig="instance void set_Mode(struct CipherMode )" />
+            <Method Sig="instance class Encoding get_Encoding()" />
+            <Method Sig="instance void set_Encoding(class Encoding )" />
+            <Method Sig="instance string get_Recipient()" />
+            <Method Sig="instance void set_Recipient(string )" />
+            <Method Sig="instance class XmlElement GetIdElement(class XmlDocument , string )" />
+            <Method Sig="instance [] byte GetDecryptionIV(class EncryptedData , string )">
+              <Demand>
+                <PermissionSet version="1" class="System.Security.PermissionSet" Unrestricted="true" />
+              </Demand>
+            </Method>
+            <Method Sig="instance class SymmetricAlgorithm GetDecryptionKey(class EncryptedData , string )">
+              <Demand>
+                <PermissionSet version="1" class="System.Security.PermissionSet" Unrestricted="true" />
+              </Demand>
+            </Method>
+            <Method Sig="instance [] byte DecryptEncryptedKey(class EncryptedKey )">
+              <Demand>
+                <PermissionSet version="1" class="System.Security.PermissionSet" Unrestricted="true" />
+              </Demand>
+            </Method>
+            <Method Sig="instance void AddKeyNameMapping(string , object )" />
+            <Method Sig="instance void ClearKeyNameMappings()" />
+            <Method Sig="instance class EncryptedData Encrypt(class XmlElement , class X509Certificate2 )">
+              <Demand>
+                <PermissionSet version="1" class="System.Security.PermissionSet">
+                  <IPermission version="1" class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="UnmanagedCode" />
+                  <IPermission Window="SafeTopLevelWindows" version="1" class="System.Security.Permissions.UIPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+                  <IPermission version="1" class="System.Security.Permissions.KeyContainerPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Unrestricted="true" />
+                </PermissionSet>
+              </Demand>
+            </Method>
+            <Method Sig="instance class EncryptedData Encrypt(class XmlElement , string )">
+              <Demand>
+                <PermissionSet version="1" class="System.Security.PermissionSet">
+                  <IPermission version="1" class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="UnmanagedCode" />
+                  <IPermission version="1" class="System.Security.Permissions.KeyContainerPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Unrestricted="true" />
+                </PermissionSet>
+              </Demand>
+            </Method>
+            <Method Sig="instance void DecryptDocument()">
+              <Demand>
+                <PermissionSet version="1" class="System.Security.PermissionSet" Unrestricted="true" />
+              </Demand>
+            </Method>
+            <Method Sig="instance [] byte EncryptData([] byte , class SymmetricAlgorithm )" />
+            <Method Sig="instance [] byte EncryptData(class XmlElement , class SymmetricAlgorithm , bool )" />
+            <Method Sig="instance [] byte DecryptData(class EncryptedData , class SymmetricAlgorithm )">
+              <Demand>
+                <PermissionSet version="1" class="System.Security.PermissionSet" Unrestricted="true" />
+              </Demand>
+            </Method>
+            <Method Sig="instance void ReplaceData(class XmlElement , [] byte )">
+              <Demand>
+                <PermissionSet version="1" class="System.Security.PermissionSet">
+                  <IPermission version="1" class="System.Security.Permissions.FileIOPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" PathDiscovery="*AllFiles*" />
+                </PermissionSet>
+              </Demand>
+            </Method>
+            <Method Sig="void ReplaceElement(class XmlElement , class EncryptedData , bool )">
+              <Demand>
+                <PermissionSet version="1" class="System.Security.PermissionSet">
+                  <IPermission version="1" class="System.Security.Permissions.FileIOPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" PathDiscovery="*AllFiles*" />
+                </PermissionSet>
+              </Demand>
+            </Method>
+            <Method Sig="[] byte EncryptKey([] byte , class SymmetricAlgorithm )">
+              <Demand>
+                <PermissionSet version="1" class="System.Security.PermissionSet">
+                  <IPermission version="1" class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="UnmanagedCode" />
+                  <IPermission version="1" class="System.Security.Permissions.KeyContainerPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Unrestricted="true" />
+                </PermissionSet>
+              </Demand>
+            </Method>
+            <Method Sig="[] byte EncryptKey([] byte , class RSA , bool )">
+              <Demand>
+                <PermissionSet version="1" class="System.Security.PermissionSet">
+                  <IPermission version="1" class="System.Security.Permissions.KeyContainerPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Unrestricted="true" />
+                </PermissionSet>
+              </Demand>
+            </Method>
+            <Method Sig="[] byte DecryptKey([] byte , class SymmetricAlgorithm )">
+              <Demand>
+                <PermissionSet version="1" class="System.Security.PermissionSet">
+                  <IPermission version="1" class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="UnmanagedCode" />
+                  <IPermission version="1" class="System.Security.Permissions.KeyContainerPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Unrestricted="true" />
+                </PermissionSet>
+              </Demand>
+            </Method>
+            <Method Sig="[] byte DecryptKey([] byte , class RSA , bool )">
+              <Demand>
+                <PermissionSet version="1" class="System.Security.PermissionSet">
+                  <IPermission version="1" class="System.Security.Permissions.KeyContainerPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Unrestricted="true" />
+                </PermissionSet>
+              </Demand>
+            </Method>
+          </Type>
+        </Namespace>
+      </Namespace>
+      <Namespace Name="Permissions">
+        <Type Name="DataProtectionPermission">
+          <Method Sig="instance void .ctor(struct PermissionState )" />
+          <Method Sig="instance void .ctor(struct DataProtectionPermissionFlags )" />
+          <Method Sig="instance void set_Flags(struct DataProtectionPermissionFlags )" />
+          <Method Sig="instance struct DataProtectionPermissionFlags get_Flags()" />
+          <Method Sig="instance bool IsUnrestricted()" />
+          <Method Sig="instance class IPermission Union(class IPermission )" />
+          <Method Sig="instance bool IsSubsetOf(class IPermission )" />
+          <Method Sig="instance class IPermission Intersect(class IPermission )" />
+          <Method Sig="instance class IPermission Copy()" />
+          <Method Sig="instance class SecurityElement ToXml()" />
+          <Method Sig="instance void FromXml(class SecurityElement )" />
+        </Type>
+        <Type Name="DataProtectionPermissionAttribute">
+          <Method Sig="instance void .ctor(struct SecurityAction )" />
+          <Method Sig="instance struct DataProtectionPermissionFlags get_Flags()" />
+          <Method Sig="instance void set_Flags(struct DataProtectionPermissionFlags )" />
+          <Method Sig="instance bool get_ProtectData()" />
+          <Method Sig="instance void set_ProtectData(bool )" />
+          <Method Sig="instance bool get_UnprotectData()" />
+          <Method Sig="instance void set_UnprotectData(bool )" />
+          <Method Sig="instance bool get_ProtectMemory()" />
+          <Method Sig="instance void set_ProtectMemory(bool )" />
+          <Method Sig="instance bool get_UnprotectMemory()" />
+          <Method Sig="instance void set_UnprotectMemory(bool )" />
+          <Method Sig="instance class IPermission CreatePermission()" />
+        </Type>
+      </Namespace>
+    </Namespace>
+  </Namespace>
+</Assembly>

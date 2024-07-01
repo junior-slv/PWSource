@@ -1,0 +1,1585 @@
+﻿<?xml version="1.0"?>
+<Assembly>
+  <Namespace Name="System">
+    <Namespace Name="Runtime">
+      <Namespace Name="Remoting">
+        <Namespace Name="Channels">
+          <Type Name="CommonTransportKeys">
+            <Method Sig="instance void .ctor()" />
+          </Type>
+          <Namespace Name="Http">
+            <Type Name="HttpChannel">
+              <Method Sig="instance void .ctor()">
+                <Demand>
+                  <PermissionSet version="1" class="System.Security.PermissionSet">
+                    <IPermission version="1" class="System.Security.Permissions.ReflectionPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="MemberAccess" />
+                    <IPermission version="1" class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="UnmanagedCode, ControlEvidence" />
+                    <IPermission version="1" class="System.Security.Permissions.KeyContainerPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Unrestricted="true" />
+                  </PermissionSet>
+                </Demand>
+              </Method>
+              <Method Sig="instance void .ctor(int )">
+                <Demand>
+                  <PermissionSet version="1" class="System.Security.PermissionSet">
+                    <IPermission version="1" class="System.Security.Permissions.ReflectionPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="MemberAccess" />
+                    <IPermission version="1" class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="UnmanagedCode, ControlEvidence" />
+                    <IPermission version="1" class="System.Security.Permissions.KeyContainerPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Unrestricted="true" />
+                  </PermissionSet>
+                </Demand>
+              </Method>
+              <Method Sig="instance void .ctor(class IDictionary , class IClientChannelSinkProvider , class IServerChannelSinkProvider )">
+                <Demand>
+                  <PermissionSet version="1" class="System.Security.PermissionSet">
+                    <IPermission version="1" class="System.Security.Permissions.ReflectionPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="MemberAccess" />
+                    <IPermission version="1" class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="UnmanagedCode, ControlEvidence" />
+                    <IPermission version="1" class="System.Security.Permissions.KeyContainerPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Unrestricted="true" />
+                  </PermissionSet>
+                </Demand>
+              </Method>
+              <Method Sig="instance bool get_IsSecured()">
+                <LinkDemand>
+                  <PermissionSet version="1" class="System.Security.PermissionSet">
+                    <IPermission version="1" class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="Infrastructure" />
+                  </PermissionSet>
+                </LinkDemand>
+              </Method>
+              <Method Sig="instance void set_IsSecured(bool )">
+                <LinkDemand>
+                  <PermissionSet version="1" class="System.Security.PermissionSet">
+                    <IPermission version="1" class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="Infrastructure" />
+                  </PermissionSet>
+                </LinkDemand>
+              </Method>
+              <Method Sig="instance int get_ChannelPriority()">
+                <LinkDemand>
+                  <PermissionSet version="1" class="System.Security.PermissionSet">
+                    <IPermission version="1" class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="Infrastructure" />
+                  </PermissionSet>
+                </LinkDemand>
+              </Method>
+              <Method Sig="instance string get_ChannelName()">
+                <LinkDemand>
+                  <PermissionSet version="1" class="System.Security.PermissionSet">
+                    <IPermission version="1" class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="Infrastructure" />
+                  </PermissionSet>
+                </LinkDemand>
+              </Method>
+              <Method Sig="instance string Parse(string , &amp; string )">
+                <LinkDemand>
+                  <PermissionSet version="1" class="System.Security.PermissionSet">
+                    <IPermission version="1" class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="Infrastructure" />
+                  </PermissionSet>
+                </LinkDemand>
+              </Method>
+              <Method Sig="instance class IMessageSink CreateMessageSink(string , object , &amp; string )">
+                <Demand>
+                  <PermissionSet version="1" class="System.Security.PermissionSet">
+                    <IPermission version="1" class="System.Security.Permissions.ReflectionPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="MemberAccess" />
+                    <IPermission version="1" class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="UnmanagedCode, ControlEvidence" />
+                    <IPermission version="1" class="System.Security.Permissions.KeyContainerPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Unrestricted="true" />
+                  </PermissionSet>
+                </Demand>
+                <LinkDemand>
+                  <PermissionSet version="1" class="System.Security.PermissionSet">
+                    <IPermission version="1" class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="Infrastructure" />
+                  </PermissionSet>
+                </LinkDemand>
+              </Method>
+              <Method Sig="instance object get_ChannelData()">
+                <LinkDemand>
+                  <PermissionSet version="1" class="System.Security.PermissionSet">
+                    <IPermission version="1" class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="Infrastructure" />
+                  </PermissionSet>
+                </LinkDemand>
+              </Method>
+              <Method Sig="instance [] string GetUrlsForUri(string )">
+                <LinkDemand>
+                  <PermissionSet version="1" class="System.Security.PermissionSet">
+                    <IPermission version="1" class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="Infrastructure" />
+                  </PermissionSet>
+                </LinkDemand>
+              </Method>
+              <Method Sig="instance void StartListening(object )">
+                <Demand>
+                  <PermissionSet version="1" class="System.Security.PermissionSet">
+                    <IPermission version="1" class="System.Security.Permissions.ReflectionPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="MemberAccess" />
+                    <IPermission version="1" class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="UnmanagedCode, ControlEvidence" />
+                    <IPermission version="1" class="System.Security.Permissions.KeyContainerPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Unrestricted="true" />
+                  </PermissionSet>
+                </Demand>
+                <LinkDemand>
+                  <PermissionSet version="1" class="System.Security.PermissionSet">
+                    <IPermission version="1" class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="Infrastructure" />
+                  </PermissionSet>
+                </LinkDemand>
+              </Method>
+              <Method Sig="instance void StopListening(object )">
+                <Demand>
+                  <PermissionSet version="1" class="System.Security.PermissionSet">
+                    <IPermission version="1" class="System.Security.Permissions.ReflectionPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="MemberAccess" />
+                    <IPermission version="1" class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="UnmanagedCode, ControlEvidence" />
+                    <IPermission version="1" class="System.Security.Permissions.KeyContainerPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Unrestricted="true" />
+                  </PermissionSet>
+                </Demand>
+                <LinkDemand>
+                  <PermissionSet version="1" class="System.Security.PermissionSet">
+                    <IPermission version="1" class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="Infrastructure" />
+                  </PermissionSet>
+                </LinkDemand>
+              </Method>
+              <Method Sig="instance string get_ChannelScheme()">
+                <LinkDemand>
+                  <PermissionSet version="1" class="System.Security.PermissionSet">
+                    <IPermission version="1" class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="Infrastructure" />
+                  </PermissionSet>
+                </LinkDemand>
+              </Method>
+              <Method Sig="instance bool get_WantsToListen()">
+                <LinkDemand>
+                  <PermissionSet version="1" class="System.Security.PermissionSet">
+                    <IPermission version="1" class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="Infrastructure" />
+                  </PermissionSet>
+                </LinkDemand>
+              </Method>
+              <Method Sig="instance void set_WantsToListen(bool )" />
+              <Method Sig="instance class IServerChannelSink get_ChannelSinkChain()">
+                <LinkDemand>
+                  <PermissionSet version="1" class="System.Security.PermissionSet">
+                    <IPermission version="1" class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="Infrastructure" />
+                  </PermissionSet>
+                </LinkDemand>
+              </Method>
+              <Method Sig="instance void AddHookChannelUri(string )">
+                <Demand>
+                  <PermissionSet version="1" class="System.Security.PermissionSet">
+                    <IPermission version="1" class="System.Security.Permissions.ReflectionPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="MemberAccess" />
+                    <IPermission version="1" class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="UnmanagedCode, ControlEvidence" />
+                    <IPermission version="1" class="System.Security.Permissions.KeyContainerPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Unrestricted="true" />
+                  </PermissionSet>
+                </Demand>
+                <LinkDemand>
+                  <PermissionSet version="1" class="System.Security.PermissionSet">
+                    <IPermission version="1" class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="Infrastructure" />
+                  </PermissionSet>
+                </LinkDemand>
+              </Method>
+              <Method Sig="instance class IDictionary get_Properties()">
+                <LinkDemand>
+                  <PermissionSet version="1" class="System.Security.PermissionSet">
+                    <IPermission version="1" class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="Infrastructure" />
+                  </PermissionSet>
+                </LinkDemand>
+              </Method>
+              <Method Sig="instance object get_Item(object )" />
+              <Method Sig="instance void set_Item(object , object )" />
+              <Method Sig="instance class ICollection get_Keys()" />
+            </Type>
+            <Type Name="HttpClientChannel">
+              <Method Sig="instance void .ctor()" />
+              <Method Sig="instance void .ctor(string , class IClientChannelSinkProvider )" />
+              <Method Sig="instance void .ctor(class IDictionary , class IClientChannelSinkProvider )">
+                <Demand>
+                  <PermissionSet version="1" class="System.Security.PermissionSet">
+                    <IPermission version="1" class="System.Security.Permissions.ReflectionPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="MemberAccess" />
+                    <IPermission version="1" class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="UnmanagedCode, ControlEvidence" />
+                    <IPermission version="1" class="System.Security.Permissions.KeyContainerPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Unrestricted="true" />
+                  </PermissionSet>
+                </Demand>
+              </Method>
+              <Method Sig="instance int get_ChannelPriority()">
+                <LinkDemand>
+                  <PermissionSet version="1" class="System.Security.PermissionSet">
+                    <IPermission version="1" class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="Infrastructure" />
+                  </PermissionSet>
+                </LinkDemand>
+              </Method>
+              <Method Sig="instance string get_ChannelName()">
+                <LinkDemand>
+                  <PermissionSet version="1" class="System.Security.PermissionSet">
+                    <IPermission version="1" class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="Infrastructure" />
+                  </PermissionSet>
+                </LinkDemand>
+              </Method>
+              <Method Sig="instance string Parse(string , &amp; string )">
+                <LinkDemand>
+                  <PermissionSet version="1" class="System.Security.PermissionSet">
+                    <IPermission version="1" class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="Infrastructure" />
+                  </PermissionSet>
+                </LinkDemand>
+              </Method>
+              <Method Sig="instance class IMessageSink CreateMessageSink(string , object , &amp; string )">
+                <Demand>
+                  <PermissionSet version="1" class="System.Security.PermissionSet">
+                    <IPermission version="1" class="System.Security.Permissions.ReflectionPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="MemberAccess" />
+                    <IPermission version="1" class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="UnmanagedCode, ControlEvidence" />
+                    <IPermission version="1" class="System.Security.Permissions.KeyContainerPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Unrestricted="true" />
+                  </PermissionSet>
+                </Demand>
+                <LinkDemand>
+                  <PermissionSet version="1" class="System.Security.PermissionSet">
+                    <IPermission version="1" class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="Infrastructure" />
+                  </PermissionSet>
+                </LinkDemand>
+              </Method>
+              <Method Sig="instance object get_Item(object )" />
+              <Method Sig="instance void set_Item(object , object )">
+                <Demand>
+                  <PermissionSet version="1" class="System.Security.PermissionSet">
+                    <IPermission version="1" class="System.Security.Permissions.ReflectionPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="MemberAccess" />
+                    <IPermission version="1" class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="UnmanagedCode, ControlEvidence" />
+                    <IPermission version="1" class="System.Security.Permissions.KeyContainerPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Unrestricted="true" />
+                  </PermissionSet>
+                </Demand>
+              </Method>
+              <Method Sig="instance class ICollection get_Keys()" />
+            </Type>
+            <Type Name="HttpServerChannel">
+              <Method Sig="instance void .ctor()">
+                <Demand>
+                  <PermissionSet version="1" class="System.Security.PermissionSet">
+                    <IPermission version="1" class="System.Security.Permissions.ReflectionPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="MemberAccess" />
+                    <IPermission version="1" class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="UnmanagedCode, ControlEvidence" />
+                    <IPermission version="1" class="System.Security.Permissions.KeyContainerPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Unrestricted="true" />
+                  </PermissionSet>
+                </Demand>
+              </Method>
+              <Method Sig="instance void .ctor(int )">
+                <Demand>
+                  <PermissionSet version="1" class="System.Security.PermissionSet">
+                    <IPermission version="1" class="System.Security.Permissions.ReflectionPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="MemberAccess" />
+                    <IPermission version="1" class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="UnmanagedCode, ControlEvidence" />
+                    <IPermission version="1" class="System.Security.Permissions.KeyContainerPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Unrestricted="true" />
+                  </PermissionSet>
+                </Demand>
+              </Method>
+              <Method Sig="instance void .ctor(string , int )">
+                <Demand>
+                  <PermissionSet version="1" class="System.Security.PermissionSet">
+                    <IPermission version="1" class="System.Security.Permissions.ReflectionPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="MemberAccess" />
+                    <IPermission version="1" class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="UnmanagedCode, ControlEvidence" />
+                    <IPermission version="1" class="System.Security.Permissions.KeyContainerPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Unrestricted="true" />
+                  </PermissionSet>
+                </Demand>
+              </Method>
+              <Method Sig="instance void .ctor(string , int , class IServerChannelSinkProvider )">
+                <Demand>
+                  <PermissionSet version="1" class="System.Security.PermissionSet">
+                    <IPermission version="1" class="System.Security.Permissions.ReflectionPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="MemberAccess" />
+                    <IPermission version="1" class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="UnmanagedCode, ControlEvidence" />
+                    <IPermission version="1" class="System.Security.Permissions.KeyContainerPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Unrestricted="true" />
+                  </PermissionSet>
+                </Demand>
+              </Method>
+              <Method Sig="instance void .ctor(class IDictionary , class IServerChannelSinkProvider )">
+                <Demand>
+                  <PermissionSet version="1" class="System.Security.PermissionSet">
+                    <IPermission version="1" class="System.Security.Permissions.ReflectionPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="MemberAccess" />
+                    <IPermission version="1" class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="UnmanagedCode, ControlEvidence" />
+                    <IPermission version="1" class="System.Security.Permissions.KeyContainerPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Unrestricted="true" />
+                  </PermissionSet>
+                </Demand>
+              </Method>
+              <Method Sig="instance int get_ChannelPriority()">
+                <LinkDemand>
+                  <PermissionSet version="1" class="System.Security.PermissionSet">
+                    <IPermission version="1" class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="Infrastructure" />
+                  </PermissionSet>
+                </LinkDemand>
+              </Method>
+              <Method Sig="instance string get_ChannelName()">
+                <LinkDemand>
+                  <PermissionSet version="1" class="System.Security.PermissionSet">
+                    <IPermission version="1" class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="Infrastructure" />
+                  </PermissionSet>
+                </LinkDemand>
+              </Method>
+              <Method Sig="instance string Parse(string , &amp; string )">
+                <LinkDemand>
+                  <PermissionSet version="1" class="System.Security.PermissionSet">
+                    <IPermission version="1" class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="Infrastructure" />
+                  </PermissionSet>
+                </LinkDemand>
+              </Method>
+              <Method Sig="instance object get_ChannelData()">
+                <LinkDemand>
+                  <PermissionSet version="1" class="System.Security.PermissionSet">
+                    <IPermission version="1" class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="Infrastructure" />
+                  </PermissionSet>
+                </LinkDemand>
+              </Method>
+              <Method Sig="instance string GetChannelUri()" />
+              <Method Sig="instance [] string GetUrlsForUri(string )">
+                <LinkDemand>
+                  <PermissionSet version="1" class="System.Security.PermissionSet">
+                    <IPermission version="1" class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="Infrastructure" />
+                  </PermissionSet>
+                </LinkDemand>
+              </Method>
+              <Method Sig="instance void StartListening(object )">
+                <Demand>
+                  <PermissionSet version="1" class="System.Security.PermissionSet">
+                    <IPermission version="1" class="System.Security.Permissions.ReflectionPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="MemberAccess" />
+                    <IPermission version="1" class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="UnmanagedCode, ControlEvidence" />
+                    <IPermission version="1" class="System.Security.Permissions.KeyContainerPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Unrestricted="true" />
+                  </PermissionSet>
+                </Demand>
+                <LinkDemand>
+                  <PermissionSet version="1" class="System.Security.PermissionSet">
+                    <IPermission version="1" class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="Infrastructure" />
+                  </PermissionSet>
+                </LinkDemand>
+              </Method>
+              <Method Sig="instance void StopListening(object )">
+                <Demand>
+                  <PermissionSet version="1" class="System.Security.PermissionSet">
+                    <IPermission version="1" class="System.Security.Permissions.ReflectionPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="MemberAccess" />
+                    <IPermission version="1" class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="UnmanagedCode, ControlEvidence" />
+                    <IPermission version="1" class="System.Security.Permissions.KeyContainerPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Unrestricted="true" />
+                  </PermissionSet>
+                </Demand>
+                <LinkDemand>
+                  <PermissionSet version="1" class="System.Security.PermissionSet">
+                    <IPermission version="1" class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="Infrastructure" />
+                  </PermissionSet>
+                </LinkDemand>
+              </Method>
+              <Method Sig="instance string get_ChannelScheme()">
+                <LinkDemand>
+                  <PermissionSet version="1" class="System.Security.PermissionSet">
+                    <IPermission version="1" class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="Infrastructure" />
+                  </PermissionSet>
+                </LinkDemand>
+              </Method>
+              <Method Sig="instance bool get_WantsToListen()">
+                <LinkDemand>
+                  <PermissionSet version="1" class="System.Security.PermissionSet">
+                    <IPermission version="1" class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="Infrastructure" />
+                  </PermissionSet>
+                </LinkDemand>
+              </Method>
+              <Method Sig="instance void set_WantsToListen(bool )" />
+              <Method Sig="instance class IServerChannelSink get_ChannelSinkChain()">
+                <LinkDemand>
+                  <PermissionSet version="1" class="System.Security.PermissionSet">
+                    <IPermission version="1" class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="Infrastructure" />
+                  </PermissionSet>
+                </LinkDemand>
+              </Method>
+              <Method Sig="instance void AddHookChannelUri(string )">
+                <Demand>
+                  <PermissionSet version="1" class="System.Security.PermissionSet">
+                    <IPermission version="1" class="System.Security.Permissions.ReflectionPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="MemberAccess" />
+                    <IPermission version="1" class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="UnmanagedCode, ControlEvidence" />
+                    <IPermission version="1" class="System.Security.Permissions.KeyContainerPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Unrestricted="true" />
+                  </PermissionSet>
+                </Demand>
+                <LinkDemand>
+                  <PermissionSet version="1" class="System.Security.PermissionSet">
+                    <IPermission version="1" class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="Infrastructure" />
+                  </PermissionSet>
+                </LinkDemand>
+              </Method>
+              <Method Sig="instance object get_Item(object )" />
+              <Method Sig="instance void set_Item(object , object )" />
+              <Method Sig="instance class ICollection get_Keys()" />
+            </Type>
+            <Type Name="HttpRemotingHandler">
+              <Method Sig="instance void .ctor()" />
+              <Method Sig="instance void .ctor(class Type , object )" />
+              <Method Sig="instance void ProcessRequest(class HttpContext )">
+                <Demand>
+                  <PermissionSet version="1" class="System.Security.PermissionSet" Unrestricted="true" />
+                </Demand>
+              </Method>
+              <Method Sig="instance bool get_IsReusable()" />
+              <Method Sig="void .cctor()" />
+            </Type>
+            <Type Name="HttpRemotingHandlerFactory">
+              <Method Sig="instance class IHttpHandler GetHandler(class HttpContext , string , string , string )">
+                <Demand>
+                  <PermissionSet version="1" class="System.Security.PermissionSet">
+                    <IPermission version="1" class="System.Security.Permissions.EnvironmentPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Read="COMPUTERNAME" />
+                    <IPermission version="1" class="System.Security.Permissions.FileIOPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Read="*AllFiles*" PathDiscovery="*AllFiles*" />
+                    <IPermission version="1" class="System.Security.Permissions.ReflectionPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="MemberAccess" />
+                    <IPermission version="1" class="System.Security.Permissions.RegistryPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Unrestricted="true" />
+                    <IPermission version="1" class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Unrestricted="true" />
+                    <IPermission version="1" class="System.Security.Permissions.KeyContainerPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Unrestricted="true" />
+                  </PermissionSet>
+                </Demand>
+              </Method>
+              <Method Sig="instance void ReleaseHandler(class IHttpHandler )" />
+              <Method Sig="instance void .ctor()" />
+              <Method Sig="void .cctor()" />
+            </Type>
+          </Namespace>
+          <Namespace Name="Tcp">
+            <Type Name="TcpChannel">
+              <Method Sig="instance void .ctor()" />
+              <Method Sig="instance void .ctor(int )">
+                <Demand>
+                  <PermissionSet version="1" class="System.Security.PermissionSet">
+                    <IPermission version="1" class="System.Security.Permissions.EnvironmentPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Read="USERNAME" />
+                    <IPermission version="1" class="System.Security.Permissions.ReflectionPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="MemberAccess" />
+                    <IPermission version="1" class="System.Security.Permissions.RegistryPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Unrestricted="true" />
+                    <IPermission version="1" class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="UnmanagedCode, ControlEvidence, ControlPrincipal" />
+                    <IPermission version="1" class="System.Security.Permissions.KeyContainerPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Unrestricted="true" />
+                  </PermissionSet>
+                </Demand>
+              </Method>
+              <Method Sig="instance void .ctor(class IDictionary , class IClientChannelSinkProvider , class IServerChannelSinkProvider )">
+                <Demand>
+                  <PermissionSet version="1" class="System.Security.PermissionSet">
+                    <IPermission version="1" class="System.Security.Permissions.EnvironmentPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Read="USERNAME" />
+                    <IPermission version="1" class="System.Security.Permissions.ReflectionPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="MemberAccess" />
+                    <IPermission version="1" class="System.Security.Permissions.RegistryPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Unrestricted="true" />
+                    <IPermission version="1" class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="UnmanagedCode, ControlEvidence, ControlPrincipal" />
+                    <IPermission version="1" class="System.Security.Permissions.KeyContainerPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Unrestricted="true" />
+                  </PermissionSet>
+                </Demand>
+              </Method>
+              <Method Sig="instance bool get_IsSecured()">
+                <LinkDemand>
+                  <PermissionSet version="1" class="System.Security.PermissionSet">
+                    <IPermission version="1" class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="Infrastructure" />
+                  </PermissionSet>
+                </LinkDemand>
+              </Method>
+              <Method Sig="instance void set_IsSecured(bool )">
+                <LinkDemand>
+                  <PermissionSet version="1" class="System.Security.PermissionSet">
+                    <IPermission version="1" class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="Infrastructure" />
+                  </PermissionSet>
+                </LinkDemand>
+              </Method>
+              <Method Sig="instance int get_ChannelPriority()">
+                <LinkDemand>
+                  <PermissionSet version="1" class="System.Security.PermissionSet">
+                    <IPermission version="1" class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="Infrastructure" />
+                  </PermissionSet>
+                </LinkDemand>
+              </Method>
+              <Method Sig="instance string get_ChannelName()">
+                <LinkDemand>
+                  <PermissionSet version="1" class="System.Security.PermissionSet">
+                    <IPermission version="1" class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="Infrastructure" />
+                  </PermissionSet>
+                </LinkDemand>
+              </Method>
+              <Method Sig="instance string Parse(string , &amp; string )">
+                <LinkDemand>
+                  <PermissionSet version="1" class="System.Security.PermissionSet">
+                    <IPermission version="1" class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="Infrastructure" />
+                  </PermissionSet>
+                </LinkDemand>
+              </Method>
+              <Method Sig="instance class IMessageSink CreateMessageSink(string , object , &amp; string )">
+                <LinkDemand>
+                  <PermissionSet version="1" class="System.Security.PermissionSet">
+                    <IPermission version="1" class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="Infrastructure" />
+                  </PermissionSet>
+                </LinkDemand>
+              </Method>
+              <Method Sig="instance object get_ChannelData()">
+                <LinkDemand>
+                  <PermissionSet version="1" class="System.Security.PermissionSet">
+                    <IPermission version="1" class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="Infrastructure" />
+                  </PermissionSet>
+                </LinkDemand>
+              </Method>
+              <Method Sig="instance [] string GetUrlsForUri(string )">
+                <LinkDemand>
+                  <PermissionSet version="1" class="System.Security.PermissionSet">
+                    <IPermission version="1" class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="Infrastructure" />
+                  </PermissionSet>
+                </LinkDemand>
+              </Method>
+              <Method Sig="instance void StartListening(object )">
+                <Demand>
+                  <PermissionSet version="1" class="System.Security.PermissionSet">
+                    <IPermission version="1" class="System.Security.Permissions.ReflectionPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="MemberAccess" />
+                    <IPermission version="1" class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="UnmanagedCode, ControlEvidence" />
+                    <IPermission version="1" class="System.Security.Permissions.KeyContainerPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Unrestricted="true" />
+                  </PermissionSet>
+                </Demand>
+                <LinkDemand>
+                  <PermissionSet version="1" class="System.Security.PermissionSet">
+                    <IPermission version="1" class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="Infrastructure" />
+                  </PermissionSet>
+                </LinkDemand>
+              </Method>
+              <Method Sig="instance void StopListening(object )">
+                <Demand>
+                  <PermissionSet version="1" class="System.Security.PermissionSet">
+                    <IPermission version="1" class="System.Security.Permissions.ReflectionPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="MemberAccess" />
+                    <IPermission version="1" class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="UnmanagedCode, ControlEvidence" />
+                    <IPermission version="1" class="System.Security.Permissions.KeyContainerPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Unrestricted="true" />
+                  </PermissionSet>
+                </Demand>
+                <LinkDemand>
+                  <PermissionSet version="1" class="System.Security.PermissionSet">
+                    <IPermission version="1" class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="Infrastructure" />
+                  </PermissionSet>
+                </LinkDemand>
+              </Method>
+            </Type>
+            <Type Name="TcpClientChannel">
+              <Method Sig="instance void .ctor()" />
+              <Method Sig="instance void .ctor(string , class IClientChannelSinkProvider )" />
+              <Method Sig="instance void .ctor(class IDictionary , class IClientChannelSinkProvider )" />
+              <Method Sig="instance int get_ChannelPriority()">
+                <LinkDemand>
+                  <PermissionSet version="1" class="System.Security.PermissionSet">
+                    <IPermission version="1" class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="Infrastructure" />
+                  </PermissionSet>
+                </LinkDemand>
+              </Method>
+              <Method Sig="instance string get_ChannelName()">
+                <LinkDemand>
+                  <PermissionSet version="1" class="System.Security.PermissionSet">
+                    <IPermission version="1" class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="Infrastructure" />
+                  </PermissionSet>
+                </LinkDemand>
+              </Method>
+              <Method Sig="instance string Parse(string , &amp; string )">
+                <LinkDemand>
+                  <PermissionSet version="1" class="System.Security.PermissionSet">
+                    <IPermission version="1" class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="Infrastructure" />
+                  </PermissionSet>
+                </LinkDemand>
+              </Method>
+              <Method Sig="instance class IMessageSink CreateMessageSink(string , object , &amp; string )">
+                <LinkDemand>
+                  <PermissionSet version="1" class="System.Security.PermissionSet">
+                    <IPermission version="1" class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="Infrastructure" />
+                  </PermissionSet>
+                </LinkDemand>
+              </Method>
+            </Type>
+            <Type Name="TcpServerChannel">
+              <Method Sig="instance void .ctor(int )">
+                <Demand>
+                  <PermissionSet version="1" class="System.Security.PermissionSet">
+                    <IPermission version="1" class="System.Security.Permissions.EnvironmentPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Read="USERNAME" />
+                    <IPermission version="1" class="System.Security.Permissions.ReflectionPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="MemberAccess" />
+                    <IPermission version="1" class="System.Security.Permissions.RegistryPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Unrestricted="true" />
+                    <IPermission version="1" class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="UnmanagedCode, ControlEvidence, ControlPrincipal" />
+                    <IPermission version="1" class="System.Security.Permissions.KeyContainerPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Unrestricted="true" />
+                  </PermissionSet>
+                </Demand>
+              </Method>
+              <Method Sig="instance void .ctor(string , int )">
+                <Demand>
+                  <PermissionSet version="1" class="System.Security.PermissionSet">
+                    <IPermission version="1" class="System.Security.Permissions.EnvironmentPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Read="USERNAME" />
+                    <IPermission version="1" class="System.Security.Permissions.ReflectionPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="MemberAccess" />
+                    <IPermission version="1" class="System.Security.Permissions.RegistryPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Unrestricted="true" />
+                    <IPermission version="1" class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="UnmanagedCode, ControlEvidence, ControlPrincipal" />
+                    <IPermission version="1" class="System.Security.Permissions.KeyContainerPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Unrestricted="true" />
+                  </PermissionSet>
+                </Demand>
+              </Method>
+              <Method Sig="instance void .ctor(string , int , class IServerChannelSinkProvider )">
+                <Demand>
+                  <PermissionSet version="1" class="System.Security.PermissionSet">
+                    <IPermission version="1" class="System.Security.Permissions.EnvironmentPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Read="USERNAME" />
+                    <IPermission version="1" class="System.Security.Permissions.ReflectionPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="MemberAccess" />
+                    <IPermission version="1" class="System.Security.Permissions.RegistryPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Unrestricted="true" />
+                    <IPermission version="1" class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="UnmanagedCode, ControlEvidence, ControlPrincipal" />
+                    <IPermission version="1" class="System.Security.Permissions.KeyContainerPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Unrestricted="true" />
+                  </PermissionSet>
+                </Demand>
+              </Method>
+              <Method Sig="instance void .ctor(class IDictionary , class IServerChannelSinkProvider )">
+                <Demand>
+                  <PermissionSet version="1" class="System.Security.PermissionSet">
+                    <IPermission version="1" class="System.Security.Permissions.EnvironmentPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Read="USERNAME" />
+                    <IPermission version="1" class="System.Security.Permissions.ReflectionPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="MemberAccess" />
+                    <IPermission version="1" class="System.Security.Permissions.RegistryPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Unrestricted="true" />
+                    <IPermission version="1" class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="UnmanagedCode, ControlEvidence, ControlPrincipal" />
+                    <IPermission version="1" class="System.Security.Permissions.KeyContainerPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Unrestricted="true" />
+                  </PermissionSet>
+                </Demand>
+              </Method>
+              <Method Sig="instance void .ctor(class IDictionary , class IServerChannelSinkProvider , class IAuthorizeRemotingConnection )">
+                <Demand>
+                  <PermissionSet version="1" class="System.Security.PermissionSet">
+                    <IPermission version="1" class="System.Security.Permissions.EnvironmentPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Read="USERNAME" />
+                    <IPermission version="1" class="System.Security.Permissions.ReflectionPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="MemberAccess" />
+                    <IPermission version="1" class="System.Security.Permissions.RegistryPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Unrestricted="true" />
+                    <IPermission version="1" class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="UnmanagedCode, ControlEvidence, ControlPrincipal" />
+                    <IPermission version="1" class="System.Security.Permissions.KeyContainerPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Unrestricted="true" />
+                  </PermissionSet>
+                </Demand>
+              </Method>
+              <Method Sig="instance int get_ChannelPriority()">
+                <LinkDemand>
+                  <PermissionSet version="1" class="System.Security.PermissionSet">
+                    <IPermission version="1" class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="Infrastructure" />
+                  </PermissionSet>
+                </LinkDemand>
+              </Method>
+              <Method Sig="instance string get_ChannelName()">
+                <LinkDemand>
+                  <PermissionSet version="1" class="System.Security.PermissionSet">
+                    <IPermission version="1" class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="Infrastructure" />
+                  </PermissionSet>
+                </LinkDemand>
+              </Method>
+              <Method Sig="instance string Parse(string , &amp; string )">
+                <LinkDemand>
+                  <PermissionSet version="1" class="System.Security.PermissionSet">
+                    <IPermission version="1" class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="Infrastructure" />
+                  </PermissionSet>
+                </LinkDemand>
+              </Method>
+              <Method Sig="instance object get_ChannelData()">
+                <LinkDemand>
+                  <PermissionSet version="1" class="System.Security.PermissionSet">
+                    <IPermission version="1" class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="Infrastructure" />
+                  </PermissionSet>
+                </LinkDemand>
+              </Method>
+              <Method Sig="instance string GetChannelUri()" />
+              <Method Sig="instance [] string GetUrlsForUri(string )">
+                <LinkDemand>
+                  <PermissionSet version="1" class="System.Security.PermissionSet">
+                    <IPermission version="1" class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="Infrastructure" />
+                  </PermissionSet>
+                </LinkDemand>
+              </Method>
+              <Method Sig="instance void StartListening(object )">
+                <Demand>
+                  <PermissionSet version="1" class="System.Security.PermissionSet">
+                    <IPermission version="1" class="System.Security.Permissions.ReflectionPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="MemberAccess" />
+                    <IPermission version="1" class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="UnmanagedCode, ControlEvidence" />
+                    <IPermission version="1" class="System.Security.Permissions.KeyContainerPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Unrestricted="true" />
+                  </PermissionSet>
+                </Demand>
+                <LinkDemand>
+                  <PermissionSet version="1" class="System.Security.PermissionSet">
+                    <IPermission version="1" class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="Infrastructure" />
+                  </PermissionSet>
+                </LinkDemand>
+              </Method>
+              <Method Sig="instance void StopListening(object )">
+                <Demand>
+                  <PermissionSet version="1" class="System.Security.PermissionSet">
+                    <IPermission version="1" class="System.Security.Permissions.ReflectionPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="MemberAccess" />
+                    <IPermission version="1" class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="UnmanagedCode, ControlEvidence" />
+                    <IPermission version="1" class="System.Security.Permissions.KeyContainerPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Unrestricted="true" />
+                  </PermissionSet>
+                </Demand>
+                <LinkDemand>
+                  <PermissionSet version="1" class="System.Security.PermissionSet">
+                    <IPermission version="1" class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="Infrastructure" />
+                  </PermissionSet>
+                </LinkDemand>
+              </Method>
+            </Type>
+          </Namespace>
+          <Namespace Name="Ipc">
+            <Type Name="IpcChannel">
+              <Method Sig="instance void .ctor()" />
+              <Method Sig="instance void .ctor(string )">
+                <Demand>
+                  <PermissionSet version="1" class="System.Security.PermissionSet">
+                    <IPermission version="1" class="System.Security.Permissions.ReflectionPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="MemberAccess" />
+                    <IPermission version="1" class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="UnmanagedCode, ControlEvidence, ControlPrincipal" />
+                    <IPermission version="1" class="System.Security.Permissions.KeyContainerPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Unrestricted="true" />
+                  </PermissionSet>
+                </Demand>
+              </Method>
+              <Method Sig="instance void .ctor(class IDictionary , class IClientChannelSinkProvider , class IServerChannelSinkProvider )">
+                <Demand>
+                  <PermissionSet version="1" class="System.Security.PermissionSet">
+                    <IPermission version="1" class="System.Security.Permissions.ReflectionPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="MemberAccess" />
+                    <IPermission version="1" class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="UnmanagedCode, ControlEvidence, ControlPrincipal" />
+                    <IPermission version="1" class="System.Security.Permissions.KeyContainerPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Unrestricted="true" />
+                  </PermissionSet>
+                </Demand>
+              </Method>
+              <Method Sig="instance bool get_IsSecured()">
+                <LinkDemand>
+                  <PermissionSet version="1" class="System.Security.PermissionSet">
+                    <IPermission version="1" class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="Infrastructure" />
+                  </PermissionSet>
+                </LinkDemand>
+              </Method>
+              <Method Sig="instance void set_IsSecured(bool )">
+                <LinkDemand>
+                  <PermissionSet version="1" class="System.Security.PermissionSet">
+                    <IPermission version="1" class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="Infrastructure" />
+                  </PermissionSet>
+                </LinkDemand>
+              </Method>
+              <Method Sig="instance int get_ChannelPriority()">
+                <LinkDemand>
+                  <PermissionSet version="1" class="System.Security.PermissionSet">
+                    <IPermission version="1" class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="Infrastructure" />
+                  </PermissionSet>
+                </LinkDemand>
+              </Method>
+              <Method Sig="instance string get_ChannelName()">
+                <LinkDemand>
+                  <PermissionSet version="1" class="System.Security.PermissionSet">
+                    <IPermission version="1" class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="Infrastructure" />
+                  </PermissionSet>
+                </LinkDemand>
+              </Method>
+              <Method Sig="instance string Parse(string , &amp; string )">
+                <LinkDemand>
+                  <PermissionSet version="1" class="System.Security.PermissionSet">
+                    <IPermission version="1" class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="Infrastructure" />
+                  </PermissionSet>
+                </LinkDemand>
+              </Method>
+              <Method Sig="instance class IMessageSink CreateMessageSink(string , object , &amp; string )">
+                <LinkDemand>
+                  <PermissionSet version="1" class="System.Security.PermissionSet">
+                    <IPermission version="1" class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="Infrastructure" />
+                  </PermissionSet>
+                </LinkDemand>
+              </Method>
+              <Method Sig="instance object get_ChannelData()">
+                <LinkDemand>
+                  <PermissionSet version="1" class="System.Security.PermissionSet">
+                    <IPermission version="1" class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="Infrastructure" />
+                  </PermissionSet>
+                </LinkDemand>
+              </Method>
+              <Method Sig="instance [] string GetUrlsForUri(string )">
+                <LinkDemand>
+                  <PermissionSet version="1" class="System.Security.PermissionSet">
+                    <IPermission version="1" class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="Infrastructure" />
+                  </PermissionSet>
+                </LinkDemand>
+              </Method>
+              <Method Sig="instance void StartListening(object )">
+                <LinkDemand>
+                  <PermissionSet version="1" class="System.Security.PermissionSet">
+                    <IPermission version="1" class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="Infrastructure" />
+                  </PermissionSet>
+                </LinkDemand>
+              </Method>
+              <Method Sig="instance void StopListening(object )">
+                <LinkDemand>
+                  <PermissionSet version="1" class="System.Security.PermissionSet">
+                    <IPermission version="1" class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="Infrastructure" />
+                  </PermissionSet>
+                </LinkDemand>
+              </Method>
+            </Type>
+            <Type Name="IpcServerChannel">
+              <Method Sig="instance void .ctor(string )">
+                <Demand>
+                  <PermissionSet version="1" class="System.Security.PermissionSet">
+                    <IPermission version="1" class="System.Security.Permissions.ReflectionPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="MemberAccess" />
+                    <IPermission version="1" class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="UnmanagedCode, ControlEvidence, ControlPrincipal" />
+                    <IPermission version="1" class="System.Security.Permissions.KeyContainerPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Unrestricted="true" />
+                  </PermissionSet>
+                </Demand>
+              </Method>
+              <Method Sig="instance void .ctor(string , string )">
+                <Demand>
+                  <PermissionSet version="1" class="System.Security.PermissionSet">
+                    <IPermission version="1" class="System.Security.Permissions.ReflectionPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="MemberAccess" />
+                    <IPermission version="1" class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="UnmanagedCode, ControlEvidence, ControlPrincipal" />
+                    <IPermission version="1" class="System.Security.Permissions.KeyContainerPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Unrestricted="true" />
+                  </PermissionSet>
+                </Demand>
+              </Method>
+              <Method Sig="instance void .ctor(string , string , class IServerChannelSinkProvider )">
+                <Demand>
+                  <PermissionSet version="1" class="System.Security.PermissionSet">
+                    <IPermission version="1" class="System.Security.Permissions.ReflectionPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="MemberAccess" />
+                    <IPermission version="1" class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="UnmanagedCode, ControlEvidence, ControlPrincipal" />
+                    <IPermission version="1" class="System.Security.Permissions.KeyContainerPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Unrestricted="true" />
+                  </PermissionSet>
+                </Demand>
+              </Method>
+              <Method Sig="instance void .ctor(class IDictionary , class IServerChannelSinkProvider )">
+                <Demand>
+                  <PermissionSet version="1" class="System.Security.PermissionSet">
+                    <IPermission version="1" class="System.Security.Permissions.ReflectionPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="MemberAccess" />
+                    <IPermission version="1" class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="UnmanagedCode, ControlEvidence, ControlPrincipal" />
+                    <IPermission version="1" class="System.Security.Permissions.KeyContainerPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Unrestricted="true" />
+                  </PermissionSet>
+                </Demand>
+              </Method>
+              <Method Sig="instance void .ctor(class IDictionary , class IServerChannelSinkProvider , class CommonSecurityDescriptor )">
+                <Demand>
+                  <PermissionSet version="1" class="System.Security.PermissionSet">
+                    <IPermission version="1" class="System.Security.Permissions.ReflectionPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="MemberAccess" />
+                    <IPermission version="1" class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="UnmanagedCode, ControlEvidence, ControlPrincipal" />
+                    <IPermission version="1" class="System.Security.Permissions.KeyContainerPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Unrestricted="true" />
+                  </PermissionSet>
+                </Demand>
+              </Method>
+              <Method Sig="instance int get_ChannelPriority()">
+                <LinkDemand>
+                  <PermissionSet version="1" class="System.Security.PermissionSet">
+                    <IPermission version="1" class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="Infrastructure" />
+                  </PermissionSet>
+                </LinkDemand>
+              </Method>
+              <Method Sig="instance string get_ChannelName()">
+                <LinkDemand>
+                  <PermissionSet version="1" class="System.Security.PermissionSet">
+                    <IPermission version="1" class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="Infrastructure" />
+                  </PermissionSet>
+                </LinkDemand>
+              </Method>
+              <Method Sig="instance string Parse(string , &amp; string )">
+                <LinkDemand>
+                  <PermissionSet version="1" class="System.Security.PermissionSet">
+                    <IPermission version="1" class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="Infrastructure" />
+                  </PermissionSet>
+                </LinkDemand>
+              </Method>
+              <Method Sig="instance object get_ChannelData()">
+                <LinkDemand>
+                  <PermissionSet version="1" class="System.Security.PermissionSet">
+                    <IPermission version="1" class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="Infrastructure" />
+                  </PermissionSet>
+                </LinkDemand>
+              </Method>
+              <Method Sig="instance string GetChannelUri()" />
+              <Method Sig="instance [] string GetUrlsForUri(string )">
+                <LinkDemand>
+                  <PermissionSet version="1" class="System.Security.PermissionSet">
+                    <IPermission version="1" class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="Infrastructure" />
+                  </PermissionSet>
+                </LinkDemand>
+              </Method>
+              <Method Sig="instance void StartListening(object )">
+                <LinkDemand>
+                  <PermissionSet version="1" class="System.Security.PermissionSet">
+                    <IPermission version="1" class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="Infrastructure" />
+                  </PermissionSet>
+                </LinkDemand>
+              </Method>
+              <Method Sig="instance void StopListening(object )">
+                <LinkDemand>
+                  <PermissionSet version="1" class="System.Security.PermissionSet">
+                    <IPermission version="1" class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="Infrastructure" />
+                  </PermissionSet>
+                </LinkDemand>
+              </Method>
+            </Type>
+            <Type Name="IpcClientChannel">
+              <Method Sig="instance void .ctor()" />
+              <Method Sig="instance void .ctor(string , class IClientChannelSinkProvider )" />
+              <Method Sig="instance void .ctor(class IDictionary , class IClientChannelSinkProvider )" />
+              <Method Sig="instance int get_ChannelPriority()">
+                <LinkDemand>
+                  <PermissionSet version="1" class="System.Security.PermissionSet">
+                    <IPermission version="1" class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="Infrastructure" />
+                  </PermissionSet>
+                </LinkDemand>
+              </Method>
+              <Method Sig="instance string get_ChannelName()">
+                <LinkDemand>
+                  <PermissionSet version="1" class="System.Security.PermissionSet">
+                    <IPermission version="1" class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="Infrastructure" />
+                  </PermissionSet>
+                </LinkDemand>
+              </Method>
+              <Method Sig="instance string Parse(string , &amp; string )">
+                <LinkDemand>
+                  <PermissionSet version="1" class="System.Security.PermissionSet">
+                    <IPermission version="1" class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="Infrastructure" />
+                  </PermissionSet>
+                </LinkDemand>
+              </Method>
+              <Method Sig="instance class IMessageSink CreateMessageSink(string , object , &amp; string )">
+                <LinkDemand>
+                  <PermissionSet version="1" class="System.Security.PermissionSet">
+                    <IPermission version="1" class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="Infrastructure" />
+                  </PermissionSet>
+                </LinkDemand>
+              </Method>
+            </Type>
+          </Namespace>
+          <Type Name="BinaryClientFormatterSinkProvider">
+            <Method Sig="instance void .ctor()" />
+            <Method Sig="instance void .ctor(class IDictionary , class ICollection )" />
+            <Method Sig="instance class IClientChannelSink CreateSink(class IChannelSender , string , object )">
+              <LinkDemand>
+                <PermissionSet version="1" class="System.Security.PermissionSet">
+                  <IPermission version="1" class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="Infrastructure" />
+                </PermissionSet>
+              </LinkDemand>
+            </Method>
+            <Method Sig="instance class IClientChannelSinkProvider get_Next()">
+              <LinkDemand>
+                <PermissionSet version="1" class="System.Security.PermissionSet">
+                  <IPermission version="1" class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="Infrastructure" />
+                </PermissionSet>
+              </LinkDemand>
+            </Method>
+            <Method Sig="instance void set_Next(class IClientChannelSinkProvider )">
+              <LinkDemand>
+                <PermissionSet version="1" class="System.Security.PermissionSet">
+                  <IPermission version="1" class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="Infrastructure" />
+                </PermissionSet>
+              </LinkDemand>
+            </Method>
+          </Type>
+          <Type Name="BinaryClientFormatterSink">
+            <Method Sig="instance void .ctor(class IClientChannelSink )" />
+            <Method Sig="instance class IMessageSink get_NextSink()">
+              <LinkDemand>
+                <PermissionSet version="1" class="System.Security.PermissionSet">
+                  <IPermission version="1" class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="Infrastructure" />
+                </PermissionSet>
+              </LinkDemand>
+            </Method>
+            <Method Sig="instance class IMessage SyncProcessMessage(class IMessage )">
+              <Demand>
+                <PermissionSet version="1" class="System.Security.PermissionSet">
+                  <IPermission version="1" class="System.Security.Permissions.FileIOPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Read="*AllFiles*" PathDiscovery="*AllFiles*" />
+                  <IPermission version="1" class="System.Security.Permissions.ReflectionPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="MemberAccess" />
+                  <IPermission version="1" class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="ControlEvidence" />
+                </PermissionSet>
+              </Demand>
+              <LinkDemand>
+                <PermissionSet version="1" class="System.Security.PermissionSet">
+                  <IPermission version="1" class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="Infrastructure" />
+                </PermissionSet>
+              </LinkDemand>
+            </Method>
+            <Method Sig="instance class IMessageCtrl AsyncProcessMessage(class IMessage , class IMessageSink )">
+              <LinkDemand>
+                <PermissionSet version="1" class="System.Security.PermissionSet">
+                  <IPermission version="1" class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="Infrastructure" />
+                </PermissionSet>
+              </LinkDemand>
+            </Method>
+            <Method Sig="instance void ProcessMessage(class IMessage , class ITransportHeaders , class Stream , &amp; class ITransportHeaders , &amp; class Stream )">
+              <LinkDemand>
+                <PermissionSet version="1" class="System.Security.PermissionSet">
+                  <IPermission version="1" class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="Infrastructure" />
+                </PermissionSet>
+              </LinkDemand>
+            </Method>
+            <Method Sig="instance void AsyncProcessRequest(class IClientChannelSinkStack , class IMessage , class ITransportHeaders , class Stream )">
+              <LinkDemand>
+                <PermissionSet version="1" class="System.Security.PermissionSet">
+                  <IPermission version="1" class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="Infrastructure" />
+                </PermissionSet>
+              </LinkDemand>
+            </Method>
+            <Method Sig="instance void AsyncProcessResponse(class IClientResponseChannelSinkStack , object , class ITransportHeaders , class Stream )">
+              <Demand>
+                <PermissionSet version="1" class="System.Security.PermissionSet">
+                  <IPermission version="1" class="System.Security.Permissions.FileIOPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Read="*AllFiles*" PathDiscovery="*AllFiles*" />
+                  <IPermission version="1" class="System.Security.Permissions.ReflectionPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="MemberAccess" />
+                  <IPermission version="1" class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="ControlEvidence" />
+                </PermissionSet>
+              </Demand>
+              <LinkDemand>
+                <PermissionSet version="1" class="System.Security.PermissionSet">
+                  <IPermission version="1" class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="Infrastructure" />
+                </PermissionSet>
+              </LinkDemand>
+            </Method>
+            <Method Sig="instance class Stream GetRequestStream(class IMessage , class ITransportHeaders )">
+              <LinkDemand>
+                <PermissionSet version="1" class="System.Security.PermissionSet">
+                  <IPermission version="1" class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="Infrastructure" />
+                </PermissionSet>
+              </LinkDemand>
+            </Method>
+            <Method Sig="instance class IClientChannelSink get_NextChannelSink()">
+              <LinkDemand>
+                <PermissionSet version="1" class="System.Security.PermissionSet">
+                  <IPermission version="1" class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="Infrastructure" />
+                </PermissionSet>
+              </LinkDemand>
+            </Method>
+            <Method Sig="instance class IDictionary get_Properties()">
+              <LinkDemand>
+                <PermissionSet version="1" class="System.Security.PermissionSet">
+                  <IPermission version="1" class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="Infrastructure" />
+                </PermissionSet>
+              </LinkDemand>
+            </Method>
+          </Type>
+          <Type Name="BinaryServerFormatterSinkProvider">
+            <Method Sig="instance void .ctor()" />
+            <Method Sig="instance void .ctor(class IDictionary , class ICollection )" />
+            <Method Sig="instance void GetChannelData(class IChannelDataStore )">
+              <LinkDemand>
+                <PermissionSet version="1" class="System.Security.PermissionSet">
+                  <IPermission version="1" class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="Infrastructure" />
+                </PermissionSet>
+              </LinkDemand>
+            </Method>
+            <Method Sig="instance class IServerChannelSink CreateSink(class IChannelReceiver )">
+              <LinkDemand>
+                <PermissionSet version="1" class="System.Security.PermissionSet">
+                  <IPermission version="1" class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="Infrastructure" />
+                </PermissionSet>
+              </LinkDemand>
+            </Method>
+            <Method Sig="instance class IServerChannelSinkProvider get_Next()">
+              <LinkDemand>
+                <PermissionSet version="1" class="System.Security.PermissionSet">
+                  <IPermission version="1" class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="Infrastructure" />
+                </PermissionSet>
+              </LinkDemand>
+            </Method>
+            <Method Sig="instance void set_Next(class IServerChannelSinkProvider )">
+              <LinkDemand>
+                <PermissionSet version="1" class="System.Security.PermissionSet">
+                  <IPermission version="1" class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="Infrastructure" />
+                </PermissionSet>
+              </LinkDemand>
+            </Method>
+            <Method Sig="instance struct TypeFilterLevel get_TypeFilterLevel()" />
+            <Method Sig="instance void set_TypeFilterLevel(struct TypeFilterLevel )" />
+          </Type>
+          <Type Name="BinaryServerFormatterSink">
+            <Method Sig="instance void .ctor(struct Protocol , class IServerChannelSink , class IChannelReceiver )" />
+            <Method Sig="instance struct TypeFilterLevel get_TypeFilterLevel()" />
+            <Method Sig="instance void set_TypeFilterLevel(struct TypeFilterLevel )" />
+            <Method Sig="instance struct ServerProcessing ProcessMessage(class IServerChannelSinkStack , class IMessage , class ITransportHeaders , class Stream , &amp; class IMessage , &amp; class ITransportHeaders , &amp; class Stream )">
+              <Demand>
+                <PermissionSet version="1" class="System.Security.PermissionSet">
+                  <IPermission version="1" class="System.Security.Permissions.FileIOPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Read="*AllFiles*" PathDiscovery="*AllFiles*" />
+                  <IPermission version="1" class="System.Security.Permissions.ReflectionPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="MemberAccess" />
+                  <IPermission version="1" class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="ControlEvidence" />
+                </PermissionSet>
+              </Demand>
+              <LinkDemand>
+                <PermissionSet version="1" class="System.Security.PermissionSet">
+                  <IPermission version="1" class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="Infrastructure" />
+                </PermissionSet>
+              </LinkDemand>
+            </Method>
+            <Method Sig="instance void AsyncProcessResponse(class IServerResponseChannelSinkStack , object , class IMessage , class ITransportHeaders , class Stream )">
+              <Demand>
+                <PermissionSet version="1" class="System.Security.PermissionSet">
+                  <IPermission version="1" class="System.Security.Permissions.FileIOPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" PathDiscovery="*AllFiles*" />
+                </PermissionSet>
+              </Demand>
+              <LinkDemand>
+                <PermissionSet version="1" class="System.Security.PermissionSet">
+                  <IPermission version="1" class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="Infrastructure" />
+                </PermissionSet>
+              </LinkDemand>
+            </Method>
+            <Method Sig="instance class Stream GetResponseStream(class IServerResponseChannelSinkStack , object , class IMessage , class ITransportHeaders )">
+              <LinkDemand>
+                <PermissionSet version="1" class="System.Security.PermissionSet">
+                  <IPermission version="1" class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="Infrastructure" />
+                </PermissionSet>
+              </LinkDemand>
+            </Method>
+            <Method Sig="instance class IServerChannelSink get_NextChannelSink()">
+              <LinkDemand>
+                <PermissionSet version="1" class="System.Security.PermissionSet">
+                  <IPermission version="1" class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="Infrastructure" />
+                </PermissionSet>
+              </LinkDemand>
+            </Method>
+            <Method Sig="instance class IDictionary get_Properties()">
+              <LinkDemand>
+                <PermissionSet version="1" class="System.Security.PermissionSet">
+                  <IPermission version="1" class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="Infrastructure" />
+                </PermissionSet>
+              </LinkDemand>
+            </Method>
+          </Type>
+          <Type Name="SoapClientFormatterSinkProvider">
+            <Method Sig="instance void .ctor()" />
+            <Method Sig="instance void .ctor(class IDictionary , class ICollection )" />
+            <Method Sig="instance class IClientChannelSink CreateSink(class IChannelSender , string , object )">
+              <LinkDemand>
+                <PermissionSet version="1" class="System.Security.PermissionSet">
+                  <IPermission version="1" class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="Infrastructure" />
+                </PermissionSet>
+              </LinkDemand>
+            </Method>
+            <Method Sig="instance class IClientChannelSinkProvider get_Next()">
+              <LinkDemand>
+                <PermissionSet version="1" class="System.Security.PermissionSet">
+                  <IPermission version="1" class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="Infrastructure" />
+                </PermissionSet>
+              </LinkDemand>
+            </Method>
+            <Method Sig="instance void set_Next(class IClientChannelSinkProvider )">
+              <LinkDemand>
+                <PermissionSet version="1" class="System.Security.PermissionSet">
+                  <IPermission version="1" class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="Infrastructure" />
+                </PermissionSet>
+              </LinkDemand>
+            </Method>
+          </Type>
+          <Type Name="SoapClientFormatterSink">
+            <Method Sig="instance void .ctor(class IClientChannelSink )" />
+            <Method Sig="instance class IMessageSink get_NextSink()">
+              <LinkDemand>
+                <PermissionSet version="1" class="System.Security.PermissionSet">
+                  <IPermission version="1" class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="Infrastructure" />
+                </PermissionSet>
+              </LinkDemand>
+            </Method>
+            <Method Sig="instance class IMessage SyncProcessMessage(class IMessage )">
+              <Demand>
+                <PermissionSet version="1" class="System.Security.PermissionSet">
+                  <IPermission version="1" class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="ControlEvidence" />
+                </PermissionSet>
+              </Demand>
+              <LinkDemand>
+                <PermissionSet version="1" class="System.Security.PermissionSet">
+                  <IPermission version="1" class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="Infrastructure" />
+                </PermissionSet>
+              </LinkDemand>
+            </Method>
+            <Method Sig="instance class IMessageCtrl AsyncProcessMessage(class IMessage , class IMessageSink )">
+              <Demand>
+                <PermissionSet version="1" class="System.Security.PermissionSet">
+                  <IPermission version="1" class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="ControlEvidence" />
+                </PermissionSet>
+              </Demand>
+              <LinkDemand>
+                <PermissionSet version="1" class="System.Security.PermissionSet">
+                  <IPermission version="1" class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="Infrastructure" />
+                </PermissionSet>
+              </LinkDemand>
+            </Method>
+            <Method Sig="instance void ProcessMessage(class IMessage , class ITransportHeaders , class Stream , &amp; class ITransportHeaders , &amp; class Stream )">
+              <LinkDemand>
+                <PermissionSet version="1" class="System.Security.PermissionSet">
+                  <IPermission version="1" class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="Infrastructure" />
+                </PermissionSet>
+              </LinkDemand>
+            </Method>
+            <Method Sig="instance void AsyncProcessRequest(class IClientChannelSinkStack , class IMessage , class ITransportHeaders , class Stream )">
+              <LinkDemand>
+                <PermissionSet version="1" class="System.Security.PermissionSet">
+                  <IPermission version="1" class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="Infrastructure" />
+                </PermissionSet>
+              </LinkDemand>
+            </Method>
+            <Method Sig="instance void AsyncProcessResponse(class IClientResponseChannelSinkStack , object , class ITransportHeaders , class Stream )">
+              <LinkDemand>
+                <PermissionSet version="1" class="System.Security.PermissionSet">
+                  <IPermission version="1" class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="Infrastructure" />
+                </PermissionSet>
+              </LinkDemand>
+            </Method>
+            <Method Sig="instance class Stream GetRequestStream(class IMessage , class ITransportHeaders )">
+              <LinkDemand>
+                <PermissionSet version="1" class="System.Security.PermissionSet">
+                  <IPermission version="1" class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="Infrastructure" />
+                </PermissionSet>
+              </LinkDemand>
+            </Method>
+            <Method Sig="instance class IClientChannelSink get_NextChannelSink()">
+              <LinkDemand>
+                <PermissionSet version="1" class="System.Security.PermissionSet">
+                  <IPermission version="1" class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="Infrastructure" />
+                </PermissionSet>
+              </LinkDemand>
+            </Method>
+            <Method Sig="instance class IDictionary get_Properties()">
+              <LinkDemand>
+                <PermissionSet version="1" class="System.Security.PermissionSet">
+                  <IPermission version="1" class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="Infrastructure" />
+                </PermissionSet>
+              </LinkDemand>
+            </Method>
+          </Type>
+          <Type Name="SoapServerFormatterSinkProvider">
+            <Method Sig="instance void .ctor()" />
+            <Method Sig="instance void .ctor(class IDictionary , class ICollection )" />
+            <Method Sig="instance void GetChannelData(class IChannelDataStore )">
+              <LinkDemand>
+                <PermissionSet version="1" class="System.Security.PermissionSet">
+                  <IPermission version="1" class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="Infrastructure" />
+                </PermissionSet>
+              </LinkDemand>
+            </Method>
+            <Method Sig="instance class IServerChannelSink CreateSink(class IChannelReceiver )">
+              <LinkDemand>
+                <PermissionSet version="1" class="System.Security.PermissionSet">
+                  <IPermission version="1" class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="Infrastructure" />
+                </PermissionSet>
+              </LinkDemand>
+            </Method>
+            <Method Sig="instance class IServerChannelSinkProvider get_Next()">
+              <LinkDemand>
+                <PermissionSet version="1" class="System.Security.PermissionSet">
+                  <IPermission version="1" class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="Infrastructure" />
+                </PermissionSet>
+              </LinkDemand>
+            </Method>
+            <Method Sig="instance void set_Next(class IServerChannelSinkProvider )">
+              <LinkDemand>
+                <PermissionSet version="1" class="System.Security.PermissionSet">
+                  <IPermission version="1" class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="Infrastructure" />
+                </PermissionSet>
+              </LinkDemand>
+            </Method>
+            <Method Sig="instance struct TypeFilterLevel get_TypeFilterLevel()" />
+            <Method Sig="instance void set_TypeFilterLevel(struct TypeFilterLevel )" />
+          </Type>
+          <Type Name="SoapServerFormatterSink">
+            <Method Sig="instance void .ctor(struct Protocol , class IServerChannelSink , class IChannelReceiver )" />
+            <Method Sig="instance struct TypeFilterLevel get_TypeFilterLevel()" />
+            <Method Sig="instance void set_TypeFilterLevel(struct TypeFilterLevel )" />
+            <Method Sig="instance struct ServerProcessing ProcessMessage(class IServerChannelSinkStack , class IMessage , class ITransportHeaders , class Stream , &amp; class IMessage , &amp; class ITransportHeaders , &amp; class Stream )">
+              <Demand>
+                <PermissionSet version="1" class="System.Security.PermissionSet">
+                  <IPermission version="1" class="System.Security.Permissions.FileIOPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" PathDiscovery="*AllFiles*" />
+                  <IPermission version="1" class="System.Security.Permissions.ReflectionPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="MemberAccess" />
+                  <IPermission version="1" class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="ControlEvidence" />
+                </PermissionSet>
+              </Demand>
+              <LinkDemand>
+                <PermissionSet version="1" class="System.Security.PermissionSet">
+                  <IPermission version="1" class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="Infrastructure" />
+                </PermissionSet>
+              </LinkDemand>
+            </Method>
+            <Method Sig="instance void AsyncProcessResponse(class IServerResponseChannelSinkStack , object , class IMessage , class ITransportHeaders , class Stream )">
+              <Demand>
+                <PermissionSet version="1" class="System.Security.PermissionSet">
+                  <IPermission version="1" class="System.Security.Permissions.FileIOPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" PathDiscovery="*AllFiles*" />
+                  <IPermission version="1" class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="ControlEvidence" />
+                </PermissionSet>
+              </Demand>
+              <LinkDemand>
+                <PermissionSet version="1" class="System.Security.PermissionSet">
+                  <IPermission version="1" class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="Infrastructure" />
+                </PermissionSet>
+              </LinkDemand>
+            </Method>
+            <Method Sig="instance class Stream GetResponseStream(class IServerResponseChannelSinkStack , object , class IMessage , class ITransportHeaders )">
+              <LinkDemand>
+                <PermissionSet version="1" class="System.Security.PermissionSet">
+                  <IPermission version="1" class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="Infrastructure" />
+                </PermissionSet>
+              </LinkDemand>
+            </Method>
+            <Method Sig="instance class IServerChannelSink get_NextChannelSink()">
+              <LinkDemand>
+                <PermissionSet version="1" class="System.Security.PermissionSet">
+                  <IPermission version="1" class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="Infrastructure" />
+                </PermissionSet>
+              </LinkDemand>
+            </Method>
+            <Method Sig="instance class IDictionary get_Properties()">
+              <LinkDemand>
+                <PermissionSet version="1" class="System.Security.PermissionSet">
+                  <IPermission version="1" class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="Infrastructure" />
+                </PermissionSet>
+              </LinkDemand>
+            </Method>
+          </Type>
+        </Namespace>
+        <Namespace Name="MetadataServices">
+          <Type Name="MetaData">
+            <Method Sig="void ConvertTypesToSchemaToFile([] class Type , struct SdlType , string )" />
+            <Method Sig="void ConvertTypesToSchemaToStream([] class Type , struct SdlType , class Stream )" />
+            <Method Sig="void ConvertTypesToSchemaToFile([] class ServiceType , struct SdlType , string )" />
+            <Method Sig="void ConvertTypesToSchemaToStream([] class ServiceType , struct SdlType , class Stream )" />
+            <Method Sig="void RetrieveSchemaFromUrlToStream(string , class Stream )">
+              <Demand>
+                <PermissionSet version="1" class="System.Security.PermissionSet">
+                  <IPermission version="1" class="System.Security.Permissions.ReflectionPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="MemberAccess" />
+                  <IPermission version="1" class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="UnmanagedCode, ControlEvidence" />
+                  <IPermission version="1" class="System.Security.Permissions.KeyContainerPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Unrestricted="true" />
+                </PermissionSet>
+              </Demand>
+            </Method>
+            <Method Sig="void RetrieveSchemaFromUrlToFile(string , string )">
+              <Demand>
+                <PermissionSet version="1" class="System.Security.PermissionSet">
+                  <IPermission version="1" class="System.Security.Permissions.ReflectionPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="MemberAccess" />
+                  <IPermission version="1" class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="UnmanagedCode, ControlEvidence" />
+                  <IPermission version="1" class="System.Security.Permissions.KeyContainerPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Unrestricted="true" />
+                </PermissionSet>
+              </Demand>
+            </Method>
+            <Method Sig="void ConvertSchemaStreamToCodeSourceStream(bool , string , class Stream , class ArrayList , string , string )">
+              <Demand>
+                <PermissionSet version="1" class="System.Security.PermissionSet">
+                  <IPermission version="1" class="System.Security.Permissions.ReflectionPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="MemberAccess" />
+                  <IPermission version="1" class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="UnmanagedCode, ControlEvidence" />
+                  <IPermission version="1" class="System.Security.Permissions.KeyContainerPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Unrestricted="true" />
+                </PermissionSet>
+              </Demand>
+            </Method>
+            <Method Sig="void ConvertSchemaStreamToCodeSourceStream(bool , string , class Stream , class ArrayList , string )">
+              <Demand>
+                <PermissionSet version="1" class="System.Security.PermissionSet">
+                  <IPermission version="1" class="System.Security.Permissions.ReflectionPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="MemberAccess" />
+                  <IPermission version="1" class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="UnmanagedCode, ControlEvidence" />
+                  <IPermission version="1" class="System.Security.Permissions.KeyContainerPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Unrestricted="true" />
+                </PermissionSet>
+              </Demand>
+            </Method>
+            <Method Sig="void ConvertSchemaStreamToCodeSourceStream(bool , string , class Stream , class ArrayList )">
+              <Demand>
+                <PermissionSet version="1" class="System.Security.PermissionSet">
+                  <IPermission version="1" class="System.Security.Permissions.ReflectionPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="MemberAccess" />
+                  <IPermission version="1" class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="UnmanagedCode, ControlEvidence" />
+                  <IPermission version="1" class="System.Security.Permissions.KeyContainerPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Unrestricted="true" />
+                </PermissionSet>
+              </Demand>
+            </Method>
+            <Method Sig="void ConvertCodeSourceStreamToAssemblyFile(class ArrayList , string , string )" />
+            <Method Sig="void ConvertCodeSourceFileToAssemblyFile(string , string , string )" />
+            <Method Sig="void SaveStreamToFile(class Stream , string )" />
+            <Method Sig="instance void .ctor()" />
+          </Type>
+          <Type Name="ServiceType">
+            <Method Sig="instance void .ctor(class Type )" />
+            <Method Sig="instance void .ctor(class Type , string )" />
+            <Method Sig="instance class Type get_ObjectType()" />
+            <Method Sig="instance string get_Url()" />
+          </Type>
+          <Type Name="SdlChannelSinkProvider">
+            <Method Sig="instance void .ctor()" />
+            <Method Sig="instance void .ctor(class IDictionary , class ICollection )" />
+            <Method Sig="instance void GetChannelData(class IChannelDataStore )">
+              <LinkDemand>
+                <PermissionSet version="1" class="System.Security.PermissionSet">
+                  <IPermission version="1" class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="Infrastructure" />
+                </PermissionSet>
+              </LinkDemand>
+            </Method>
+            <Method Sig="instance class IServerChannelSink CreateSink(class IChannelReceiver )">
+              <LinkDemand>
+                <PermissionSet version="1" class="System.Security.PermissionSet">
+                  <IPermission version="1" class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="Infrastructure" />
+                </PermissionSet>
+              </LinkDemand>
+            </Method>
+            <Method Sig="instance class IServerChannelSinkProvider get_Next()">
+              <LinkDemand>
+                <PermissionSet version="1" class="System.Security.PermissionSet">
+                  <IPermission version="1" class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="Infrastructure" />
+                </PermissionSet>
+              </LinkDemand>
+            </Method>
+            <Method Sig="instance void set_Next(class IServerChannelSinkProvider )">
+              <LinkDemand>
+                <PermissionSet version="1" class="System.Security.PermissionSet">
+                  <IPermission version="1" class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="Infrastructure" />
+                </PermissionSet>
+              </LinkDemand>
+            </Method>
+          </Type>
+          <Type Name="SdlChannelSink">
+            <Method Sig="instance void .ctor(class IChannelReceiver , class IServerChannelSink )" />
+            <Method Sig="instance struct ServerProcessing ProcessMessage(class IServerChannelSinkStack , class IMessage , class ITransportHeaders , class Stream , &amp; class IMessage , &amp; class ITransportHeaders , &amp; class Stream )">
+              <Demand>
+                <PermissionSet version="1" class="System.Security.PermissionSet">
+                  <IPermission version="1" class="System.Security.Permissions.FileIOPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" PathDiscovery="*AllFiles*" />
+                  <IPermission version="1" class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="RemotingConfiguration" />
+                </PermissionSet>
+              </Demand>
+              <LinkDemand>
+                <PermissionSet version="1" class="System.Security.PermissionSet">
+                  <IPermission version="1" class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="Infrastructure" />
+                </PermissionSet>
+              </LinkDemand>
+            </Method>
+            <Method Sig="instance void AsyncProcessResponse(class IServerResponseChannelSinkStack , object , class IMessage , class ITransportHeaders , class Stream )">
+              <LinkDemand>
+                <PermissionSet version="1" class="System.Security.PermissionSet">
+                  <IPermission version="1" class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="Infrastructure" />
+                </PermissionSet>
+              </LinkDemand>
+            </Method>
+            <Method Sig="instance class Stream GetResponseStream(class IServerResponseChannelSinkStack , object , class IMessage , class ITransportHeaders )">
+              <LinkDemand>
+                <PermissionSet version="1" class="System.Security.PermissionSet">
+                  <IPermission version="1" class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="Infrastructure" />
+                </PermissionSet>
+              </LinkDemand>
+            </Method>
+            <Method Sig="instance class IServerChannelSink get_NextChannelSink()">
+              <LinkDemand>
+                <PermissionSet version="1" class="System.Security.PermissionSet">
+                  <IPermission version="1" class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="Infrastructure" />
+                </PermissionSet>
+              </LinkDemand>
+            </Method>
+            <Method Sig="instance class IDictionary get_Properties()">
+              <LinkDemand>
+                <PermissionSet version="1" class="System.Security.PermissionSet">
+                  <IPermission version="1" class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="Infrastructure" />
+                </PermissionSet>
+              </LinkDemand>
+            </Method>
+          </Type>
+        </Namespace>
+        <Namespace Name="Services">
+          <Type Name="RemotingClientProxy">
+            <Method Sig="instance bool get_AllowAutoRedirect()">
+              <Demand>
+                <PermissionSet version="1" class="System.Security.PermissionSet">
+                  <IPermission version="1" class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="RemotingConfiguration" />
+                </PermissionSet>
+              </Demand>
+            </Method>
+            <Method Sig="instance void set_AllowAutoRedirect(bool )">
+              <Demand>
+                <PermissionSet version="1" class="System.Security.PermissionSet">
+                  <IPermission version="1" class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="RemotingConfiguration" />
+                </PermissionSet>
+              </Demand>
+            </Method>
+            <Method Sig="instance object get_Cookies()" />
+            <Method Sig="instance bool get_EnableCookies()" />
+            <Method Sig="instance void set_EnableCookies(bool )" />
+            <Method Sig="instance bool get_PreAuthenticate()">
+              <Demand>
+                <PermissionSet version="1" class="System.Security.PermissionSet">
+                  <IPermission version="1" class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="RemotingConfiguration" />
+                </PermissionSet>
+              </Demand>
+            </Method>
+            <Method Sig="instance void set_PreAuthenticate(bool )">
+              <Demand>
+                <PermissionSet version="1" class="System.Security.PermissionSet">
+                  <IPermission version="1" class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="RemotingConfiguration" />
+                </PermissionSet>
+              </Demand>
+            </Method>
+            <Method Sig="instance string get_Path()" />
+            <Method Sig="instance void set_Path(string )">
+              <Demand>
+                <PermissionSet version="1" class="System.Security.PermissionSet">
+                  <IPermission version="1" class="System.Security.Permissions.ReflectionPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="MemberAccess" />
+                  <IPermission version="1" class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="RemotingConfiguration" />
+                </PermissionSet>
+              </Demand>
+            </Method>
+            <Method Sig="instance int get_Timeout()">
+              <Demand>
+                <PermissionSet version="1" class="System.Security.PermissionSet">
+                  <IPermission version="1" class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="RemotingConfiguration" />
+                </PermissionSet>
+              </Demand>
+            </Method>
+            <Method Sig="instance void set_Timeout(int )">
+              <Demand>
+                <PermissionSet version="1" class="System.Security.PermissionSet">
+                  <IPermission version="1" class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="RemotingConfiguration" />
+                </PermissionSet>
+              </Demand>
+            </Method>
+            <Method Sig="instance string get_Url()" />
+            <Method Sig="instance void set_Url(string )">
+              <Demand>
+                <PermissionSet version="1" class="System.Security.PermissionSet">
+                  <IPermission version="1" class="System.Security.Permissions.ReflectionPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="MemberAccess" />
+                  <IPermission version="1" class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="RemotingConfiguration" />
+                </PermissionSet>
+              </Demand>
+            </Method>
+            <Method Sig="instance string get_UserAgent()" />
+            <Method Sig="instance void set_UserAgent(string )" />
+            <Method Sig="instance string get_Username()">
+              <Demand>
+                <PermissionSet version="1" class="System.Security.PermissionSet">
+                  <IPermission version="1" class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="RemotingConfiguration" />
+                </PermissionSet>
+              </Demand>
+            </Method>
+            <Method Sig="instance void set_Username(string )">
+              <Demand>
+                <PermissionSet version="1" class="System.Security.PermissionSet">
+                  <IPermission version="1" class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="RemotingConfiguration" />
+                </PermissionSet>
+              </Demand>
+            </Method>
+            <Method Sig="instance string get_Password()">
+              <Demand>
+                <PermissionSet version="1" class="System.Security.PermissionSet">
+                  <IPermission version="1" class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="RemotingConfiguration" />
+                </PermissionSet>
+              </Demand>
+            </Method>
+            <Method Sig="instance void set_Password(string )">
+              <Demand>
+                <PermissionSet version="1" class="System.Security.PermissionSet">
+                  <IPermission version="1" class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="RemotingConfiguration" />
+                </PermissionSet>
+              </Demand>
+            </Method>
+            <Method Sig="instance string get_Domain()">
+              <Demand>
+                <PermissionSet version="1" class="System.Security.PermissionSet">
+                  <IPermission version="1" class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="RemotingConfiguration" />
+                </PermissionSet>
+              </Demand>
+            </Method>
+            <Method Sig="instance void set_Domain(string )">
+              <Demand>
+                <PermissionSet version="1" class="System.Security.PermissionSet">
+                  <IPermission version="1" class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="RemotingConfiguration" />
+                </PermissionSet>
+              </Demand>
+            </Method>
+            <Method Sig="instance string get_ProxyName()">
+              <Demand>
+                <PermissionSet version="1" class="System.Security.PermissionSet">
+                  <IPermission version="1" class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="RemotingConfiguration" />
+                </PermissionSet>
+              </Demand>
+            </Method>
+            <Method Sig="instance void set_ProxyName(string )">
+              <Demand>
+                <PermissionSet version="1" class="System.Security.PermissionSet">
+                  <IPermission version="1" class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="RemotingConfiguration" />
+                </PermissionSet>
+              </Demand>
+            </Method>
+            <Method Sig="instance int get_ProxyPort()">
+              <Demand>
+                <PermissionSet version="1" class="System.Security.PermissionSet">
+                  <IPermission version="1" class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="RemotingConfiguration" />
+                </PermissionSet>
+              </Demand>
+            </Method>
+            <Method Sig="instance void set_ProxyPort(int )">
+              <Demand>
+                <PermissionSet version="1" class="System.Security.PermissionSet">
+                  <IPermission version="1" class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="RemotingConfiguration" />
+                </PermissionSet>
+              </Demand>
+            </Method>
+          </Type>
+          <Type Name="RemotingService">
+            <Method Sig="instance class HttpApplicationState get_Application()">
+              <Demand>
+                <PermissionSet version="1" class="System.Security.PermissionSet">
+                  <IPermission version="1" class="System.Security.Permissions.FileIOPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" PathDiscovery="*AllFiles*" />
+                  <IPermission version="1" class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="ControlThread" />
+                </PermissionSet>
+              </Demand>
+            </Method>
+            <Method Sig="instance class HttpContext get_Context()" />
+            <Method Sig="instance class HttpSessionState get_Session()">
+              <Demand>
+                <PermissionSet version="1" class="System.Security.PermissionSet">
+                  <IPermission version="1" class="System.Security.Permissions.FileIOPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" PathDiscovery="*AllFiles*" />
+                </PermissionSet>
+              </Demand>
+            </Method>
+            <Method Sig="instance class HttpServerUtility get_Server()" />
+            <Method Sig="instance class IPrincipal get_User()" />
+            <Method Sig="instance void .ctor()" />
+          </Type>
+        </Namespace>
+      </Namespace>
+    </Namespace>
+  </Namespace>
+</Assembly>
